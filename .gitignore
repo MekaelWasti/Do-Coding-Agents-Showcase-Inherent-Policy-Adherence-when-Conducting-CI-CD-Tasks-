@@ -1,0 +1,33 @@
+# Local dependencies, credentials and generated files
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+*.parquet
+*.arrow
+*.jsonl
+*.zip
+*.tar.gz
+*.exe
+*.dll
+*.log
+
+# Raw research data; retain the custom checker implementation only
+/Experiments/Data/*
+!/Experiments/Data/rule_mining/
+/Experiments/Data/rule_mining/*
+!/Experiments/Data/rule_mining/mine.py
+
+# Paper A local configuration, dependencies, caches and outputs
+/Experiments/Policy Oracle Pipeline/paper_a/output_location.json
+/Experiments/Policy Oracle Pipeline/paper_a/outputs/
+/Experiments/Policy Oracle Pipeline/paper_a/deps/
+/Experiments/Policy Oracle Pipeline/paper_a/sources/
+/Experiments/Policy Oracle Pipeline/paper_a/preliminary/
+/Experiments/Policy Oracle Pipeline/paper_a/storage_copy_verification.json
+/Experiments/Policy Oracle Pipeline/paper_a/tools/*
+!/Experiments/Policy Oracle Pipeline/paper_a/tools/actionlint_provenance.json
+!/Experiments/Policy Oracle Pipeline/paper_a/tools/tool_versions.json
