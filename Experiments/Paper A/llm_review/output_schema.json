@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["case_id", "overall_support", "summary", "instance_assessments", "mechanisms", "missing_context", "needs_human_review"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "overall_support": {"type": "string", "enum": ["supported", "questionable", "mixed", "insufficient_evidence"]},
+    "summary": {"type": "string"},
+    "instance_assessments": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["instance_index", "support", "applicability", "explanation", "mechanism_ids"],
+        "properties": {
+          "instance_index": {"type": "integer", "minimum": 0},
+          "support": {"type": "string", "enum": ["supported", "questionable", "insufficient_evidence"]},
+          "applicability": {"type": "string", "enum": ["appears_applicable", "possible_exception", "unclear"]},
+          "explanation": {"type": "string"},
+          "mechanism_ids": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "mechanisms": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["mechanism_id", "provisional_pattern", "observable_change", "evidence", "limitations"],
+        "properties": {
+          "mechanism_id": {"type": "string"},
+          "provisional_pattern": {"type": "string"},
+          "observable_change": {"type": "string"},
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object", "additionalProperties": false,
+              "required": ["side", "location", "snippet"],
+              "properties": {
+                "side": {"type": "string", "enum": ["before", "after"]},
+                "location": {"type": "string"},
+                "snippet": {"type": "string"}
+              }
+            }
+          },
+          "limitations": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "missing_context": {"type": "array", "items": {"type": "string"}},
+    "needs_human_review": {"type": "boolean"}
+  }
+}

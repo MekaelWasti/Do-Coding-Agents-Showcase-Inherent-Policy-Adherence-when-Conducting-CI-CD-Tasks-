@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "catalog_id": "paper-a-ci-candidates-v0",
+  "status": "provisional",
+  "exported_on": "2026-10-16",
+  "paper_a_catalog_sha256": "5d7c55b0f3f4e56b1c3cad911458db35e05b6376b1d38d0a596ae926dea7ffb3",
+  "paper_a_dataset_revision": "37bbe1533e26cc1e1374917dba1186d1c8a4dc81",
+  "oracle_versions": {
+    "zizmor": "1.30.1",
+    "actionlint": "1.7.12",
+    "paper_a_custom": "existing R1-R11 implementation; see source hash at plan time"
+  },
+  "rules": [
+    {
+      "rule_id": "R7_all_actions_sha_pinned",
+      "statement": "Pin remote action references to full commit SHAs. Local actions and container references are outside this particular checker.",
+      "origin": "external",
+      "validation_status": "candidate",
+      "scope": "github_actions_workflow",
+      "oracle": "custom",
+      "paper_a_rule_ids": [
+        "R7_all_actions_sha_pinned"
+      ],
+      "sources": [
+        {
+          "source_id": "github_secure_use",
+          "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+          "relationship": "security guidance; not an unconditional universal repository obligation"
+        },
+        {
+          "source_id": "paper_a_oracle",
+          "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+          "relationship": "exact reused checker reference"
+        },
+        {
+          "source_id": "scorecard",
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#pinned-dependencies",
+          "relationship": "related requirement family; NOT a reproduced Scorecard score/check"
+        },
+        {
+          "source_id": "ghaleb_checklist",
+          "url": "https://arxiv.org/html/2605.02091v1#S3.T1",
+          "relationship": "Partial operationalization of S13; not full checklist-item coverage"
+        }
+      ],
+      "oracle_limits": "Matches the Paper A literal custom check; SHA validity and trusted provenance are not established.",
+      "paper_a_qualification": "Original R1\u2013R11 candidate baseline, not a universal vendor requirement; literal applicability/limits retained from mining task"
+    },
+    {
+      "rule_id": "R8_checkout_no_persist_creds",
+      "statement": "Set persist-credentials: false when using actions/checkout.",
+      "origin": "external",
+      "validation_status": "candidate",
+      "scope": "github_actions_workflow",
+      "oracle": "custom",
+      "paper_a_rule_ids": [
+        "R8_checkout_no_persist_creds"
+      ],
+      "sources": [
+        {
+          "source_id": "github_secure_use",
+          "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+          "relationship": "security guidance; not an unconditional universal repository obligation"
+        },
+        {
+          "source_id": "paper_a_oracle",
+          "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+          "relationship": "exact reused checker reference"
+        }
+      ],
+      "oracle_limits": "Literal checkout-setting requirement; credential flows and other checkout implementations are not fully assessed.",
+      "paper_a_qualification": "Original R1\u2013R11 candidate baseline, not a universal vendor requirement; literal applicability/limits retained from mining task"
+    },
+    {
+      "rule_id": "Z_template_injection",
+      "statement": "Do not directly interpolate untrusted event data into executable inline scripts; pass data through a safely handled input or environment variable.",
+      "origin": "external",
+      "validation_status": "candidate",
+      "scope": "github_actions_workflow",
+      "oracle": "zizmor",
+      "paper_a_rule_ids": [
+        "Z_template_injection"
+      ],
+      "sources": [
+        {
+          "source_id": "github_secure_use",
+          "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+          "relationship": "security guidance; not an unconditional universal repository obligation"
+        },
+        {
+          "source_id": "paper_a_oracle",
+          "url": "https://github.com/zizmorcore/zizmor/blob/v1.30.1/crates/zizmor/src/audit/template_injection.rs",
+          "relationship": "exact reused checker reference"
+        },
+        {
+          "source_id": "scorecard",
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#dangerous-workflow",
+          "relationship": "related requirement family; NOT a reproduced Scorecard score/check"
+        },
+        {
+          "source_id": "ghaleb_checklist",
+          "url": "https://arxiv.org/html/2605.02091v1#S3.T1",
+          "relationship": "Partial operationalization of S3; not full checklist-item coverage"
+        }
+      ],
+      "oracle_limits": "Partial static coverage; no proof that all untrusted inputs are handled safely.",
+      "paper_a_qualification": "Pinned offline diagnostic; persona/config/context can limit coverage. Not an adopted repository policy by default."
+    },
+    {
+      "rule_id": "Z_excessive_permissions",
+      "statement": "Restrict GITHUB_TOKEN permissions to the minimum required, avoiding broadly scoped permissions.",
+      "origin": "external",
+      "validation_status": "candidate",
+      "scope": "github_actions_workflow",
+      "oracle": "zizmor",
+      "paper_a_rule_ids": [
+        "Z_excessive_permissions"
+      ],
+      "sources": [
+        {
+          "source_id": "github_secure_use",
+          "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+          "relationship": "security guidance; not an unconditional universal repository obligation"
+        },
+        {
+          "source_id": "paper_a_oracle",
+          "url": "https://github.com/zizmorcore/zizmor/blob/v1.30.1/crates/zizmor/src/audit/excessive_permissions.rs",
+          "relationship": "exact reused checker reference"
+        },
+        {
+          "source_id": "scorecard",
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#token-permissions",
+          "relationship": "related requirement family; NOT a reproduced Scorecard score/check"
+        }
+      ],
+      "oracle_limits": "Scanner proxy for broad permissions, not a task-specific proof of least privilege; repository defaults can be unknown.",
+      "paper_a_qualification": "Pinned offline diagnostic; persona/config/context can limit coverage. Not an adopted repository policy by default."
+    }
+  ]
+}
