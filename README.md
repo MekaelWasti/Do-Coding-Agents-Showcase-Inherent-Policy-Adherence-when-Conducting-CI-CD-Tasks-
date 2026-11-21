@@ -1,4 +1,4 @@
-# Agentic Policy Compliance
+# Do Coding Agents Showcase Inherent Policy Adherence when Conducting CI-CD Tasks? An Agentic-PR based-Explorative Study
 
 Research code for assessing security and correctness changes in agent-attributed GitHub Actions workflow edits. The current pipeline compares historical before/after workflow files using zizmor, actionlint, literal custom rules, and relative change checks.
 
