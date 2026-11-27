@@ -1,0 +1,153 @@
+{
+  "repo": "go-vikunja/vikunja",
+  "base_sha": "8c4fc4780ed1d10d667bb57f3c32ef472844254e",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "f7e8546967f2ad735019d976eab217a21b791647",
+      "fetch_status": "found",
+      "sha256": "141ef93ae988b62dd3f7333e0d7398812df34af89088da9be5b7ef2849ae8385",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 3,
+            "Z_secrets_inherit": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/crowdin.yml",
+      "blob_sha": "f1f2adbcd8b269d15c3993fa6d47e0c3551b113e",
+      "fetch_status": "found",
+      "sha256": "1ab0edb118ff82b4519c16c1eee33a15917d743df467b20c286d2a390f67ea25",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/issue-closed-comment.yml",
+      "blob_sha": "af85a198d57c67dad83c7b02e8768f0da0d84d55",
+      "fetch_status": "found",
+      "sha256": "35b8f556c2a897939c3f1b831a23ffb06e41e43819e3a7c566936976526edfc6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "305d57760008725e3a16692103e28b43de40d264",
+      "fetch_status": "found",
+      "sha256": "fccd99f6445bfe273c8ef07b1d34d94a1936404b6e4ac0fffa34477e2015c12c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_unpinned_uses": 8
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "blob_sha": "ac8439f745b0c736caaf3e73464d345bd774eaab",
+      "fetch_status": "found",
+      "sha256": "399aa1bbe67a871436903912a21404ed49590c57246c9f6a03e17e8868fcfb14",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 11,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

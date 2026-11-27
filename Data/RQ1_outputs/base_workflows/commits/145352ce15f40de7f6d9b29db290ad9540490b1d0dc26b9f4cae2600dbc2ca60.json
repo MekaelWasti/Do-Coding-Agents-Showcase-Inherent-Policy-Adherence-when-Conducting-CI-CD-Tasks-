@@ -1,0 +1,69 @@
+{
+  "repo": "tektoncd/pipelines-as-code",
+  "base_sha": "6a0d17954f0bd723f24cc5356e9d6f363812e880",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/container.yaml",
+      "blob_sha": "8e76a8a2361500703ee1363e88e357142aee3d84",
+      "fetch_status": "found",
+      "sha256": "7359acec863fd25635ad04f052e9bafeaf16d4fcaa1217d0f1e8e99a5e0154cb",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 5,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/e2e.yaml",
+      "blob_sha": "aa68b74fe51e803d113edb1673f34e33b112813b",
+      "fetch_status": "found",
+      "sha256": "9498a43f44f1c9322c6f3b7d2336585d8d4db0b3322dc1cda21707a8d0d0aa89",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 9
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

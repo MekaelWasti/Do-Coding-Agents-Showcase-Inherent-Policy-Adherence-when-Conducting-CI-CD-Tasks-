@@ -1,0 +1,70 @@
+{
+  "repo": "fortra/impacket",
+  "base_sha": "084aff60df7e8a5784bee3fb6ac74ed9d1362af8",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build_and_test.yml",
+      "blob_sha": "b5f460e73dd332a75675a337e835c7e06db5e882",
+      "fetch_status": "found",
+      "sha256": "ecf592183f6195de258f1bace36d22003221740cfe5cb61f2565503d0d49a474",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 5
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/labeler.yml",
+      "blob_sha": "3d820a859d4c9d3121dafe086031914807c9d0c4",
+      "fetch_status": "found",
+      "sha256": "f0d6d289b0b252bccef7105c8864047369cef85ef409afd7061bb5994aa35d01",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

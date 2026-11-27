@@ -1,0 +1,99 @@
+{
+  "repo": "vaadin/flow",
+  "base_sha": "b020facae76847f6a510a3c16dd72357b6f7fb60",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/formatter.yml",
+      "blob_sha": "e260764db21e8c0e76ceb475c9b45618d29e3e9f",
+      "fetch_status": "found",
+      "sha256": "4675b64610ad627d35a7ddca76a381f7361103c0a2893457965f0369e7aac573",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/sonar-pr.yml",
+      "blob_sha": "6d8aff3456ebb01bde54ed68b8506eb6e147a738",
+      "fetch_status": "found",
+      "sha256": "b5f664737dbe47a950949a3c3c4a139640f261eb6694950f5765c07927c93dd5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/validation.yml",
+      "blob_sha": "6c9680635e456a9909541a72f9ce35aca2b74c22",
+      "fetch_status": "found",
+      "sha256": "1856a5ba46e1bd0027a7ebe9e411fd5e355848fe9b134a88634527e655a5b1d7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 6,
+            "Z_dangerous_triggers": 1,
+            "Z_template_injection": 26,
+            "Z_unpinned_uses": 33
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

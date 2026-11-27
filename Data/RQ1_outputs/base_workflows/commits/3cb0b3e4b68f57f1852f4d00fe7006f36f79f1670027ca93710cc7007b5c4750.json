@@ -1,0 +1,106 @@
+{
+  "repo": "1dustindavis/gorilla",
+  "base_sha": "087a93fed7cf182b0b9f46814e4752785789528f",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build_pr.yml",
+      "blob_sha": "9ffb44d01bcee3269f9601ef446e719d428aec86",
+      "fetch_status": "found",
+      "sha256": "3cde610ecd479858dd506d63bd9c9b4576f62c5fd415a3201996e49deca829f7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/build_release.yml",
+      "blob_sha": "45bd7e9401085def14805f6df390d7325228b15a",
+      "fetch_status": "found",
+      "sha256": "1a849ac32be25a01586cf91d43b6f8a693f055d085d09047de7f35b060ae6918",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/go-test.yml",
+      "blob_sha": "0a059d98767a78d2ac464ef700908011327cb070",
+      "fetch_status": "found",
+      "sha256": "5083e6a087014982b6c962f307115e237a9a4310cb14e94b98823c4e0155c6b6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "repo": "better-auth/better-auth",
+  "base_sha": "bf90741a887491763350e102dc891565fd51a550",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "f98e52ab4f62120e40b26396713b21e81382415b",
+      "fetch_status": "found",
+      "sha256": "42f41f0e3b02b7a19c732b8c727cf00d323c0201641245a1c1a8a060a037e470",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 3
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/claude.yml",
+      "blob_sha": "15ca403b67df397cdbb234fe04d615d4be46c467",
+      "fetch_status": "found",
+      "sha256": "caa37fc82c0be2e6a17d4321227b3f29f62f89e80721797d10f33574983dbcfc",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/e2e.yml",
+      "blob_sha": "9aaa8d8cb00b8314b186efba3b64da75b38ec299",
+      "fetch_status": "found",
+      "sha256": "e184962185b319bb44bf1f1a6631f86a1e5addd0fb2ac6d4a1d423907ac08784",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 3
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/preview.yml",
+      "blob_sha": "c157ee15b354572dc513142d48e3fa8583281d93",
+      "fetch_status": "found",
+      "sha256": "2c8bda9afba87311f580413052e57b3cb678e999cfd588f1bb143449b0658d8f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "a26ffe6e7536510fa552a5c724bfdf2cd492311a",
+      "fetch_status": "found",
+      "sha256": "1127f70d9a803bed3e8d84e32fdcc42c3d36876ea38445ff604c35f5a1178035",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

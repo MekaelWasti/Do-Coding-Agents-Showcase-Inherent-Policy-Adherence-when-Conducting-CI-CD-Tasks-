@@ -1,0 +1,106 @@
+{
+  "repo": "tikv/client-go",
+  "base_sha": "98ed21b132facd8497628537c4037263cf3ce265",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/compatibility.yml",
+      "blob_sha": "e598e4b61eac013553158b3ea56018bcc6d15216",
+      "fetch_status": "found",
+      "sha256": "78c8fb360d97561593692c7ee08035a58ae2413c8dd9f3e0d92caf14ed0d3f58",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 4
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/integration.yml",
+      "blob_sha": "cde5c9d87a04d343f36ec697828767fcd96e7038",
+      "fetch_status": "found",
+      "sha256": "239a878477dbb939597f0b25748a2c64fc2721699882b0570cbd7337fd097cee",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 5,
+            "Z_unpinned_uses": 12
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 8
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "blob_sha": "50c4909737f5a08a11461647074de31a3df51939",
+      "fetch_status": "found",
+      "sha256": "97dedeaf47d323611d1d869071ff48ee39624fc49029fb7952e559ef916efa0b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 7
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 7
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

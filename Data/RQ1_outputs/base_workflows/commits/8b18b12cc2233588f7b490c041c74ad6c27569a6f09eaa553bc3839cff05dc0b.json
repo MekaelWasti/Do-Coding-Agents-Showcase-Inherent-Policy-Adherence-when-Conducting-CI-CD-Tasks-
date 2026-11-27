@@ -1,0 +1,68 @@
+{
+  "repo": "marmot-protocol/whitenoise-rs",
+  "base_sha": "a4964a46d41c46cd141085b5214b4d5e3e30f199",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/auto-issue-project.yml",
+      "blob_sha": "f77bc0bb202e9b91c301b74e4712e62187681934",
+      "fetch_status": "found",
+      "sha256": "d631adfe27326e1f6b12d24e74429a3ffc7f62fd4c00bf37ee49386e0390769e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "3640ae89dd0f5f90f881569bd2c9055e961e3506",
+      "fetch_status": "found",
+      "sha256": "0ec0939560d273681437cbdc923f564ff78e44f6a790fdfcd41bc1da538b8335",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 6,
+            "Z_excessive_permissions": 5,
+            "Z_unpinned_uses": 22
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

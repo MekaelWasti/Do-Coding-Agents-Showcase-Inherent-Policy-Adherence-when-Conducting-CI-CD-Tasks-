@@ -1,0 +1,99 @@
+{
+  "repo": "uber-go/nilaway",
+  "base_sha": "99d94caaf04396223638a88b7291740a853b7b00",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "4951583ea064e01296109dcafdf3382138dad10e",
+      "fetch_status": "found",
+      "sha256": "59986afc84081c783b5d9cee1aaad063446f303752685e023bd16b9e595eb55b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 10
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/golden-test-comment.yml",
+      "blob_sha": "260124994b845121a4f159cca5c36cb0b15e8f68",
+      "fetch_status": "found",
+      "sha256": "e11f74c8a7e8d6a9c39facbf8d30ca49cfcdd8ccbc8f770ad9f01b27817dafe7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R4_no_workflow_run": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/golden-test-run.yml",
+      "blob_sha": "19bd10184a10f83e60bd2d1eb6001ff8938a733d",
+      "fetch_status": "found",
+      "sha256": "11dff603345a01780376898d2ab3f807ef878f1324434e0b01926d3a3859ab5c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

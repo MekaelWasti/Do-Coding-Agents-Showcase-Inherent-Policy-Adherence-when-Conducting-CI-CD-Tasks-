@@ -1,0 +1,101 @@
+{
+  "repo": "Open-J-Proxy/ojp",
+  "base_sha": "05c75a6333926bda9931d6172900e6905473b927",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/docker-build.yml",
+      "blob_sha": "e30be59b45bb1a126aaf59f1c91fbaf2eeebfe38",
+      "fetch_status": "found",
+      "sha256": "3a4d821b824e204b637a89286ca3708dbf84da1407617a5ab8ee3abad26cd2b3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/main.yml",
+      "blob_sha": "41304e682c85509b3f3f955f091cc376defb97ed",
+      "fetch_status": "found",
+      "sha256": "375e508354852fbc05c92f5b8aa0409ed50866b5442d8ba1a57e45902dc582b8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 10,
+            "Z_excessive_permissions": 10,
+            "Z_unpinned_uses": 29
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/meterian-scanner.yml",
+      "blob_sha": "f0a9ca16b37bb8a266cc5c6337298fe73e0c367a",
+      "fetch_status": "found",
+      "sha256": "59aecd70ed5896d2d9402bd385aa81420454c3a9d2836119972c2bf5796ca9ee",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

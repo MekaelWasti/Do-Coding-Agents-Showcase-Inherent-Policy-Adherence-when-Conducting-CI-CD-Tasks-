@@ -1,0 +1,669 @@
+{
+  "repo": "rancher/rancher",
+  "base_sha": "d984f698f0522d7845dce8960c4d4be3f6c2855c",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci-testing-create-pr.yml",
+      "blob_sha": "97e4bac4ee75cf4a943c4d5073aa1f01aa1534f8",
+      "fetch_status": "found",
+      "sha256": "537020844322af3709d432ac37748a5386be916c3d7b94307a40f7b8a1a94383",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci-testing-restart-ci.yml",
+      "blob_sha": "4acfeec6ba15b7cc476d4f6a59aa8259529fe1bd",
+      "fetch_status": "found",
+      "sha256": "f909947f4b6ceafe3ef546ec4a175605e302eb523bcb0c20569e2a55dc31af21",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R4_no_workflow_run": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/controller-test.yml",
+      "blob_sha": "d6ddbba1ce8cc1e04b8eefa10966a2dff9898828",
+      "fetch_status": "found",
+      "sha256": "3bba6c66142c48857ee803d323c84a4a53883230730eb5a4ebffdb889ab674d1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/fossa.yml",
+      "blob_sha": "4a4813c22d9925d0fbe64dd18f1cc0868d70b2e9",
+      "fetch_status": "found",
+      "sha256": "3ae3a887db0623cc0d811ddb786b6f462aeaee27c4178f99ee3a36b845fe61a9",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/go-get.yml",
+      "blob_sha": "b219614a1d000bf81510267ab1ef7793f07dcb60",
+      "fetch_status": "found",
+      "sha256": "810464c9d6679634cd6a4849a6aad1eb7f1a463eedb0d692050043a8551e6c28",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 1,
+            "Z_github_app": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_deprecated_commands": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/hotfix-release.yml",
+      "blob_sha": "ab58a102ca64849a999eeb4b828eb50866290829",
+      "fetch_status": "found",
+      "sha256": "9ce5b002e1871d27cd2783e5ff3a5e4b107d7046ce7348f772e0a5333649e3cf",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 7,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/integration-tests.yml",
+      "blob_sha": "f8006b29808e7e208fe66a19f37f0aefab266b3b",
+      "fetch_status": "found",
+      "sha256": "50d460aee67999140249163e26cd204db292d4414a758782d6619fdad121b015",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 3
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/port-issue.yml",
+      "blob_sha": "77ef0efd78201afec4b165528e08693f6da82836",
+      "fetch_status": "found",
+      "sha256": "6e64599d8991f4caea17d886f1e13594702ea0ffaae716da12e9060fbc1f27de",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/promote-to-stable.yml",
+      "blob_sha": "f40a7e3d07b2553bfda4c053332a9eff9134ea27",
+      "fetch_status": "found",
+      "sha256": "2d6ae8b092d796dfd8b06fe826e7dfeb9158af5edefb6df196b395a590a6b2d3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_template_injection": 9,
+            "Z_unpinned_uses": 3,
+            "Z_github_app": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_deprecated_commands": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/provisioning-tests.yml",
+      "blob_sha": "10b0630a589399d320d19cf68e332bdb56c37229",
+      "fetch_status": "found",
+      "sha256": "af70e003eb70f036a443f6c0e837a156acd17587b2c1227601600d7f9ff85a96",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 3
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish-provisioning-test-results.yaml",
+      "blob_sha": "306d5c8834851f129cc65fde4049e3cb6f3c5682",
+      "fetch_status": "found",
+      "sha256": "43fd3735c406b8ef98aab19b469992eb5e34358b8e3fe06c442a4ba1729a1c39",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R4_no_workflow_run": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pull-request.yml",
+      "blob_sha": "9661b24aa1226b6eac5bee10680671fd8f882a26",
+      "fetch_status": "found",
+      "sha256": "70142e2398d56d5142472edddc4ebdae6149e9d06311922533d1f637781ebb6c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/push.yml",
+      "blob_sha": "0fea209a5144191444f55693d70c98f93ba45027",
+      "fetch_status": "found",
+      "sha256": "ba6f72b8f88b9f2d1f3078df55d3c77a3ec55b1ffaae00b04b676d4c9053a433",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 6,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/rcs-release.yml",
+      "blob_sha": "e3b1fc234fc09c06e0d05b38b320b70bb3ac098f",
+      "fetch_status": "found",
+      "sha256": "5a1934642643930e323e72423402fee42f0cd84435897b041b530c122871d25b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 7,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 5,
+            "Z_unpinned_images": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "2ea3442dd6353ef1eb8173b7ca2b5ed96949940b",
+      "fetch_status": "found",
+      "sha256": "39e8d12f6364442817146e2c3b06d6b1d0a39844d7c71b060a127b65de742787",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 9,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 7
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/renovate-vault.yml",
+      "blob_sha": "0a248549ad76f8d71a4f6b4f3e39281bc72cb388",
+      "fetch_status": "found",
+      "sha256": "b840ac3d8257b090f0d8175a4243ba866d0d7fa699416ed87c93a82d923d4bd3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/replace-env-value.yml",
+      "blob_sha": "f03adc6b93b6f90371640354116327bd01bfc184",
+      "fetch_status": "found",
+      "sha256": "5404a3234bca5eded1562ac7b5c3bfa058d3add3a9fb5b6fc8afbf2601666f73",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_deprecated_commands": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/stale.yml",
+      "blob_sha": "a2c2a0462fa4306605e5ed8a328ec42ba464775d",
+      "fetch_status": "found",
+      "sha256": "5321255d7b8e73a34ed445b0a569edaeee3ea457b964ab09e49f4b54a4d279f6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/system-agent-upgrade.yml",
+      "blob_sha": "4aa8695bd56b199b40e2ad2d86c564a6746ead3f",
+      "fetch_status": "found",
+      "sha256": "266c6d416cf8832a22c20631d5554cb18eedc596b41527c4f4648d8fd1bb4af4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 1,
+            "Z_github_app": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_deprecated_commands": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/unit-test.yml",
+      "blob_sha": "ef031b745e5c117978bb482ca2328d0357d6ec4c",
+      "fetch_status": "found",
+      "sha256": "24b448e39c82bac24fac0988a6b86b46ec9a7a546aaefe4132b98d1e1a4dd665",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 3
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/updatecli.yml",
+      "blob_sha": "2644d6815f73e756168414e44a6966901ef3663a",
+      "fetch_status": "found",
+      "sha256": "77dca68f3efc62007f5d24e583bce31a800949bd32d3bde51532d068a71e7398",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 1,
+            "Z_github_app": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "blob_sha": "64cb4c3136762f758463e8c89a14a6f745d58067",
+      "fetch_status": "found",
+      "sha256": "2a2611153738b1426751b533fa8e6e63b09048218639bd7f72265aba42b83ffa",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/verify-generated-code-changes.yml",
+      "blob_sha": "1a6b2f555924a2c5aac2eef21d269d1c90191808",
+      "fetch_status": "found",
+      "sha256": "d6025e9e25c030b872cb9e1d4791c45443fb5c2561f95bcc27a787088382d9a2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

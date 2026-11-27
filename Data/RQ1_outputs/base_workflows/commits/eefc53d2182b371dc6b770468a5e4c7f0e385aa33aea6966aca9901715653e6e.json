@@ -1,0 +1,73 @@
+{
+  "repo": "etr/libhttpserver",
+  "base_sha": "dff6af2fc17f9ac313e64ab8fb83bd01a1d7da70",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/codeql-analysis.yml",
+      "blob_sha": "cc0f95be06612939062319e50c1b4a2805ddd1c9",
+      "fetch_status": "found",
+      "sha256": "52c0dd0367f7577a117a1b79ec802959630762072a0ea482a66406a681cf2153",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 3
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/verify-build.yml",
+      "blob_sha": "7753044996531f4376df7318d9978f9ad45af05f",
+      "fetch_status": "found",
+      "sha256": "aefc8199876e8ab7b098fcb62912655d5e261d33a606459e8fb5c2e3dbf2cc7d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 8,
+            "A_action": 4
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "repo": "ledger/ledger",
+  "base_sha": "3c6006e8967093963dbbdb128d56baca6c097127",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/cmake.yml",
+      "blob_sha": "7dd91344b9d9b772294c4c21d20bffdfd35ba68a",
+      "fetch_status": "found",
+      "sha256": "0f232461f2817c17e17ea0afdfbb5f626ca6280bcd59c431f21468384526a047",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/nix-flake.yml",
+      "blob_sha": "9e65b22b94f8ded34a72499daaf5a2d1089ff220",
+      "fetch_status": "found",
+      "sha256": "656ab9db608bc6e789ffa89acd60b6dbaa368de67e85cad7e8a8f77b6f93d9c1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

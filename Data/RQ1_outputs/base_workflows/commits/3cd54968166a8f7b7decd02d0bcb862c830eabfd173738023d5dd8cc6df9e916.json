@@ -1,0 +1,65 @@
+{
+  "repo": "sipcapture/captagent",
+  "base_sha": "30e48c626beeb00aa09dbb172759d031a1270d40",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "65eab405f8eb3ba9fcc16f5876a15213761ee84c",
+      "fetch_status": "found",
+      "sha256": "de69832cd69174802a5b4490e049b49703f25aacbd24f0fc4647d90a3f8e593a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/star.yml",
+      "blob_sha": "7ee952c2b2b2910c10eeac4c409b9cdc55703bb0",
+      "fetch_status": "found",
+      "sha256": "59b94ba4831b9c24e877ff4188e429274874d91aa2ca8da31148043e7c6bfe46",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

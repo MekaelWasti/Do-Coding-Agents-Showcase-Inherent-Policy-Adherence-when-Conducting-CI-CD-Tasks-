@@ -1,0 +1,112 @@
+{
+  "repo": "cartography-cncf/cartography",
+  "base_sha": "833c8efeae8bb8172dc6f38c96f9bb4e08710da7",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ossf-scorecard.yml",
+      "blob_sha": "907b96b87ad59a990f8dafbbf5fe875c99b45bc0",
+      "fetch_status": "found",
+      "sha256": "1429feadc1597918377e7fd05759f771968aad0c680e6b0cab97d6fe0dd55090",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish-to-ghcr-and-pypi.yml",
+      "blob_sha": "357513e945dd3002ecd963e7ae191869c1f74aef",
+      "fetch_status": "found",
+      "sha256": "eb962cfec63ebb3ff6778b3b366a8320c2f7a3b072c15f6b466d2efbd501305d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_template_injection": 2,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/sphinx.yml",
+      "blob_sha": "d240175d187e5c81bad2f219b6b453f68c06da68",
+      "fetch_status": "found",
+      "sha256": "c42d21f7c9d964c536bdbb66041e8e9368301fa0089900f27ca3f7eaae31fc52",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test_suite.yml",
+      "blob_sha": "9385e4d80a3fc0fffaca5103e0f88dca430916e6",
+      "fetch_status": "found",
+      "sha256": "b630cb0ddd87e5bb83b5767eba97cfc8d9e2d0d935cfa471b75f02c018017a33",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

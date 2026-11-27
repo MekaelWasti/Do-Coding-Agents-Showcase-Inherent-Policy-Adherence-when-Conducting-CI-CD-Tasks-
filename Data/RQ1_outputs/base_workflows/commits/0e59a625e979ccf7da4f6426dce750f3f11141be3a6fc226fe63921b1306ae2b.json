@@ -1,0 +1,103 @@
+{
+  "repo": "ayutaz/piper-plus",
+  "base_sha": "63a5b17b78a578239d2a6b46fd3b4472a6d0ccf3",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/cleanup-draft-releases.yml",
+      "blob_sha": "ac598dbbfd82a46bbfe7f1dee7ef4885105c03d1",
+      "fetch_status": "found",
+      "sha256": "588f426a5d698f06677c3594c1f8ace963c7e862697688b0046484c2d21bf23d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/dev-daily-release.yml",
+      "blob_sha": "024f0fdacac4faefcc588f9ac5ecb953e1954d9a",
+      "fetch_status": "found",
+      "sha256": "cebf4561a971c5be804f72c7e58d7b27e0dec34840590b6c3f45914bb3cd1ce5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 6,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 5,
+            "Z_unpinned_uses": 20
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1,
+            "A_runner_label": 1,
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test-multilingual-tts.yml",
+      "blob_sha": "8f9425f60418c222f850452a6bef3bf10438f429",
+      "fetch_status": "found",
+      "sha256": "acab58a7ccb31af0e67e8bfff7a8502fae917c366e1639cd1db1b40a2e8f8af1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 5,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 11
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

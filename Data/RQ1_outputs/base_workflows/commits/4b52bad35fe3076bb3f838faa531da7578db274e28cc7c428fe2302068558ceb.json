@@ -1,0 +1,38 @@
+{
+  "repo": "trustedsec/hate_crack",
+  "base_sha": "92200a7964d014c0b9106ee88704fcbff5ea3ffb",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/tests.yml",
+      "blob_sha": "8f41ef25c428ccb94f413c607ea168856cd557a1",
+      "fetch_status": "found",
+      "sha256": "31f7cb7d2452e2f2b5ec0da8a61ae329a6a5e204d0b0a378450598ce5214889d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

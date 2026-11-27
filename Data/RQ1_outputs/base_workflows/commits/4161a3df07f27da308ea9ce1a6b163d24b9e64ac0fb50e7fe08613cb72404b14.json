@@ -1,0 +1,66 @@
+{
+  "repo": "partiallywritten/Mega.nz-Bot",
+  "base_sha": "59691f893c3b9ee5bd64d0b387a4935540fe58cb",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/docker-publish.yml",
+      "blob_sha": "10e89f298595dd8f652ece6c78a923ad69806a07",
+      "fetch_status": "found",
+      "sha256": "fda71090d0c9d14d88d20b00dc6b2541ff071af47779551be271cfe49e223619",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/notify.yml",
+      "blob_sha": "104c0a04d99cafbcb67f7ea1739c61e3dee4a0a3",
+      "fetch_status": "found",
+      "sha256": "a1f7f75b81a3f8bd59f427b68b04fa3e8e7620fa56c1fa97b8260661f966b94d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "repo": "trinadhthatakula/Thor",
+  "base_sha": "4ad1c0c86a08b93c13afe1cd31c4e8502407688c",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/dev-check.yml",
+      "blob_sha": "bdfb72bf219cd6d99e289723811b53f47d611031",
+      "fetch_status": "found",
+      "sha256": "b57b4ae2f8a1fd2e628f85b55b8e9dc49127f7161062b16073fa3528434cf648",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/production-deploy.yml",
+      "blob_sha": "7a3d31ae52c740ca41c0e5e1db9895688030d6db",
+      "fetch_status": "found",
+      "sha256": "9f2305f59f49211a2824322a0ee7ee12adff564233d30a05ab252c36b59545dd",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4,
+            "Z_cache_poisoning": 1,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "repo": "gepa-ai/gepa",
+  "base_sha": "1b5eff5133be1015210e0512953c25a4b85ad454",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build_and_release.yml",
+      "blob_sha": "878b534b98c6271add4cc743a17dfaae586b37ad",
+      "fetch_status": "found",
+      "sha256": "a5c60b25576e7bbcb9d2d3e552d19965c700eeb74292702a7bf7fb6a106a63e6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 9,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/run_tests.yml",
+      "blob_sha": "c31e64ac41e0f211e0851839e6f75923af87fa55",
+      "fetch_status": "found",
+      "sha256": "0951d10407e8f386c84dfd096e1e12041daed1715b8370d75e6e32e6444ad281",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_unpinned_uses": 13,
+            "Z_cache_poisoning": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

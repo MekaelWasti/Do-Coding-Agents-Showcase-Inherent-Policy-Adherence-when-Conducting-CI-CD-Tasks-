@@ -1,0 +1,70 @@
+{
+  "repo": "elisescu/tty-share",
+  "base_sha": "aa514b0708260095b86bd8df8f71910705a3e38b",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/pr_checks.yml",
+      "blob_sha": "cb6bb56daadf37bc116d92ff70e38ddca8f6dfbd",
+      "fetch_status": "found",
+      "sha256": "b22b4b87cb740eb34d27eda90551195caf375992dba193387d1dd1d4a00a7595",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/releases.yml",
+      "blob_sha": "cbd856dd9378abba4512fd6ba2a0da956612dc9c",
+      "fetch_status": "found",
+      "sha256": "6662a725e26d0328c93eaa193f83dd281f31374d436db81609910342f6f2ebe7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

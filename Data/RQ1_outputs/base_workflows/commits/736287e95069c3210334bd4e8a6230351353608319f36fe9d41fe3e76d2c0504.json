@@ -1,0 +1,70 @@
+{
+  "repo": "toshimaru/rubocop-rails_config",
+  "base_sha": "8948dc9944e153e776b014e2b272e988906a5713",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "bdc28c295a7701d901aae2df8e6ae86d7902b6f8",
+      "fetch_status": "found",
+      "sha256": "979cab011cd17c4ccac969ad1b4d88459b95fa30614c923399aae33c70bff0a8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 3,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "blob_sha": "5942b0984b990b89299de2fd655414cea9b3fbb3",
+      "fetch_status": "found",
+      "sha256": "f70045bfb17a56fe5db90adab58bd5746ad0906617f7852f2366ff3e07923333",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

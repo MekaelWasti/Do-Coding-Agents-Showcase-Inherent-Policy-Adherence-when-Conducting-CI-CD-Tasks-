@@ -1,0 +1,69 @@
+{
+  "repo": "fieldsoftheworld/ftw-baselines",
+  "base_sha": "78df1a2042b874423a8ff9e6cfbaec4b294811a5",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/integration-tests.yml",
+      "blob_sha": "e754495fc7f11cc8dfe2d5f2de02ae7dd83a2299",
+      "fetch_status": "found",
+      "sha256": "557738c94d7198a77d67c1cedc3f0e633d57663a90782f9a10e0b03663ab4eb9",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "blob_sha": "9762c76b7fe51869ceb5df3c81248135fe9d10aa",
+      "fetch_status": "found",
+      "sha256": "5a77247a4145d1e6ccc9828c1254353f3e5f7356da2a42212355f6aab865b567",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

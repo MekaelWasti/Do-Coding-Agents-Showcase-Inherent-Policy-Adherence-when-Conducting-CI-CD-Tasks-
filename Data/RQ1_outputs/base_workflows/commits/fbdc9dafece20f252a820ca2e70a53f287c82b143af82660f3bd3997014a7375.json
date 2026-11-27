@@ -1,0 +1,128 @@
+{
+  "repo": "dailydotdev/apps",
+  "base_sha": "2d89c910aae09a063fef63ef7d5cc7eef92ac411",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/add-preview-domain.yml",
+      "blob_sha": "1683d05ee760b22527661679d28131e30bebde6b",
+      "fetch_status": "found",
+      "sha256": "04517e04d2f2669e1be14f9fa005478d2605314ff914d8393d6fb09363305e99",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 3
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R5_no_untrusted_in_run": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/claude.yml",
+      "blob_sha": "94ba8c0bf85f72ece1ada82ab9c436f39b2ad271",
+      "fetch_status": "found",
+      "sha256": "23aa5d17fc8d490e8521c4bab083705dba3cbf676b7a2e6487d888667572a505",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/e2e-tests.yml",
+      "blob_sha": "3997285147b1278e4178fcb79a4644a6e8e1682f",
+      "fetch_status": "found",
+      "sha256": "5f417740c1c6a7fad568771cb8ee6084724df1bcb88c41f9b620fe6c125fe214",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/remove-preview-domain.yml",
+      "blob_sha": "822433f8f4d1bfbe100955b18cbeb3ae0ddd3b4b",
+      "fetch_status": "found",
+      "sha256": "cc9ce1cffbd5b65c5f521372340aa8218cc7ac894ecf3abb3ab365b627dd2962",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

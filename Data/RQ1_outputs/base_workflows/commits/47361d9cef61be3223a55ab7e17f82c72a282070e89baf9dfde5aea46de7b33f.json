@@ -1,0 +1,64 @@
+{
+  "repo": "productdevbook/nitro-graphql",
+  "base_sha": "0abefcb4dd4be195b66281f08a884f4aae028a3b",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "7822374417a0d566bed49d41a4f6c5e69a64fbdd",
+      "fetch_status": "found",
+      "sha256": "a716d99d593147d281a119cf180f736f66d678773132b6b40fb6459a9b5f3a2b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "a49cbfc3ab28c186fcaebe5adefb3a65e1b43c49",
+      "fetch_status": "found",
+      "sha256": "3772091eaf0eddba3af7ea759ab50057722ca6f2b44050fc90d2539527613e54",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "repo": "htilly/SlackONOS",
+  "base_sha": "4ddada978e5a786f537d1a2e26b63bb7cc18e506",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/confluence-changelog.yml",
+      "blob_sha": "c5cad6a6fa0c4f96b12e739da151eac6da66bcd3",
+      "fetch_status": "found",
+      "sha256": "0c8898bbc2f4c858f89ac4259c06c182ccd92d8ccaf16b32d0076831bc75f3e2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 9,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/coverage.yml",
+      "blob_sha": "d2513a5870733a3404be45672e10641c5b0f767f",
+      "fetch_status": "found",
+      "sha256": "0c0e9040a50fa7812b697c29cf7fa523ea261cf5e30c2644f036a050c342b0c7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/docker-image.yml",
+      "blob_sha": "bc8bdaa34c18bf708788781bf1c104ecfbf22217",
+      "fetch_status": "found",
+      "sha256": "0179b2f825c7da6fbf5dabc34e37ea6f7d8397eede7c35d42581126f42971b0f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_template_injection": 5,
+            "Z_unpinned_uses": 6,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/enhance_feature_requests.yml",
+      "blob_sha": "7648da2061b077abccb345bd84358eb4785eaf83",
+      "fetch_status": "found",
+      "sha256": "ae90d03f5d8fe6cc1e3b097642b4224931a2c878100244bf6cba7bd564274c38",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: could not find expected ':' at line 281 column 1, while scanning a simple key at line 279 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditabl"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 279, column 1:\n    \\($enhanced)\n    ^ (line: 279)\ncould not find expected ':'\n  in \"<unicode string>\", line 281, column 1:\n    ---\n    ^ (line: 281)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/feature-request-enhance.yml",
+      "blob_sha": "56a7cd679707fed1c81982db6b78b619d965294b",
+      "fetch_status": "found",
+      "sha256": "d1ef7dfaaff732b9d51a36d2c5ec931bf31073040cbdd9cca07b9d240a166435",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 3,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/snyk-security.yml",
+      "blob_sha": "a26a5554167d13bea6ceb1dcce89031048140965",
+      "fetch_status": "found",
+      "sha256": "c54bb53be97bd3d94e47b0d85f62a607f532dc9f7b0c4edfac186d7d8f9f2787",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "blob_sha": "4cbaf715bdc5cadfcf4b0b059a47ae3129f81401",
+      "fetch_status": "found",
+      "sha256": "73e7dd8feabc6441cc1db9ded781762be1e68f8f601f5da825b6ee6c3f16769c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

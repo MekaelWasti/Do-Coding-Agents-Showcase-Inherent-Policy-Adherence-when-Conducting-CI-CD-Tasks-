@@ -1,0 +1,63 @@
+{
+  "repo": "whitphx/streamlit-webrtc",
+  "base_sha": "2f044934a110c4d9ecc45ab2840678a1125ee8ab",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/post-build.yml",
+      "blob_sha": "ac4036b02d1391a66ac2c23739250abe05dd64fa",
+      "fetch_status": "found",
+      "sha256": "6dfd3542b8850c3ab2d9f714cfada25c55e0cb6df33acc3e51a118fdc384f024",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R4_no_workflow_run": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test-build.yml",
+      "blob_sha": "30a8fe72af343628463d15036a17c23e04daaf58",
+      "fetch_status": "found",
+      "sha256": "b02ebf0add67ba3bf4fa9ee8d40009c98e01ecfcc59477a591b43de033d6458f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_template_injection": 3,
+            "Z_cache_poisoning": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R5_no_untrusted_in_run": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

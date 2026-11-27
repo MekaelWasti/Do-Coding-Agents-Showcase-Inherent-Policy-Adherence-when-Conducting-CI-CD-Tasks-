@@ -1,0 +1,102 @@
+{
+  "repo": "schollz/e2ecp",
+  "base_sha": "f71250498de2cb532f26202151eb1a11e5aa53c3",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "5587141abee9db49f881786cba94538ddda32c49",
+      "fetch_status": "found",
+      "sha256": "2dc9a181cfa35ab36fb02e200d22cc8546fe78fe0b16d7785383ca9b66b4d5ec",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 5,
+            "Z_unpinned_uses": 18,
+            "Z_cache_poisoning": 8
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/dockerdeploy.yml",
+      "blob_sha": "2c2d4ec8318b491ed633e5dfd2b38856fb7a8959",
+      "fetch_status": "found",
+      "sha256": "9cf76993fecd1581cd59cd10a335f1b847c57e982ed0e3e75b4c0fa163edb346",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/homebrew.yml",
+      "blob_sha": "99eac6eeeb2af5e628361209a1430825344f47ba",
+      "fetch_status": "found",
+      "sha256": "00a6ab37a4b5e4f1cf0abefee02b556cbd31f2ee8b820a48f753c073f5a8b8ba",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 4,
+            "Z_unpinned_uses": 4,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

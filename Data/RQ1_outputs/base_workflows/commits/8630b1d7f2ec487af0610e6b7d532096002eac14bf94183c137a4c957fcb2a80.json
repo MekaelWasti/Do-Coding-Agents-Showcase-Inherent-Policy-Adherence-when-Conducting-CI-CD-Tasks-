@@ -1,0 +1,67 @@
+{
+  "repo": "greyhaven-ai/autocontext",
+  "base_sha": "bad94f5aec76dafb490e1cc69d29fd498de41645",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "1ebcdc4152725f2ae5e43a892d85868e6326f010",
+      "fetch_status": "found",
+      "sha256": "a05f5c8d8cb810c48cfd75c1265cea59c5a88001de36061bd64ab1ae8ec529b6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 5,
+            "Z_unpinned_uses": 13
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "blob_sha": "7f6f847f403936dd222ca2bfcbc9ed195c7c6fd7",
+      "fetch_status": "found",
+      "sha256": "60ec157d00c12f8a58bbaa7d7789872f26da47a0c4f7b838838de9103205249b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_unpinned_uses": 8,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

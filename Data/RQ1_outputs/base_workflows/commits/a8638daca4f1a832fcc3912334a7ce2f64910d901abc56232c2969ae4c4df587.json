@@ -1,0 +1,103 @@
+{
+  "repo": "pingdotgg/t3code",
+  "base_sha": "e3d46b687ce2537b4761ab9ae1c50db6708d3948",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "815a3bcdd46d8ef82e53c296f23a1fa08315918b",
+      "fetch_status": "found",
+      "sha256": "aa0198dcdb1e2aaef74a329d0338c9650fdb37eadbed1d52f297f0c2c16e88d1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 8
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pr-vouch.yml",
+      "blob_sha": "976a9a097e75baf1df6990e7bb68a5d77e87a0a6",
+      "fetch_status": "found",
+      "sha256": "72c5a4d2f76d1032386be4faffd6f29b1622a1cded0acd322893c99024faa915",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 2,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "807e0f763943082247cb059c118a613a7b910ae1",
+      "fetch_status": "found",
+      "sha256": "91b396bda8c0700e04d7c808b2cf100062289958b1e9e4b44084aa01de313d05",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 5,
+            "Z_excessive_permissions": 2,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 17,
+            "Z_cache_poisoning": 9
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

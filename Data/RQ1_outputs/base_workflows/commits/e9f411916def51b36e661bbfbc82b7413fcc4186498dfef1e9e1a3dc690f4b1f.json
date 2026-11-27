@@ -1,0 +1,70 @@
+{
+  "repo": "rust-cross/cargo-xwin",
+  "base_sha": "5f3a1940122884c1223325a217cccd842d0bacc2",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/CI.yml",
+      "blob_sha": "66d750ea5ea0bb71b136158c309e83550336eb04",
+      "fetch_status": "found",
+      "sha256": "a770a279e1baa91902c12a029cf019cd27cd9f4650b89d37c6e7d9c52dabb71f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 7,
+            "Z_excessive_permissions": 7,
+            "Z_unpinned_uses": 16
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/Release.yml",
+      "blob_sha": "4ce695efa2d2b870f82ef80abc41204abc6056f4",
+      "fetch_status": "found",
+      "sha256": "348a244bf149a34edf48fdd2a3317174e8ab21d8684d0b9eac8ef2b6191ab103",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 6,
+            "Z_unpinned_uses": 31,
+            "Z_cache_poisoning": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

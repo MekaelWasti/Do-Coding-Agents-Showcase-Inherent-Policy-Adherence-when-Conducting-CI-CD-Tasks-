@@ -1,0 +1,66 @@
+{
+  "repo": "Blimp-Labs/claude-usage-bar",
+  "base_sha": "0921bd916497b01b32be49b6994f9201b016bd31",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "d76ed19ad9bd88672d8be7308e422e4a51adb9b0",
+      "fetch_status": "found",
+      "sha256": "ffc1eea935401c0785c3ec1a3b5844f76e0a62f4d9724173adb0f520039ddfae",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "5b3994f8f3db7be05e4dadc22f9390a4742ce496",
+      "fetch_status": "found",
+      "sha256": "01da632f839917e3813f51760a6e5ddd4921a13efd8a7a908b4a1f57c1075fbf",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

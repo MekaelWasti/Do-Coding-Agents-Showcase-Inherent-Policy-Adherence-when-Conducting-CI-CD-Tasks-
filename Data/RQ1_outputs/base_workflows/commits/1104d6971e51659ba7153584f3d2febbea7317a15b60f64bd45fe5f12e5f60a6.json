@@ -1,0 +1,125 @@
+{
+  "repo": "1dustindavis/gorilla",
+  "base_sha": "058f7dc59dd315e7ba03014def56964b8bfd9db1",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build_pr.yml",
+      "blob_sha": "d91baebb1445999407d95032d650fdd07c62f8b1",
+      "fetch_status": "found",
+      "sha256": "ef183964a4b21fb95003cd03f7dc409282009fd9469b8ecf1d6cd869f996f064",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/build_release.yml",
+      "blob_sha": "51f0997c7b105f199eaac35ca2a2f49571737aaa",
+      "fetch_status": "found",
+      "sha256": "c848909525723ad2377ef564b26b51c1081ea2c81f67f5ae904f674fcf7517b9",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/go-test.yml",
+      "blob_sha": "965bb4b8d9367a4fec9229525c50819f097e7192",
+      "fetch_status": "found",
+      "sha256": "8652904527911f6d87528e3dd2ea6146bb7ceafa2dbb66360ec04526568c2422",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/windows-release-integration.yml",
+      "blob_sha": "d0593268a62eb570a457ae6bb28a6f545c3b1f8f",
+      "fetch_status": "found",
+      "sha256": "b063a93695fbd92f5d6c01b4ae5824aa67908d2970c9dd6e6914df7f023a65a5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 8,
+            "Z_github_env": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R4_no_workflow_run": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

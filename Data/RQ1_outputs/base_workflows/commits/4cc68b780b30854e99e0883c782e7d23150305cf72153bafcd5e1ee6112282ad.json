@@ -1,0 +1,97 @@
+{
+  "repo": "pmndrs/docs",
+  "base_sha": "0d5acf71d294a10625bc82d358e3cf28e81e7077",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "dbcf30c003054e9e3c68730cedfe67253e567bfe",
+      "fetch_status": "found",
+      "sha256": "d538cb48388ea3811ca94144ac469e780ca3619e6be477bcbac039b34dbcbfc5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_events": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "38dfdc8629ea211d979418d18657c6f6b36e2690",
+      "fetch_status": "found",
+      "sha256": "16cbdddf62c5353ddb76a0b49a32f46ecee1ba4ed5ea783d8bf6a960682a04cf",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "9cc9caa77a9882c575bda692f4d61e3e337dd0d7",
+      "fetch_status": "found",
+      "sha256": "73d1255ecf971334f3d47c9e12170e23ff1dc7a29e8ffef0a58ee93a0a798b5a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 5,
+            "Z_template_injection": 5,
+            "Z_unpinned_uses": 10
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

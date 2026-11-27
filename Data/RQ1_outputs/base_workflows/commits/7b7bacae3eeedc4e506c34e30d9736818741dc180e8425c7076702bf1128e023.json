@@ -1,0 +1,40 @@
+{
+  "repo": "microsoft/jericho",
+  "base_sha": "7d4aaa9e630974f216fd6d3d6799b55c7ba4f507",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/main.yml",
+      "blob_sha": "01addc8b01fdc6ff88a2815fc90616979858d768",
+      "fetch_status": "found",
+      "sha256": "05b8b7cc2332501eca4e87b63ce29d4b95fee55f4d1e3bb47e795f28b9ef1d7c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

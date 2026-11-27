@@ -1,0 +1,130 @@
+{
+  "repo": "BitBoxSwiss/bitbox02-firmware",
+  "base_sha": "fb158a80d659efdd84070e3dd9b4fc57843c48a4",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci-common.yml",
+      "blob_sha": "9ddb59a122cf22a7aa9fae995d18ff63630f763f",
+      "fetch_status": "found",
+      "sha256": "33efeb360398147e48528d10ac60a9c453ad6e217855eb07a684337b9581b268",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 12,
+            "Z_unpinned_uses": 19,
+            "Z_unpinned_images": 9
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci-dev-container.yml",
+      "blob_sha": "9e3b60903a0ed012246ace3f03eaab929380c91b",
+      "fetch_status": "found",
+      "sha256": "35609b2f1372b7821e38e9f1c2339c11557024b1e1c8ca6e2ad5820d62c0eb89",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "1f4b741c917adca5665ee5178f5cd64e9fb5bb8d",
+      "fetch_status": "found",
+      "sha256": "49a0a1087412660bd66b17923a59fd86ac4ebf9d8bc2e519bb51427c24aa7032",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 2,
+            "Z_secrets_inherit": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pr-ci.yml",
+      "blob_sha": "b11e619ee14be42fc27bf3047c1bb6e3a92bc9dc",
+      "fetch_status": "found",
+      "sha256": "51be3a05a6c765b776557a1507986fa51597b44e85c409c6d05cf599c959a2d8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 4,
+            "Z_template_injection": 4,
+            "Z_unpinned_uses": 2,
+            "Z_secrets_inherit": 2,
+            "Z_unpinned_images": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

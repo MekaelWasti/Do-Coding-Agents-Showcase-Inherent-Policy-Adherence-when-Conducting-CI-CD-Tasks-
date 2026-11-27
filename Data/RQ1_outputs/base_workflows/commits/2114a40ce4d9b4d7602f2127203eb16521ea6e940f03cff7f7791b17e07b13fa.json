@@ -1,0 +1,123 @@
+{
+  "repo": "openclaw/clawhub",
+  "base_sha": "51beceeb201ad125a5b39ad7405e1d228d30985b",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "815063b36e5a14723730df221f6b552db3a06db5",
+      "fetch_status": "found",
+      "sha256": "134ae6f55c7d1fbd31ce20587519c561f396e71a525edd8ff0c01f0aa21ef034",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "blob_sha": "450b23a6c08052faf5a43c9e28afa57181082d2c",
+      "fetch_status": "found",
+      "sha256": "6d5a399350eb1d5bd6de1afada898034e06a7ad732462b93ccff04fc0ba2ab8a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 5,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/package-publish.yml",
+      "blob_sha": "04126440ea8f4a5af397f5090deea365e4e1e185",
+      "fetch_status": "found",
+      "sha256": "5c0310b49877f914f7d59d1b7a257d1be5796cf08c6e634842e0cb90e86d96a6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/secret-scan.yml",
+      "blob_sha": "b4f574afd36b235c044e06bebf54015168505700",
+      "fetch_status": "found",
+      "sha256": "abc8ae0381fd29c336b09ccca6c112aed57067114f217b4451fc5dd9acc85791",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

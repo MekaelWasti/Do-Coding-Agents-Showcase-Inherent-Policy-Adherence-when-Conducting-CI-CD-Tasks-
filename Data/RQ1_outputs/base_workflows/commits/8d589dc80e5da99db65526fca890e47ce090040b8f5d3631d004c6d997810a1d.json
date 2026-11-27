@@ -1,0 +1,62 @@
+{
+  "repo": "WordPress/plugin-check-action",
+  "base_sha": "778b29ff036c6268846fbd8c00e470812053b610",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/auto-merge.yml",
+      "blob_sha": "42c5b6fb780a035025d245182b106d364c967553",
+      "fetch_status": "found",
+      "sha256": "1b28a42f599ca5a46eb422fe728fee573d00d0ef77d73a590b76843eceeb51ef",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_bot_conditions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "blob_sha": "9078d46139bf734a812166cb4f82469cd39cb225",
+      "fetch_status": "found",
+      "sha256": "fe2f380462b6e86e39d33b788e5076d90d6328ff4ecfd3ba4b309ff135e300f3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

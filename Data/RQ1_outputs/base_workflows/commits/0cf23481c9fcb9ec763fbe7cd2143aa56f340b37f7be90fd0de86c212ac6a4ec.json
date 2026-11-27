@@ -1,0 +1,195 @@
+{
+  "repo": "Deepractice/PromptX",
+  "base_sha": "ed163cbbfa12abaecf859111dbd954aa6b24838b",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/hotfix.yml",
+      "blob_sha": "859f716b53e943a3350ff12b067df3d442e09811",
+      "fetch_status": "found",
+      "sha256": "c63128044b57160bd22f850108bb58ab8d7c70743bf7689d18806456013335e2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 10,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release-auto-tag.yml",
+      "blob_sha": "e1abb87b768ff4550cb9cc8e5a28b62920725db9",
+      "fetch_status": "found",
+      "sha256": "c40f6ff70a5f46da9b7d7914e2064ad2999d5fa6afaf5bccf57a1a1e28bdf857",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 6,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R5_no_untrusted_in_run": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release-desktop.yml",
+      "blob_sha": "ed98a30078399f6302fd29f060abf354713b432d",
+      "fetch_status": "found",
+      "sha256": "2709be3980431d4d82134b53fd172ccaeb683703e8da87d3b287dbe499669b0a",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: could not find expected ':' at line 323 column 11, while scanning a simple key at line 321 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditab"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 321, column 1:\n    YAMLEOF\n    ^ (line: 321)\ncould not find expected ':'\n  in \"<unicode string>\", line 323, column 11:\n              # \u9a8c\u8bc1\u751f\u6210\u7684 YAML \u683c\u5f0f\n              ^ (line: 323)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release-publish.yml",
+      "blob_sha": "91081a38c0654f8d85171f8d7be903fbed22958a",
+      "fetch_status": "found",
+      "sha256": "aa9fcf6fa4570ef8c8370546c16c3a0eb9fd495320f4c71523f9c8a3fb7eb6fa",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_template_injection": 5,
+            "Z_unpinned_uses": 9,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release-start.yml",
+      "blob_sha": "a75b08c5eb02ec50fcc1218741d80bf5668a0a67",
+      "fetch_status": "found",
+      "sha256": "aafd352fa672af13ff3d8b1302b5c3f0ecbbea406ec81d4fbf9b39e8f7ec85ab",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/sync-dpml-prompt.yml",
+      "blob_sha": "230c4964fbddb63effce94fecaf0062a68a0fe3e",
+      "fetch_status": "found",
+      "sha256": "1792c072bdd94457ae047b279a4d0bd311aa93511d2ba4517bbbe5adebcffbd9",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 2,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

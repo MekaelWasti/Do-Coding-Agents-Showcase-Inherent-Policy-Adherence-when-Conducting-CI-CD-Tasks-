@@ -1,0 +1,142 @@
+{
+  "repo": "tryAGI/Ollama",
+  "base_sha": "2c81492682f80d0c7709b1e8291f646b1d1be17c",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/auto-merge.yml",
+      "blob_sha": "d9ca1bbb1a64cfc5e7a2ccf8b163b016ba6c39e8",
+      "fetch_status": "found",
+      "sha256": "fcabf8465d1a2cd2e6867c0cba67de270f56563749470cd1e01f4c704c619d17",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_template_injection": 1,
+            "Z_bot_conditions": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/auto-update.yml",
+      "blob_sha": "0b9b397b8ccfe413aacf5d74c14de76b7f3d6c88",
+      "fetch_status": "found",
+      "sha256": "5544819c5e509de52d8b6329ff1b71172ee17e6cdae87715b6d0662a40e844a0",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/dotnet.yml",
+      "blob_sha": "2e572ef9f24d73553260834e8c4b61c7f180a549",
+      "fetch_status": "found",
+      "sha256": "b5cee15959af39e84ebc6b226aa7882e5bc210a5cecc13b032fb6eddf51eeeb5",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: deserializing from YAML containing more than one document is not supported\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable inputs\n  = help: at le"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/mkdocs.yml",
+      "blob_sha": "0098a10a85a545549481cddcee0a6d83a1e9f255",
+      "fetch_status": "found",
+      "sha256": "a2bfa52b7aed0cb47463f8c3de34877847df8bd6137c6235542e8d79d5a3c86a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pull-request.yml",
+      "blob_sha": "a9f41c360beb2962d5cafb87f67324a8ee4814d4",
+      "fetch_status": "found",
+      "sha256": "7035f691d98419a51f78bb2663b0d62a49c42fcb8dfbccf04d4a18dd0e7f0eae",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: deserializing from YAML containing more than one document is not supported\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable inputs\n  = help: at le"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "repo": "OpenBikeControl/bikecontrol",
+  "base_sha": "2b106fd1c9e8bc6bf682c051b7654fd79ee0feb9",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "f4008195c502aa4ab58284f6aef1e3e20efae5e4",
+      "fetch_status": "found",
+      "sha256": "f59fa0c4177fd5e2e7b9a3311175a39031d2a1751bb4fe9171f3132314d08d7f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 18
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2,
+            "A_if_cond": 3
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "more indented follow up line than first in a block scalar\n  in \"<unicode string>\", line 287, column 11:\n              $source = \"C:\\Windows\\System32\"\n              ^ (line: 287)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/patch.yml",
+      "blob_sha": "3f7f98a25df34339d15ff559e950082767c43f19",
+      "fetch_status": "found",
+      "sha256": "ee7d797e84d8a99f85f173cf11e3134da6fc8182534baf4a8653e583830fcc93",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 11
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2,
+            "A_if_cond": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/web.yml",
+      "blob_sha": "402be51f314213147fccb680677c8f0ce6ae0913",
+      "fetch_status": "found",
+      "sha256": "14e81c384873513f91a364fd9d3643dc30bba12cca3ff52ea3dd84e7999ddca4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

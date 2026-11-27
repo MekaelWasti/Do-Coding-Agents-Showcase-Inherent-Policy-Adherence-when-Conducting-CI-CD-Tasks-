@@ -1,0 +1,98 @@
+{
+  "repo": "xtool-org/xtool",
+  "base_sha": "96032d0f17b1675092a230c270374c6f7b390d95",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "ee605cd1cf6d7d9d1af16a2893a5b6d05e61a367",
+      "fetch_status": "found",
+      "sha256": "aa4fc07c0fa80cab5ed57a943a80338c3ff6e8cdf4a9b9e0486c0be79495cb3f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "747a5fe6b987cf456bf958ec5daca3cf34ae03d9",
+      "fetch_status": "found",
+      "sha256": "8af05b16c736cead3ba7e6190bbb3c77ee77f60cf0bd9742900cd55e965929b0",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 7,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/swiftlint.yml",
+      "blob_sha": "d2e54822b1bf2f2d0234de9b15f181ab697b76f1",
+      "fetch_status": "found",
+      "sha256": "1b824a54e2ca0b276e1819ee2574d6ca173bda95bd3d51f102dccd2a408da503",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

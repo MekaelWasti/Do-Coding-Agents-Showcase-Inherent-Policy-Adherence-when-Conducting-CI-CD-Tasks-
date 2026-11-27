@@ -1,0 +1,135 @@
+{
+  "repo": "NASA-AMMOS/MMGIS",
+  "base_sha": "7ad72b24b8e29d92f9d16b15b0b7c29f7a58a570",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/bump-version.yml",
+      "blob_sha": "44074170627a437edbb35ef59f7604cf696a7a48",
+      "fetch_status": "found",
+      "sha256": "c71cd546a111a04da91a1e94bef36d967617beaa5651357b41824cfca73e486f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 5,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R5_no_untrusted_in_run": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/docker-build.yml",
+      "blob_sha": "fd9ff5f80796db00376219d8ab45c2445c0ace23",
+      "fetch_status": "found",
+      "sha256": "0d61cd91a0cc646c0ff4ac03d8e14ca70a100d3d001d43641f834f60501a28ff",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_template_injection": 4,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 3,
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R5_no_untrusted_in_run": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/playwright-tests.yml",
+      "blob_sha": "70804b092a81d8ce8812096277b03a2768b25a82",
+      "fetch_status": "found",
+      "sha256": "fe9a683f90270a494799a354f1b590488e69ab22f4a25d95046be33ffb9538a7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/security-scan.yml",
+      "blob_sha": "32529d3b745dd6739f57bcf0ff97292f1effa720",
+      "fetch_status": "found",
+      "sha256": "f523ecc933496bea23701ccfc565fe20e3dacecf50b7c86529dc4f6febdb647f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "repo": "firebuild/firebuild",
+  "base_sha": "cca688061ddf20d131b0b33e6b4ff2a3d36d48de",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "cd81bf11d71d59753e378622526246b5a5d661f7",
+      "fetch_status": "found",
+      "sha256": "289bae396209b90b90917a791e336c10463f4e73ec691677ea5ef3c1cb5c4aac",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 10,
+            "Z_excessive_permissions": 11,
+            "Z_unpinned_uses": 30,
+            "Z_unpinned_images": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/codeql.yml",
+      "blob_sha": "b38b6137165e363aca2226e0ad0ed945ccabf2fe",
+      "fetch_status": "found",
+      "sha256": "d0ec60b578c51ab4f813966c450e9012eea61c90c0819d5eb5e76dfb1d38595c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 4
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

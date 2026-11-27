@@ -1,0 +1,101 @@
+{
+  "repo": "XiangpengHao/liquid-cache",
+  "base_sha": "061222f622a546d8501414522a4d9d1c7de2d7df",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "43f1c8cce4a95a40e719b03e6d57f8d5a07daa3c",
+      "fetch_status": "found",
+      "sha256": "d3ad03a6695258aca0d9dcd59e2fc7d48ea5614a0c76c84d19ffe1523d81576e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 7,
+            "Z_excessive_permissions": 8,
+            "Z_unpinned_uses": 26
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/docker-publish.yml",
+      "blob_sha": "7f45ef7fc29dacf6c0c066aac11758101c7771b5",
+      "fetch_status": "found",
+      "sha256": "056a0314e2e5387ad17a4ddfd8177b2bf5a845b1abc432cad41e9ab4fb4ac6c1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "blob_sha": "6ad689804928c2765870b8487a35ba2e22831028",
+      "fetch_status": "found",
+      "sha256": "bf2ecd15f68723fa9621864e38db5208c28736e603b7c51a608f254d6965194e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "repo": "mRemoteNG/mRemoteNG",
+  "base_sha": "2bb34607ccc64e1945c98fab4c687373d829adba",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/Build_mR-NB.yml",
+      "blob_sha": "bda378bdc8b486ca5eedbc08154c3ff58342821b",
+      "fetch_status": "found",
+      "sha256": "83b31abc5c7bb891870b697bdb7b2f1822279111acfa2036c0dbb8d000ec2fa2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/add_PR_2_chlog.yml",
+      "blob_sha": "51d4c8381c23d732aaae842af5f82bc9358fd793",
+      "fetch_status": "found",
+      "sha256": "3187f5093b3763f468165c3fb621f356cd70f3c41cdb6661ffcb8551385a78bb",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R3_no_pr_target": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/post_2_Reddit.yml",
+      "blob_sha": "14a07fbdb79cf55377f7544c6d5e211b9729c567",
+      "fetch_status": "found",
+      "sha256": "e733c3d9e38be12f31674383c53d542301000222f80fcc152c47ca0a753f7875",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

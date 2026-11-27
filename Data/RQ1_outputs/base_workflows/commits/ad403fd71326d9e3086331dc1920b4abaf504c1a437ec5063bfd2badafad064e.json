@@ -1,0 +1,297 @@
+{
+  "repo": "microsoft/openvmm",
+  "base_sha": "21e9e7bbbdf5f92adb2fa4cc26fc119e47882e7c",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/code-review-metrics.yml",
+      "blob_sha": "efb9d28e30b6b5c1ac89fdf045990cface16af8b",
+      "fetch_status": "found",
+      "sha256": "3dd9c3a126f6f9bf6702f4c7a25dd9b2bc8b10cbdf6241c22201232044040de2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/labeler.yml",
+      "blob_sha": "e57cd86e2b3c7f262ed35e7b058a7f578446ec90",
+      "fetch_status": "found",
+      "sha256": "81be926e6cfe08fe83f3aa1137ed85a4ba013b2a5040edb9f93e110139ef8c74",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/openvmm-ci.yaml",
+      "blob_sha": "3b23b98ac5204f37ae3ba7fd11fa25b78df0c1fd",
+      "fetch_status": "found",
+      "sha256": "6e3e3dc19aac50ae60e6e188dc58bfbcafe7cb6d2e3b67754dddde0dbb1e3f9f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 18,
+            "Z_unpinned_uses": 164,
+            "Z_cache_poisoning": 44
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 39
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/openvmm-docs-ci.yaml",
+      "blob_sha": "301973b12f027c5827dd63e2c56633bd59aefda2",
+      "fetch_status": "found",
+      "sha256": "31906072f5bf78f0cd68ce605350d1de69af10149bb9e57d2b4a9d6456c09f33",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_unpinned_uses": 18
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/openvmm-docs-pr.yaml",
+      "blob_sha": "875e000180302189d66adc60f24ffb68cd3692ff",
+      "fetch_status": "found",
+      "sha256": "baf2d623d7121acc8dfefea6aeff5493fed574613c53075b6a4b228b28b72e6b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_unpinned_uses": 14
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/openvmm-pr-release.yaml",
+      "blob_sha": "e70d58752ef0a35943d0d563ed6069e240787c42",
+      "fetch_status": "found",
+      "sha256": "0681557f6ae3416f0ea096791a48ec028152b6a601c34aba94b2049526b73f9f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 18,
+            "Z_unpinned_uses": 159
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 39
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/openvmm-pr.yaml",
+      "blob_sha": "bdf19122e2f583268c1f90e2f81920955dfe5430",
+      "fetch_status": "found",
+      "sha256": "c88bb72d1e8f07956ebca564da29a48dbd22078e615ac298cf91bf4009b3518a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 20,
+            "Z_unpinned_uses": 170
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 31
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/refresh-mirror.yml",
+      "blob_sha": "43e516afec4149dc35b2f4e73d12dfa9cbdd0347",
+      "fetch_status": "found",
+      "sha256": "4c0a46d1d73bd269a5264413cbb60e3691128a0a59185212e8750d5dee40a513",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/unsafe-label.yml",
+      "blob_sha": "e46e6da53aef05069c78e82599aa5afa7640cd4d",
+      "fetch_status": "found",
+      "sha256": "20ba7ab6eaeddcd4c2029e4ab1117f8d0f779a9fbe29830f6c24c448fb706a6f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/upload-petri-results.yml",
+      "blob_sha": "d94a426e7e4e0e7a8ee871f7e68caca6b070bd5d",
+      "fetch_status": "found",
+      "sha256": "056a0d9706ee70b2987510bf69b6f037444fdd94e06c5b5efa521008607033dc",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 2,
+            "Z_github_env": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R4_no_workflow_run": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

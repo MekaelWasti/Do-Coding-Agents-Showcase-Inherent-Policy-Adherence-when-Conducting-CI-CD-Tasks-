@@ -1,0 +1,73 @@
+{
+  "repo": "microsoft/go-mssqldb",
+  "base_sha": "0bbbaf2502c84730740733286a5068656bf4fc27",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/pr-validation.yml",
+      "blob_sha": "c42a502910273cfbfd6bd492daad969db5827a96",
+      "fetch_status": "found",
+      "sha256": "b8f8b5360e9ea57d37159d79df1e3e0cfb993448ef7af983283c3f967866e3e1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/reviewdog.yml",
+      "blob_sha": "143ab8b12eb9b84c690f484436d5c766bc6b3492",
+      "fetch_status": "found",
+      "sha256": "3084e2eedfd6fab54db2316b5495ab04eb2b2f8b29789333050698a84e48385f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

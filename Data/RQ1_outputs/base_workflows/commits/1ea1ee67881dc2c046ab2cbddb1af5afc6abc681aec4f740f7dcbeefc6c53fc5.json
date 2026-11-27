@@ -1,0 +1,101 @@
+{
+  "repo": "dotnet/orleans",
+  "base_sha": "daeddff9cdb35df8686c8cedb0fc7f94c725141c",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "45701df14299d56647418825c4eba2cb81885431",
+      "fetch_status": "found",
+      "sha256": "eb2d3d046dfcbe744e907fb3b07e2918b8e01941e482bd8c2cd25bd0648ad3fe",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 13,
+            "Z_excessive_permissions": 14,
+            "Z_unpinned_uses": 38,
+            "Z_obfuscation": 1,
+            "Z_unpinned_images": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_if_cond": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/generate-api-diffs.yml",
+      "blob_sha": "c92fa49bea679734aec457877992a7b155d65e28",
+      "fetch_status": "found",
+      "sha256": "f39d86a59f65ed4c2e67d819e740fb9efbfbe2f16b6e1de59245ba765fedf9c9",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/locker.yml",
+      "blob_sha": "0e7b7715101616fe176804301fa52b5dded32e1d",
+      "fetch_status": "found",
+      "sha256": "63dbad322ab7cf3d15deab5eca41f05ca98d0b108f57ff3a2f5574116bc38d15",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 1,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

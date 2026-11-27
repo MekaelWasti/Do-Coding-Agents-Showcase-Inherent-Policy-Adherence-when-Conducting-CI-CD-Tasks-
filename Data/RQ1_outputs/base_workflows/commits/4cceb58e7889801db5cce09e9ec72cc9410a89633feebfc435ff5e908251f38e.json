@@ -1,0 +1,71 @@
+{
+  "repo": "Tencent/AI-Infra-Guard",
+  "base_sha": "1b662be4aee4916c4d5fc830a07a1c996a322161",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/create-release.yml",
+      "blob_sha": "045eb329880a6ac397f7b94454ecaef90c321973",
+      "fetch_status": "found",
+      "sha256": "a1a7d827f264be0187f36f8f5e3a2421c44638e8e97607e5098c5cfab597a38b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/docker-publish.yml",
+      "blob_sha": "173ddbe0d023e72e2d2937581d6ec0912ce1cd48",
+      "fetch_status": "found",
+      "sha256": "db74f9ff46393a995e4b37c209abce8ebe61063a2380a74a41719fe57ed112cb",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 13,
+            "Z_unpinned_uses": 7
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

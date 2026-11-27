@@ -1,0 +1,40 @@
+{
+  "repo": "AFLplusplus/LibAFL",
+  "base_sha": "df8f6ff0ebe570100c824499ffb3c921eb270dc5",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build_and_test.yml",
+      "blob_sha": "ed223053ca739f7fbfac10ecae74b916e413d662",
+      "fetch_status": "found",
+      "sha256": "dc1aada3473553923cda486e7388e43c22b63d75cd20ff6865fd30e49a2a2a12",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 31,
+            "Z_unpinned_uses": 91,
+            "Z_cache_poisoning": 2,
+            "Z_unpinned_tools": 12
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

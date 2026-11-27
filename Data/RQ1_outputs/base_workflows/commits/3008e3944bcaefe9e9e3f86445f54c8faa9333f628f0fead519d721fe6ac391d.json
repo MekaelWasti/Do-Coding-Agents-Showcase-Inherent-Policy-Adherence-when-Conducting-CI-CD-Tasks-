@@ -1,0 +1,104 @@
+{
+  "repo": "ruvnet/RuVector",
+  "base_sha": "959e767595bb53fb493883ce47ccb0e895a2f51f",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/agentic-synth-ci.yml",
+      "blob_sha": "f947d1bbac5e9d5070ed0f53694637645cb722b5",
+      "fetch_status": "found",
+      "sha256": "accc6573cd4ad24f8b0041797092cb43a03267ca5addd38b923943b95dbf31a1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 7,
+            "Z_excessive_permissions": 9,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 16,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/build-native.yml",
+      "blob_sha": "b981752d447d8d52a6b3667b5ec7c58630c162f8",
+      "fetch_status": "found",
+      "sha256": "5cdaad8f9b04c8edc636e75c89f97f18d89f4e47329ba7c1f0f44ec3b6d819dc",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 8,
+            "Z_cache_poisoning": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/validate-lockfile.yml",
+      "blob_sha": "af9d32f4214c9c0a1bb8b6f82229c4474b86990a",
+      "fetch_status": "found",
+      "sha256": "4c94c6395887d0c93c14ad2aa547a0d2fbd75a5b0745c6418cb532d4b8f39e97",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

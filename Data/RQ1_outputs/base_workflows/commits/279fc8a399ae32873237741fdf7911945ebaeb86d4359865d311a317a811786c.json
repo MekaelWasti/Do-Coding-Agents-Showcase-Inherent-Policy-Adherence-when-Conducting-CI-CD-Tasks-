@@ -1,0 +1,67 @@
+{
+  "repo": "microsoft/agent-lightning",
+  "base_sha": "160a82b0354969122ff3667937bab75c0a09a21e",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/examples.yml",
+      "blob_sha": "9793a668462420422ced1abae3cf37b9e16b8756",
+      "fetch_status": "found",
+      "sha256": "a22a1efd24f4b210cb1b44493c7ec924c05f6a898ca43088d117dc202ef6eabe",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2,
+            "Z_unpinned_images": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "blob_sha": "96b817af88e0223a2912ae12a75c5679643282a3",
+      "fetch_status": "found",
+      "sha256": "03d0553573f210ee1ba8d6d62ab76085203184857e88cd8e1b95f52e3ccdec7a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 4
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

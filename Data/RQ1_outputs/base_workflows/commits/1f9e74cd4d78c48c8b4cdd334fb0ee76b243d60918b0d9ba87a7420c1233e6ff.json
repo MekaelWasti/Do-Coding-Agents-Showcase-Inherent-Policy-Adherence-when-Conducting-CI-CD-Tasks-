@@ -1,0 +1,67 @@
+{
+  "repo": "magicbug/Cloudlog",
+  "base_sha": "5f51d60f49751a2d613052027cf5f73d076513f0",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/accessibility-alt-text-bot.yml",
+      "blob_sha": "999db08520163caaa0bab4655c0e85f2e0eaa1b0",
+      "fetch_status": "found",
+      "sha256": "6be22c1c82b3fcced83e071fbbd9cea1657b6e11072f91af3f5e47fd9a57d456",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/cypress-tests.yml",
+      "blob_sha": "157f54cd6a66d9cdd30a21c57e13a088eda8c91a",
+      "fetch_status": "found",
+      "sha256": "c3465cddf32a2fd6b494467661c12ba6e0a02714809af78be64b9ad7c005daa8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 4
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

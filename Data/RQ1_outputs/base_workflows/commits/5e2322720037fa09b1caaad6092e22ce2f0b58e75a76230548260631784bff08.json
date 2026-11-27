@@ -1,0 +1,72 @@
+{
+  "repo": "cenit-io/cenit",
+  "base_sha": "3aee827e52ba84c64604c5d076f5c087fab46913",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/api-v3-integration.yml",
+      "blob_sha": "2fc09b37f700d45d5710838a453d239adc42df69",
+      "fetch_status": "found",
+      "sha256": "73f03c06c3fa1442edff4bcc56a2e33b4ad6ef79056eaf94bb8d7b439367d93e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/docker-publish.yml",
+      "blob_sha": "3294cdaf722574da8c11748a4dd45674b6b64c28",
+      "fetch_status": "found",
+      "sha256": "f0c6b10002b831e80d993d8dccf32b4bccdd9144058658caf4d9e066121a4bb8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5,
+            "Z_obfuscation": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

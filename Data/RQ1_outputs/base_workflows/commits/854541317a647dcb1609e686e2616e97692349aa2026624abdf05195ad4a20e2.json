@@ -1,0 +1,90 @@
+{
+  "repo": "epicweb-dev/epicshop",
+  "base_sha": "910c3d4cc514c06748e6a61b10ccf94a107397d8",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/format.yml",
+      "blob_sha": "0b00115d653ebcaa482e12fc773c57256b9adc2d",
+      "fetch_status": "found",
+      "sha256": "9adbd4240a0de05ec4b2d3ef6a069e784902353465865b05e8cef733f3c45d30",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R4_no_workflow_run": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/update-workshops.yml",
+      "blob_sha": "52a6ad23592fe5bcafd9d4aacabf9242f5f164a8",
+      "fetch_status": "found",
+      "sha256": "c458afe6d2ac04c8dd4cca93d4e06acac761721866d665bafce2c14a041327b8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "blob_sha": "e93e0ca4087f1fb896794d0979c69dd6ac79dd4c",
+      "fetch_status": "found",
+      "sha256": "1ee2436b49957d7c5f65d88fefb3147b09ec49efb3eafdc658d50a8ae67102d1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 7,
+            "Z_unsound_contains": 1,
+            "Z_excessive_permissions": 7,
+            "Z_unpinned_uses": 21
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

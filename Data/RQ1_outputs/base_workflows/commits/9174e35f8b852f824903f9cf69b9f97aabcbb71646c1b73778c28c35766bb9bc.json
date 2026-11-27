@@ -1,0 +1,68 @@
+{
+  "repo": "getsentry/sentry-clj",
+  "base_sha": "e2731db5a8cdfebd7d2fb93172bcbd0aa3933909",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/test.yml",
+      "blob_sha": "1671bd12590392822466e59c4c45f057f7a8dc89",
+      "fetch_status": "found",
+      "sha256": "822b4fccc5b5d33b2f666d67566b73d11b8fd95a38c654a96a3e9377c1445fc1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/validate-pr.yml",
+      "blob_sha": "708e33cedc87893809c5978898d3502c2ab50184",
+      "fetch_status": "found",
+      "sha256": "ee0a83c1ca54c197f09e55989bfe28b9e554a538cff777d3ef8ab9dbc58f4ff1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

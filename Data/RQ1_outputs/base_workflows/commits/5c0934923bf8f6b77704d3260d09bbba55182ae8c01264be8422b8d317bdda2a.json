@@ -1,0 +1,96 @@
+{
+  "repo": "djlint/djLint",
+  "base_sha": "b3088a1ede63c056659429068ce880f48d1ccb76",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "e3e98cd19ec86cce5f54695aaa7f262d2ef12b2e",
+      "fetch_status": "found",
+      "sha256": "64248e9d964c218cb9fd3fb1b4dc4740aa494292cd5ecc5d6784b60b0fad2699",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 5,
+            "Z_unpinned_uses": 8
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "blob_sha": "a4d81bb53d720550278f4db92bdbf556b484ccb5",
+      "fetch_status": "found",
+      "sha256": "e0e0efef58f37e3e76697313372b02db4a161fefd5936e7e54ae5e4a4313ec23",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 10,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/update-wheels.yml",
+      "blob_sha": "e4e46669323a705c42948f95cf7010b1a91f22a7",
+      "fetch_status": "found",
+      "sha256": "b16363a6db40efcb308a3bb7056d057d9e8d503c93155b8d57939a1dc44d8b83",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

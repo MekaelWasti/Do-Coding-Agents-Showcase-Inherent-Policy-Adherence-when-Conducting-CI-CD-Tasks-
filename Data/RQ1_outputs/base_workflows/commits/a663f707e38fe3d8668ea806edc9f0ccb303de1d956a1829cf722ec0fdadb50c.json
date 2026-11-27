@@ -1,0 +1,70 @@
+{
+  "repo": "mattermost/mattermost-plugin-agents",
+  "base_sha": "c48e19d82a9b17668b641df06ea415138a1c2af8",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "1c766ff6622b1414fd3841ade44380a891f9fe5b",
+      "fetch_status": "found",
+      "sha256": "b2b9e6d8239512e29fbbb74ded730c7223ffc029ac510b866fec015415a9019a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 11,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 26,
+            "Z_cache_poisoning": 7
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 3
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/claude.yml",
+      "blob_sha": "8ec3797784610a5d97e737fa81893b5d9ae3ab14",
+      "fetch_status": "found",
+      "sha256": "8732e0af7d96418b2f5b7317bfca7bc0e39139de5dde6796f2d412df70b89c71",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

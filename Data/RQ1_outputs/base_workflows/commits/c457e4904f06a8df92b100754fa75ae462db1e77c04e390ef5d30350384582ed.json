@@ -1,0 +1,100 @@
+{
+  "repo": "trpc-group/trpc-agent-go",
+  "base_sha": "42ba37309edfaff690c9188ae80e3093cb59156f",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/cla.yml",
+      "blob_sha": "d72da3ed28bc33361fe4a6b8034c086f64c91890",
+      "fetch_status": "found",
+      "sha256": "df4cf082a4335a42c2202ec8edb043387a521313e5129ce44b0cd35cf259fd1e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "blob_sha": "d889070b87ab4a6adc11f2a28976c411eca4b5b1",
+      "fetch_status": "found",
+      "sha256": "59d5059e052e7299e43087d7103726551a592f3b7146fd4adc02c89ba9c751e4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/prc.yml",
+      "blob_sha": "8bd517423ab7c331412e046ff4b7abd1ede49d20",
+      "fetch_status": "found",
+      "sha256": "ca0ef56488cd5f42bcbf4f9eee078a18f592339de954e03bef6107a670abde56",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 15,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 33
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 16
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

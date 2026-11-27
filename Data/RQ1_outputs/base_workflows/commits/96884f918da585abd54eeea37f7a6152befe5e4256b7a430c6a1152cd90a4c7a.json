@@ -1,0 +1,220 @@
+{
+  "repo": "unoplatform/uno",
+  "base_sha": "c76b57a1a7a8c52018d9cc9a2273e1498a6d190d",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/codeql.yml",
+      "blob_sha": "194797890d7886eeb51eb417066eb7bbc8aa2b97",
+      "fetch_status": "found",
+      "sha256": "b4f0b21cceb3dce41acde4bd1ac0f3b872ccb360c18a2865d0263a896f77a285",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/docs-updater.yml",
+      "blob_sha": "2123c09afae5651c5f47db7bbe59b776c61a1c9b",
+      "fetch_status": "found",
+      "sha256": "57de8eb81572e1522bbf3f2456dac29d5e83003d7a8d9789c0a47c728cbbea99",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/labeler.yml",
+      "blob_sha": "25bae584e6cabd3e3d8e708f12933baa73a159a9",
+      "fetch_status": "found",
+      "sha256": "4052551fce273f211cc467f0fe75810011f730b2276f5b53a997bf259c88cd75",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/link-validation.yml",
+      "blob_sha": "2e41a13576c1d9265a9ed1a374579f457221dee8",
+      "fetch_status": "found",
+      "sha256": "b58b387da744a28596892a888509567e7ac976a55c8372bf3f848e172c226240",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: deserializing from YAML containing more than one document is not supported\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable inputs\n  = help: at le"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/no-response.yml",
+      "blob_sha": "b9d4639eca83c7d2e5c3b67a154625911640e8a4",
+      "fetch_status": "found",
+      "sha256": "68f38a740b81960d4227160bc958f380676ae662cd7968ed79735551a63e0848",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/scorecard.yml",
+      "blob_sha": "6b5865ab39aa37be59948b78453711a07ef722b1",
+      "fetch_status": "found",
+      "sha256": "530637380c2c83fac962b692d523990d0c15c36e303f42b6ae738b7d9a8c6d71",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/stale-issues.yml",
+      "blob_sha": "b303917abb89e565abfdd8096901b159725a048b",
+      "fetch_status": "found",
+      "sha256": "7492224c8b49e5b5d42172f70dac924dade3f52264fea7e7f395e7494f217ac1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/stale-prs.yml",
+      "blob_sha": "5a05cc22ca4d604cb40357dc4c56d4f3c4ea73e7",
+      "fetch_status": "found",
+      "sha256": "d2c033f1b3d626136ebf554bca13def511a3ce6a6f81048e232c8dd148b1691f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

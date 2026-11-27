@@ -1,0 +1,94 @@
+{
+  "repo": "FrankChen021/datastoria",
+  "base_sha": "cb3fdf7c1d9ff9e2789eb7a7f9ab6fcaa902b212",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "920077e71d24601596f73d20327c3f5ee1071ddd",
+      "fetch_status": "found",
+      "sha256": "77b8dffa28c13fcc1f87cfdb4f84c734e2226a199547de4111f702d15d3885b0",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 12,
+            "Z_cache_poisoning": 1,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/cleanup-deployments.yml",
+      "blob_sha": "695b17b16e014e7f356bf8a7374cff50ff608696",
+      "fetch_status": "found",
+      "sha256": "8acddec722ae13535eb7be71fcd3e08847850fc1489ca7a55c924c6a96655ac7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "a8d996318d7bd61fafd9c101bd4fb1a18ffbe5d7",
+      "fetch_status": "found",
+      "sha256": "662f4d52ad27d0b674e103f28c0bd49c60b1b6c9d954f70a59557dd9382acbbe",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

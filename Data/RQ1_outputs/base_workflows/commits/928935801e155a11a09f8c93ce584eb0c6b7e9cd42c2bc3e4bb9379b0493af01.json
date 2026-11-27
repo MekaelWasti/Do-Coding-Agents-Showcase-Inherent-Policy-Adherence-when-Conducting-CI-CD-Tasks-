@@ -1,0 +1,65 @@
+{
+  "repo": "Doezer/Questarr",
+  "base_sha": "ed0d1408af8bed722a4ba9373ff063b723ac379f",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "f8dc23df019a5adede1ccc989514bde683344866",
+      "fetch_status": "found",
+      "sha256": "45ca3953262400b22fcb91a9b7851530c2223b8c1775fe9b0e9dfccce56f726b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "blob_sha": "497e2015b0e0d10adc3168b365282d1891b24e7d",
+      "fetch_status": "found",
+      "sha256": "54be441c5df9828c7c689b299bd3ec783e6b643b74d0bc4741125a17677153cf",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

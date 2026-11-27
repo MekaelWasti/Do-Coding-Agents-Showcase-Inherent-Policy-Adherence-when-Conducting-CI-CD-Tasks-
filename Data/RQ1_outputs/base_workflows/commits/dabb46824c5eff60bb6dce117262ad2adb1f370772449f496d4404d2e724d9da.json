@@ -1,0 +1,155 @@
+{
+  "repo": "spacedriveapp/spacedrive",
+  "base_sha": "3be9403c2c26ad77ae3d2d327b12dc98c915ad9e",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/cache-factory.yaml",
+      "blob_sha": "630fee619a84329ee98c91ad06143d7f5dfe8f8c",
+      "fetch_status": "found",
+      "sha256": "02bc424720a98ea3225bb82b4f36ff58f5fccc454c238427758281e4f755a5f1",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: jobs.make_cache: duplicate entry with key \"if\" at line 31 column 5\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable inputs\n  = help: at least one "
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_if_cond": 1,
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while constructing a mapping\n  in \"<unicode string>\", line 31, column 5:\n        if: false # Temporarily disabled\n        ^ (line: 31)\nfound duplicate key \"if\" with value \"github.repository == 'spacedriveapp/spacedrive'\" (original value: \"False\")\n  in \"<unicode string>\", line 56, column 5:\n        i"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "1b80055179e7825aaeba6fe54785fdb7f42262dc",
+      "fetch_status": "found",
+      "sha256": "41f0bc5e34629a0fe127a1c129975a2db03bb6ce949a3ed470fe4e28df899d9f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_unpinned_uses": 9
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_shell_name": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/core_tests.yml",
+      "blob_sha": "331ae657951dcf6ecba164485a26897845842906",
+      "fetch_status": "found",
+      "sha256": "4ba49fbfc442e5018a982bb0551453c09a8b7c03cb91313018c6b3591d973a1d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 6,
+            "Z_misfeature": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "d1e597daeb12785ef32007a046b0210937ddfc29",
+      "fetch_status": "found",
+      "sha256": "55eed3164808cd97c4d31c118b8d2bf3d2afd8398cf5c6d442b6386ae84f5cdb",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 9
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/server.yml",
+      "blob_sha": "2c689fdbe64f2d31af7bf24d62d0d9f3eeb00471",
+      "fetch_status": "found",
+      "sha256": "ca13df8f408d00ce8a2ccdad27ecdad784d1d4661b0b936b6492846749a6a50a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

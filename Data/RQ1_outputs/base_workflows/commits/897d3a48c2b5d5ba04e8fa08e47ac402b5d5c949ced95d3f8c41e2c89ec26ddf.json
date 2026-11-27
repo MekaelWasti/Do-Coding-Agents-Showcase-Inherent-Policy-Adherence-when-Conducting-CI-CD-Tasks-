@@ -1,0 +1,72 @@
+{
+  "repo": "cmu-db/benchbase",
+  "base_sha": "d2ff90f5ccc5b6ac4e9169d4c7552312a4c4c0ba",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/maven.yml",
+      "blob_sha": "ef317903661a8a0e6ffe985ddb442ccd2852d9bc",
+      "fetch_status": "found",
+      "sha256": "9bcebb7adabca51f28d16272e8b564a65a2592790ef83a471146b136b8d14c5a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 11,
+            "Z_unpinned_uses": 25,
+            "Z_cache_poisoning": 3,
+            "Z_unpinned_images": 10
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/python.yml",
+      "blob_sha": "90cc02f2993cd6ce4420634c4b3cc1ebb597766b",
+      "fetch_status": "found",
+      "sha256": "8cb3914e3a4f8c01d1085241812a6901df299d0d9f3fb40e96ebfd6924f440bf",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

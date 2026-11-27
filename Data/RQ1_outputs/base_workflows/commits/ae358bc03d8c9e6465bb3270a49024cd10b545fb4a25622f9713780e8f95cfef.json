@@ -1,0 +1,68 @@
+{
+  "repo": "status-im/status-app",
+  "base_sha": "a980ae767cd03470219eb48fc37069eb5afe7b1c",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/e2e-appium-android.yml",
+      "blob_sha": "d18bfc1f68b71c99d629f741a8ba8a8ff12dbfad",
+      "fetch_status": "found",
+      "sha256": "fad7a77c21e5e43cc5d049b156513c21af6ee8a0c58ca87d1b84ded93e66d704",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 5,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pr.yml",
+      "blob_sha": "6f0b7ef524555e57cb87fe43072b0845dae45177",
+      "fetch_status": "found",
+      "sha256": "690435f114a9a9bd80cfb72a7d08a5ed69e02764cd2503886ffa334ac8572e67",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 7,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

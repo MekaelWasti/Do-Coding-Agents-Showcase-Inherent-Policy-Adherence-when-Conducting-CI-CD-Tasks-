@@ -1,0 +1,103 @@
+{
+  "repo": "hack-gpon/hack-gpon.github.io",
+  "base_sha": "e20df4d3045e58e9dda452fa974e622cd10e3113",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/notify-telegram-pr.yml",
+      "blob_sha": "28a0637ad74ca8e9923a7261a6af72faf89870d9",
+      "fetch_status": "found",
+      "sha256": "b874df71b168e388e0ef8180f5f2e7d8f4103638a7e63522b3b2bcb571ae5f47",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "blob_sha": "933c0c01d1dfa8757f7a1bd4e4a351072eb7bce9",
+      "fetch_status": "found",
+      "sha256": "a15d499f2482662740ba7063d76107c3af531e0230050a60c6b0ff996b694bea",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/preview-pr.yaml",
+      "blob_sha": "f171f7125f89ec2155fe9e83aa1b8df39f6f832c",
+      "fetch_status": "found",
+      "sha256": "27334b8a70dc074ac0a3aa3c75ea5329ae2e4e3edf06314f8c19f8c37272e19e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

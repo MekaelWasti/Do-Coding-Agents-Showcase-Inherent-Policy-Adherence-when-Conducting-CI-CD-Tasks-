@@ -1,0 +1,70 @@
+{
+  "repo": "steipete/Peekaboo",
+  "base_sha": "1e57e7557f6ea737e324db06d9d74063f5e966e8",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "b6d8daa56ab2d8a1ef3b67d763fd9e38dc1d5cbe",
+      "fetch_status": "found",
+      "sha256": "d5aa4a8023e395a7392556ae60f44a9780ab41db9bbcce564a26342b1dc2bdde",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/update-homebrew.yml",
+      "blob_sha": "9bd00ac5264f6dd11f90602423d5053a041e5300",
+      "fetch_status": "found",
+      "sha256": "fe016ef6b8ddf9a5a353ab31ddbf6bcb499d20e24220b2cc2bd184ff09e66443",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

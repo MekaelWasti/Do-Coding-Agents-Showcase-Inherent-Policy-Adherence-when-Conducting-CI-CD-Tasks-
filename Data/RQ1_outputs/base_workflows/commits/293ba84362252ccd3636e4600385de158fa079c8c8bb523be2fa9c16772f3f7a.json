@@ -1,0 +1,71 @@
+{
+  "repo": "tardis-dev/tardis-machine",
+  "base_sha": "bcd66e40ec276bd98a6c7a69b8f4b5c9838a17d5",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yaml",
+      "blob_sha": "cc33a9b6c0b90e069df22092f6a2951dd8ebc1b3",
+      "fetch_status": "found",
+      "sha256": "0d7b6fc50383d1d69a999e23b2b006ce0157f758a4ef7c25ce258c0807f94454",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish.yaml",
+      "blob_sha": "6248ef686ed0b67e452375253738d090e0fd25b8",
+      "fetch_status": "found",
+      "sha256": "dc28c64985fc68f5bd17c26656e6c2fa12a2e51aceb4b598cf94c345a64a13c8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 5,
+            "Z_unpinned_uses": 2,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

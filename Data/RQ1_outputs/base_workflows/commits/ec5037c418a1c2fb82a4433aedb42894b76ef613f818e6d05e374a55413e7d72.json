@@ -1,0 +1,70 @@
+{
+  "repo": "Open-J-Proxy/ojp",
+  "base_sha": "a7aeacb203c61f3002f8e579023a7c1f4ad2a757",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/docker-build.yml",
+      "blob_sha": "5b5110a8d1779e6d5f0134fd020d48b7cd7b171d",
+      "fetch_status": "found",
+      "sha256": "2f003dd24982db9e4b03f6f84248b3ae73f724f6b3a7758793b2bcb722f58fe5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/main.yml",
+      "blob_sha": "7264ea9910de66e234c1256c7d6b4ef1936dd1f2",
+      "fetch_status": "found",
+      "sha256": "ee1f961d618ecfc0f8b9d2f978246aa455a30d7d074d035aed25067a55200178",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

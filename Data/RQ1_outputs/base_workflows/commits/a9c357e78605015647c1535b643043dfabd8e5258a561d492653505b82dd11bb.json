@@ -1,0 +1,69 @@
+{
+  "repo": "pdfminer/pdfminer.six",
+  "base_sha": "dd4632c89d8ffcd6fcc7497dc65221e40b1674e8",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/actions.yml",
+      "blob_sha": "3c3670098c8ab63b27b3b247f2472523df103e81",
+      "fetch_status": "found",
+      "sha256": "454b92a84530dc687e075c5f50007ce2482032cfab7663a93fb35a5022530971",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 6,
+            "Z_excessive_permissions": 7,
+            "Z_unpinned_uses": 16,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 6
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/cifuzz.yml",
+      "blob_sha": "be7472e4a229fb3e55c4a44ef6211da9f3103a25",
+      "fetch_status": "found",
+      "sha256": "83a2f4c10ce74c4fa8368b68f60cfff4f05ea30fac5c43c77021d2004555b0be",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "repo": "Tiberriver256/mcp-server-azure-devops",
+  "base_sha": "c90efa48259ef64d84b2b26665facf19b14f98b1",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/main.yml",
+      "blob_sha": "1e5c197f23d3cdce6382f46998bb27b4adc47f46",
+      "fetch_status": "found",
+      "sha256": "cf86876cb4d9ed099c84fa2c987baa583ed24d68001dad5cf9dd33037f910d43",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release-please.yml",
+      "blob_sha": "ef9d9cc5bb934a94434bf885d0e3664b946df70d",
+      "fetch_status": "found",
+      "sha256": "2dda316271f801d8bc09b775aa81a78bacc9fe3dd36372e85688d11bbfaeb0e8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

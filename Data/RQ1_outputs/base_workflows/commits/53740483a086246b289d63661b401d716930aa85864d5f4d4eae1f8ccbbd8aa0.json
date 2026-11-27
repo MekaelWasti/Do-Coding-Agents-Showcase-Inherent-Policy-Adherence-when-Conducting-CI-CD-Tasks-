@@ -1,0 +1,121 @@
+{
+  "repo": "dotnet/arcade",
+  "base_sha": "7063d80b4e50b32ac1da72cafe423f7915487791",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/backport-base.yml",
+      "blob_sha": "913b646e0fa4d9797b9b9a7de263bf9280a5a07f",
+      "fetch_status": "found",
+      "sha256": "750601f88f7dbbfd4ce91d88e83e2d5f6238661031c07533b6f6d3c70e744090",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 7
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/backport.yml",
+      "blob_sha": "60eb59ab40dd4b1e6af7b64b7788646104ae106d",
+      "fetch_status": "found",
+      "sha256": "2f83859c4b5c31e0b0f25058dc554e9ea8062926c844c89c2bf9b6bf60d95b08",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/inter-branch-merge-base.yml",
+      "blob_sha": "19ada5b488836b058d0ce4934a3655e64760b6a7",
+      "fetch_status": "found",
+      "sha256": "c62836abcd65ec5884f57da52f9267e21aba3d981af6f8c5862658629d72b09a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/scheduled-action-cleanup-base.yml",
+      "blob_sha": "9485dc6023155869903b7c2823d97b5b0f9cdf1e",
+      "fetch_status": "found",
+      "sha256": "9c6b725f512001816bbcedcabfb17f2db60c4f6f9eba1c70b6b9f723de30d83f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "repo": "BEDOLAGA-DEV/remnawave-bedolaga-telegram-bot",
+  "base_sha": "4997acd8bcd43914b6f0ce3022ba927a1d0239fc",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/docker-hub.yml",
+      "blob_sha": "6c5045248ff987273603625d58368bd6a8db2983",
+      "fetch_status": "found",
+      "sha256": "b54bdb42bf9312683a97776997b0bc803c82c63681a48eb94e96f289355e273e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/docker-registry.yml",
+      "blob_sha": "d6d5a565ab15544ea0a9be9d64ead67ea2060442",
+      "fetch_status": "found",
+      "sha256": "a82ca519a6acf011d914a6fb5b3e427bac62404c4df2a5d6bfa9b3cc82ff1107",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

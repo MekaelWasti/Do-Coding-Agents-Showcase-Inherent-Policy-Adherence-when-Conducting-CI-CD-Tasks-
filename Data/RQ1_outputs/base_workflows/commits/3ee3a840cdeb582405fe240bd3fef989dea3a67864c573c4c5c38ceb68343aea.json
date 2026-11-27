@@ -1,0 +1,100 @@
+{
+  "repo": "AISquare-Studio/AISquare-Studio-QA",
+  "base_sha": "2e8027ebcc3c779846ab8fb15d7aca62cabe8941",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/lint.yml",
+      "blob_sha": "2c31564a37705f3b7646c011e1e72382314e0875",
+      "fetch_status": "found",
+      "sha256": "16b88151b9594164354c488fde6c07d5da4ffff0a7fd44585ae94286c807df54",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "14b645ffc3645d4c38153807576f6a7b20f8dc6e",
+      "fetch_status": "found",
+      "sha256": "726aa551d3db80458e433adfeead81ac52a6ab64724d4d0e6d25a0b73a0291ab",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 7,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test-action.yml",
+      "blob_sha": "4c8951ee9e1eca66aa4236351cd7000d80a264c8",
+      "fetch_status": "found",
+      "sha256": "c0fe8fb6998c278b9891dfb85921d53c0aa55d42c361458df24995024a44d258",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 3
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

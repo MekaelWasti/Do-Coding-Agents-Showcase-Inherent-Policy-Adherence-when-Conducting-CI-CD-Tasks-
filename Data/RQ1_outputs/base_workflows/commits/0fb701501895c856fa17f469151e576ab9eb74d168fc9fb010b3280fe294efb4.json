@@ -1,0 +1,67 @@
+{
+  "repo": "microsoft/Olive",
+  "base_sha": "de9ad9af326f6a0615ac7155dae60fc2821217f5",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/codeql.yml",
+      "blob_sha": "e273b61f1709f58e8deed9eaad2eadaa7bde46fb",
+      "fetch_status": "found",
+      "sha256": "c59eaea98d1ac157303e8f1717945a5d74f00581fcd083aecbe0d4b1c44a6cf1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/lint.yml",
+      "blob_sha": "d10375e77b7f6a416a1df27d6d1b7c35fe8ca250",
+      "fetch_status": "found",
+      "sha256": "9eb751c7a0023b8cbd5455221be48f363921421d46085716c82311444d0d7996",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

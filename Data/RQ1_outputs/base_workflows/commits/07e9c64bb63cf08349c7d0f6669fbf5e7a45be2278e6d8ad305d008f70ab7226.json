@@ -1,0 +1,64 @@
+{
+  "repo": "Azure/azure-cosmos-dotnet-v3",
+  "base_sha": "6f56e402fa9cd8eb12c2bca76ec819e5fce1897c",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci-doctor.lock.yml",
+      "blob_sha": "4c87706f862599022f4bf2d30d0fc2b9aba2636f",
+      "fetch_status": "found",
+      "sha256": "dba3d2d8fa991f1ade02bf70621418f46bfd0304c40b3090828ce9ad45bee4e8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R4_no_workflow_run": 1,
+            "R9_job_timeouts": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/prlint.yml",
+      "blob_sha": "eb7d90bc7b61f994a6be95768a9fc6fa58b87d17",
+      "fetch_status": "found",
+      "sha256": "d7bd8166b76bb0f9beef04fc1ac82a195a54c2c63e629b664f38594b982b7796",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

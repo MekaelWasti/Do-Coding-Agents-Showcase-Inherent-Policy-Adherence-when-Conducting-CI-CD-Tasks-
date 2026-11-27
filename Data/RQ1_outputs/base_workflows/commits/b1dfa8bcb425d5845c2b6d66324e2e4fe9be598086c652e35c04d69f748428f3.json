@@ -1,0 +1,99 @@
+{
+  "repo": "FalkorDB/code-graph",
+  "base_sha": "bab0090a64e1111639ad02923eb63e5484a4242f",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/nextjs.yml",
+      "blob_sha": "2dc9fde663754666964268cca4c0d1f48654412e",
+      "fetch_status": "found",
+      "sha256": "100529e346fa89b989dc5f32999786a8dc5b6ecaab62b0095ba90cdd51893d48",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/playwright.yml",
+      "blob_sha": "392263b74695c7cb4189053fdabfee5fee712dda",
+      "fetch_status": "found",
+      "sha256": "754ca7045c2a7b7eefb876ee658bb7094f55f709f156005ec90dc890884b907a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4,
+            "Z_unpinned_images": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release-image.yml",
+      "blob_sha": "679a5ae8e51969cc3a51f6f7202524f6b3d0ac74",
+      "fetch_status": "found",
+      "sha256": "1da98a977e40a3ea43484812898454760982d0ac59580ef2fb8ac4ee864b9cfa",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

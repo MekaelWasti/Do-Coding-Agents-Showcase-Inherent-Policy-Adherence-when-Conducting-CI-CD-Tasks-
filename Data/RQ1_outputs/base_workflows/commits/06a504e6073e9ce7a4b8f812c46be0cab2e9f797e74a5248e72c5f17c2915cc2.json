@@ -1,0 +1,95 @@
+{
+  "repo": "HaxeFoundation/haxe",
+  "base_sha": "12c4451ff68bdcf5e8c263348ca706f54c659952",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/copilot-setup-steps.yml",
+      "blob_sha": "41ab3b1cc53fcf813ea9c034a9041f9a5644bd41",
+      "fetch_status": "found",
+      "sha256": "993d6594197112a9ff10517df1cff0f8ac730f790ab1a9fa22fbd14c9d04fe44",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/main.yml",
+      "blob_sha": "c70f0bcf05452540fcdcf3711f29900b65dee2ac",
+      "fetch_status": "found",
+      "sha256": "39c4d4ac4012994ca4befdc6247b2e2153f36b1da1b6cef25eacc12bf07b9a80",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 9,
+            "Z_excessive_permissions": 11,
+            "Z_unpinned_uses": 31
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/target.yml",
+      "blob_sha": "7bbdb49a4075f458501aa7dd9ff90c77799dd490",
+      "fetch_status": "found",
+      "sha256": "1b42984a0efdc45f746cc362423caaa2ff5718d196ed106cad16a4e00bd7d81c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_template_injection": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R3_no_pr_target": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

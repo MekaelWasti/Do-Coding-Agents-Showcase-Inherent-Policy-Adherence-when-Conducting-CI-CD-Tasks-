@@ -1,0 +1,70 @@
+{
+  "repo": "RightNow-AI/openfang",
+  "base_sha": "ebcdc17c138e463740ac7dd7178675f63be43715",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "84b2b35287cc39a5f8870ff26866b53793a1c9cc",
+      "fetch_status": "found",
+      "sha256": "acfd68a47d87e2b580bb1cf2b6ffcbf11252b445533bbef920c85ca92bc7fcb6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 6,
+            "Z_excessive_permissions": 8,
+            "Z_unpinned_uses": 15
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "5698d658d7b71477f230b4bd46b28f747636c6c8",
+      "fetch_status": "found",
+      "sha256": "2ff0e4a6019bc9e4b8454c8fd081e22ec5817ec0b74e9367f1c5f7a65f575649",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 13,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

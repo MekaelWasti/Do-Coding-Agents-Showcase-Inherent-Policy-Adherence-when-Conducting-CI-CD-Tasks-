@@ -1,0 +1,66 @@
+{
+  "repo": "Azure/missionlz",
+  "base_sha": "30f87bc7e6a99867602aa30cd0c8299456121c16",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/super-linter.yml",
+      "blob_sha": "e8a2f87b0e1e61d77779ac42f49592b28ade1276",
+      "fetch_status": "found",
+      "sha256": "4422434157378645e748e99636ed5d0c61d0f3db3a483c414e806c6e71666379",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/validate-build-bicep.yml",
+      "blob_sha": "340c692121279a2ee56680fd02c139f80928014b",
+      "fetch_status": "found",
+      "sha256": "a7f3110cdae5dec4c49eababa68d1edcdd8a3ad8193184edfc48569f36eac8a5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

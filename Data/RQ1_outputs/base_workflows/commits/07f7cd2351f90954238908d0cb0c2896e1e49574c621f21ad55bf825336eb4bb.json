@@ -1,0 +1,101 @@
+{
+  "repo": "agentgateway/agentgateway",
+  "base_sha": "1712c72d8f88c62d5a15a9de0d4f7e1dd92c7684",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/debug_cache.yml",
+      "blob_sha": "fcf96a2cd660d6e3dd2349ea378c198ee5818754",
+      "fetch_status": "found",
+      "sha256": "a77d6828610b3d1a73fa62d66e42ac93320e0d7fa134dba19008093db9085327",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pull_request.yml",
+      "blob_sha": "5e4887f4020d4f571247d7c46fe2a0baaa274e81",
+      "fetch_status": "found",
+      "sha256": "d72466dbdc38d914928566e08c0a83df16a4c2453b78f3da566fac0d0ff873c2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 7,
+            "Z_excessive_permissions": 8,
+            "Z_unpinned_uses": 23
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "62b6ff1918061b3a353bf62e6cbb1e22dee19120",
+      "fetch_status": "found",
+      "sha256": "bd3895344381e6bdf2bef836ed921465317fab70fbed55d56bba7f394512ea97",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 5,
+            "Z_excessive_permissions": 3,
+            "Z_template_injection": 20,
+            "Z_unpinned_uses": 41,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

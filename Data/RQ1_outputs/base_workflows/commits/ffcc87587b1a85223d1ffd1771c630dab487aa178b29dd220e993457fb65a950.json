@@ -1,0 +1,69 @@
+{
+  "repo": "milkshakesoftware/PreMailer.Net",
+  "base_sha": "73e3b3164a873e8a60091dd9f7ebd5275dfa4d56",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/auto-merge.yml",
+      "blob_sha": "e17b308e1ac53c0eb31a1cf24bfd8633afadd628",
+      "fetch_status": "found",
+      "sha256": "87ec381532ba8f9588f025596f4c394fce089c38c9fc5e482abb4bf79cf10e23",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/dotnetcore.yml",
+      "blob_sha": "d044c41d92257f8834f5cc46de4874bff296f736",
+      "fetch_status": "found",
+      "sha256": "422d1d9b1db3219cb4103816225d922a16bb94f072eaa2d1f1d654803836d459",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

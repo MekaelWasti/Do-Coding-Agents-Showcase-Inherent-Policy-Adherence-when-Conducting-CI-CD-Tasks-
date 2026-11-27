@@ -1,0 +1,101 @@
+{
+  "repo": "splx-ai/agentic-radar",
+  "base_sha": "8b5724b809736d504752bf9f6bae75879733ed64",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yaml",
+      "blob_sha": "bcc4c354d0545cec4c4d9b9049aac2534bd377c9",
+      "fetch_status": "found",
+      "sha256": "ee3ff0273d373ff66b940da787ad9aec0f45ecfb5e82c80f89ff5303e5f5d67b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/framework_unit_tests.yml",
+      "blob_sha": "f456688f477c367e5a6d31a2e58361fb2d76773c",
+      "fetch_status": "found",
+      "sha256": "a7590d7aaeba408780475862876a3d7b7bea7ec064818a8c34f455cf496f0316",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1,
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R5_no_untrusted_in_run": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release-please.yaml",
+      "blob_sha": "ea7aa55bbac3113c46f77dfa8e9aa21d6af2e108",
+      "fetch_status": "found",
+      "sha256": "6768233575034564e2cf87d3b5e1aca6c84d76f92395e058822658407c1a22db",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

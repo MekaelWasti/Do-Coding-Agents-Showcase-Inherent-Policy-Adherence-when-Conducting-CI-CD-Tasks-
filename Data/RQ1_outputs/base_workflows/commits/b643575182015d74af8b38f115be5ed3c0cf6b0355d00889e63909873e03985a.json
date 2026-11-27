@@ -1,0 +1,74 @@
+{
+  "repo": "antiwork/gumroad",
+  "base_sha": "ebacfdc61674bb84fc0e870291a54dd45eea9f06",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/autofix.yml",
+      "blob_sha": "73fae1ac6a90a6860f183ed9abce7ea878888dbf",
+      "fetch_status": "found",
+      "sha256": "606edbb5d838897d4d82a755cffde771c58630865783e0300a5c6057cc52a945",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "blob_sha": "c7fe36079ea8d7722e9eed23ff1d62dcdb9ac93e",
+      "fetch_status": "found",
+      "sha256": "726bd19a2ba360e1ecbb387851bb35a793ba0526b004e6384cb6087a09ce90f1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 6,
+            "Z_template_injection": 15,
+            "Z_unpinned_uses": 13,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 5,
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

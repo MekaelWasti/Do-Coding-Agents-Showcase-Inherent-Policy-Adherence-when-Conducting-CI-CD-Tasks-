@@ -1,0 +1,100 @@
+{
+  "repo": "oxia-db/oxia",
+  "base_sha": "92cb2c993afe56a2a65366bea076d01f00504aa4",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/pr_build_and_test.yaml",
+      "blob_sha": "d94f728c37568fc309a3291e5e622e9c172ed72e",
+      "fetch_status": "found",
+      "sha256": "fff98f6ce44968eaedd31d1051d18054db334ffa540307747d43c96ac12a4402",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_unpinned_uses": 14
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 7
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yaml",
+      "blob_sha": "8b6ab42e085585f672bdc5fade3f29940c22b771",
+      "fetch_status": "found",
+      "sha256": "6668eb07cafef675ae77b10c0160ed895bc62310b91196a1758a52d9b39e4582",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_unpinned_uses": 14,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 7
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/trivy.yml",
+      "blob_sha": "773e3d0a152d13544590782292699d4749eb2d81",
+      "fetch_status": "found",
+      "sha256": "421f0a86772014289a5b6f1ab8ab1a1d83040ba00e14acb89624a4ffff715df4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

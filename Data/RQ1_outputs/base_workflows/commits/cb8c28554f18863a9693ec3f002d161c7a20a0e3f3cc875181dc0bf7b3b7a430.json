@@ -1,0 +1,113 @@
+{
+  "repo": "univrsal/input-overlay",
+  "base_sha": "01ca637cfadc9fb9b398afa9bc4a4644ff81e29e",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build-project.yaml",
+      "blob_sha": "bf0df9e69a8ea17f33862e1038a72eb8ac0cd6ee",
+      "fetch_status": "found",
+      "sha256": "fef9d7277ef0f9c565454cfcbe7c37a2b90ed9aec25c1ce4f95c8fa62776390e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_unpinned_uses": 10
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/dispatch.yaml",
+      "blob_sha": "80ed9c80b2a46920d99937b5497875aa5c21759e",
+      "fetch_status": "found",
+      "sha256": "a4dacc0fdc8c09af8ef9df2404ad0f5d5deef1a56f1fd56efc5cf46b61130fca",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_secrets_inherit": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pr-pull.yaml",
+      "blob_sha": "44d53cffe24c6c0d3e86291144d194b344bac0ab",
+      "fetch_status": "found",
+      "sha256": "9109a075c11fa4930209efbcc253aef1beb07ff7136cfb460f7129a38c748911",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_secrets_inherit": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/push.yaml",
+      "blob_sha": "1283c3ede11a2a7b38667fc9e37b9b4bb5f7e497",
+      "fetch_status": "found",
+      "sha256": "a1adc3ddd3903badeb2543e48c9f778f16df641a4d4bd8d866f40f5acac38ae3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1,
+            "Z_secrets_inherit": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "repo": "Akylas/OSS-DocumentScanner",
+  "base_sha": "61d01e39d7140dc8457abd5c91f48481fd2b389b",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/deploy.yml",
+      "blob_sha": "a549d84cb3e2701afbddba0ec86d94f8c2302283",
+      "fetch_status": "found",
+      "sha256": "7ea7de4931cff4ac43082319f12ea4d7d77bb588e61bf709b9754a5d94537e13",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "0c57777ff1c4b50b02d83ecc403c92d273252373",
+      "fetch_status": "found",
+      "sha256": "dd81a9836597a0b3997bc5dc1805c337a9b9738fe4d944e5ee03a1fffc495c33",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 5,
+            "Z_unpinned_uses": 4,
+            "Z_secrets_inherit": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

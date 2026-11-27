@@ -1,0 +1,102 @@
+{
+  "repo": "Alfanous-team/alfanous",
+  "base_sha": "8eb1e6bda95889fda62005b57f11f45d12c21a5d",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/index-translation.yaml",
+      "blob_sha": "b297257be38227f54355327b3fd63fbee8ccefdd",
+      "fetch_status": "found",
+      "sha256": "b6b74932a907bd27bccf1b3504f368e1f7d96e02602dbd8a88c7299fb7d91c42",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pypi-release.yaml",
+      "blob_sha": "77cd1d6742e864508b75fe48cecc48cb0e8b8c7c",
+      "fetch_status": "found",
+      "sha256": "4979f8ea5bd51309d3dfe595876dc202216e0f61d79d5535945bc558f259b352",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/tests.yaml",
+      "blob_sha": "fa186c8de950c11b5362c12254e79b22baf802b6",
+      "fetch_status": "found",
+      "sha256": "2cdb59235207b518e6496c34ab7a6aec73f34ba48b3db33894f2020022e6babf",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

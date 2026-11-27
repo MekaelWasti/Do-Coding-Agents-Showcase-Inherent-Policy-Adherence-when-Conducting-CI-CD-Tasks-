@@ -1,0 +1,79 @@
+{
+  "repo": "berachain/beacon-kit",
+  "base_sha": "04a85a1d7fdd5ed72540d91562823bc9776ceb21",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/pipeline.yml",
+      "blob_sha": "07c6dcf944e146157444f8515123af2fe96b450b",
+      "fetch_status": "found",
+      "sha256": "a6f86801f13f2769d3ecc572a8ef899154de0355d55cb70df4ec5e2e03f40a03",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 3,
+            "Z_template_injection": 11,
+            "Z_unpinned_uses": 11,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 3,
+            "A_action": 6,
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R5_no_untrusted_in_run": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yaml",
+      "blob_sha": "6579b271cafbf11eee789447b4171997e4ae3764",
+      "fetch_status": "found",
+      "sha256": "fb89aa725b758d967c5c23ddb383b0e56623eed8c35e35ab886d7bbad1b4e846",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_template_injection": 26,
+            "Z_unpinned_uses": 6,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

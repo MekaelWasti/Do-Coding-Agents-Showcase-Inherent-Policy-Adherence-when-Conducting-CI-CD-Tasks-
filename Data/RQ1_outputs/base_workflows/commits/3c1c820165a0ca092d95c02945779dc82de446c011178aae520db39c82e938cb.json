@@ -1,0 +1,98 @@
+{
+  "repo": "microsphere-projects/microsphere-java",
+  "base_sha": "afa5905cb8edce1631e9b870cb851ed94d67b7e4",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/maven-build.yml",
+      "blob_sha": "36674a5b80ee6050c9f06ee909ee9b084324ddc6",
+      "fetch_status": "found",
+      "sha256": "811ee19e2b0ad45e0c4d358afefeb0634ae9d860b98d8bc34a65a0f84cbae174",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/maven-publish.yml",
+      "blob_sha": "dd76c6718dbd261b908b8b2be005668122c00259",
+      "fetch_status": "found",
+      "sha256": "0b92b0ad2b8228a96202e843ba75e88e9a17e51c58ec06c9efe07fc0626bebcd",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 2,
+            "Z_template_injection": 13,
+            "Z_unpinned_uses": 3,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/merge-main-to-branches.yml",
+      "blob_sha": "f47152388f33abb6c4e05e7d515678755f044ba5",
+      "fetch_status": "found",
+      "sha256": "668d7fe454390c9c02d3b8308812a1563d0f80f7b14ca23baad57b7c826926d4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

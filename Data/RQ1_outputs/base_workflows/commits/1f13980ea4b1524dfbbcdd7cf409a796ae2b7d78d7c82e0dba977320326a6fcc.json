@@ -1,0 +1,96 @@
+{
+  "repo": "microsoft/xdp-for-windows",
+  "base_sha": "17399043c4f1874c4dc8a8da82f317ea7611fdd0",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "008cb43f9ef43a936c95e9a6907fc18dd59753a1",
+      "fetch_status": "found",
+      "sha256": "c525603bd8da76344191c4d4f3a5ca46cf785ff4ddfcffd4afb683bf3be86c1f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 6,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/build_matrix.yml",
+      "blob_sha": "4784e78e30bb04ce885f9e8aef0f030292342565",
+      "fetch_status": "found",
+      "sha256": "ab71bf00844b939c5cd458461e582164a22906e38cba3dafa42873b8469f4330",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_matrix": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "96165b20eca14c0a4ccd4ee393d65029f01ed6dc",
+      "fetch_status": "found",
+      "sha256": "e5667d3c553a9da2b1fe73bd3a7cc34aa8096d23eb7400188dcff3d93bff249b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 13,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1,
+            "A_runner_label": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

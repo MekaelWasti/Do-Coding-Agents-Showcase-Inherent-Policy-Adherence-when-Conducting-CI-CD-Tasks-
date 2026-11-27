@@ -1,0 +1,66 @@
+{
+  "repo": "wp-cli/handbook",
+  "base_sha": "b9c2d8b1c4dede2ebf26b005fab3707db9bd798d",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/code-quality.yml",
+      "blob_sha": "07e4fd1f755b3b373659f811c180a12049e0bbae",
+      "fetch_status": "found",
+      "sha256": "5c09c09a0427ed8af0697ae425ff181a84a505164566268a28498eac56e20d82",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/regenerate-handbook.yml",
+      "blob_sha": "8d50fce510a4d9e40e8ae04b83650cb7fbbd7cb3",
+      "fetch_status": "found",
+      "sha256": "199b4be7291c563b70d69975458c31e7e37d708b57ed94643defddad34e9458b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

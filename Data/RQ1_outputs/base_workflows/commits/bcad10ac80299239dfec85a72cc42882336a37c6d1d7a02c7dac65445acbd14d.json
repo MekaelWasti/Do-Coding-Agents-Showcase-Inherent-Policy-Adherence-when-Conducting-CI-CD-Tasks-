@@ -1,0 +1,68 @@
+{
+  "repo": "fluentmigrator/fluentmigrator",
+  "base_sha": "dc07e1ca93ba527a6606a26dd05ddf44488eb9a3",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/deploy-docs.yml",
+      "blob_sha": "76ea993cfd666a475b1d0e2781791fc602b04b11",
+      "fetch_status": "found",
+      "sha256": "0d09cf3eebb15b55b834f0e046c985ec1e16343e32db110ab85c6b96153ab67e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pull-requests.yaml",
+      "blob_sha": "c97e35c438a628a30a0976cc8f73bb990cac6bc9",
+      "fetch_status": "found",
+      "sha256": "58adf5840788dd4268a054c768856f5d0aed7e27513f3ca8cb2050b82cfba802",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 10
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "repo": "novaframework/nova",
+  "base_sha": "7c61a8e579adc68041d5282f10350a488260f574",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/erlang.yml",
+      "blob_sha": "77bef0a9737172fdb81e06d668426ffdcd45fefa",
+      "fetch_status": "found",
+      "sha256": "9c66c54e8b1746830bf1e36df465570cb659922de00f25b7f2828fc5820a2cb1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 4,
+            "Z_secrets_inherit": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/run_nra.yml",
+      "blob_sha": "b4bfa0c64626a8ff8771463d95b755deb2bf4d36",
+      "fetch_status": "found",
+      "sha256": "afdea1eda82261c96057c96c137f12c6444594e65034178736878ee4d17603fe",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

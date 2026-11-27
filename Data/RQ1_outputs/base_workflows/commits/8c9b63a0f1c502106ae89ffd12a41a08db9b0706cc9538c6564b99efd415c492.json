@@ -1,0 +1,94 @@
+{
+  "repo": "1dustindavis/gorilla",
+  "base_sha": "cfb3848287dc05aa8a698ada6b8f219c846bf343",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build_pr.yml",
+      "blob_sha": "d91baebb1445999407d95032d650fdd07c62f8b1",
+      "fetch_status": "found",
+      "sha256": "ef183964a4b21fb95003cd03f7dc409282009fd9469b8ecf1d6cd869f996f064",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/build_release.yml",
+      "blob_sha": "6300a3e4d3967eb565cefa885aff316aaf1273bb",
+      "fetch_status": "found",
+      "sha256": "87cff8b3354b47f74227489e8c0bf9a041741caaf94caf60a0e9ed16139dbe7d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/go-test.yml",
+      "blob_sha": "965bb4b8d9367a4fec9229525c50819f097e7192",
+      "fetch_status": "found",
+      "sha256": "8652904527911f6d87528e3dd2ea6146bb7ceafa2dbb66360ec04526568c2422",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

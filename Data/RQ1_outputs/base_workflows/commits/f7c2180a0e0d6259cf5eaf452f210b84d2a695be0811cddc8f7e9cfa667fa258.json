@@ -1,0 +1,95 @@
+{
+  "repo": "restsharp/RestSharp",
+  "base_sha": "1abceabf9c104d5da16e99b87e2baea9f776d0de",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build-dev.yml",
+      "blob_sha": "65ca2899f0e03a12c01dc845223f57a552f40d9d",
+      "fetch_status": "found",
+      "sha256": "fe3eb77f10b4f230ffb3192eb734a03070852d9589bcddf5fcc8eb72e83cbb52",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pull-request.yml",
+      "blob_sha": "e4227b3d269b64910d4ce43064afa4547857ca10",
+      "fetch_status": "found",
+      "sha256": "fa6437e1164b9b1a72ffcb1f8eb4e43db23ee0d37c2b36ce42cfb1ebb49cada9",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 7
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test-results.yml",
+      "blob_sha": "1c2672674fd2307738fde0fe9549c1ce727196aa",
+      "fetch_status": "found",
+      "sha256": "9393894da208669f62f538548de1722140ac7c4f68f40fee593a6bbddaaadbc7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R4_no_workflow_run": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

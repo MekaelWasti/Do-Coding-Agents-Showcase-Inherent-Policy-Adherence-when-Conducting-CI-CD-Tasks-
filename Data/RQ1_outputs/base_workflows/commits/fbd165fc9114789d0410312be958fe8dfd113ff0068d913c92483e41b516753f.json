@@ -1,0 +1,68 @@
+{
+  "repo": "microsoft/litebox",
+  "base_sha": "9ed37cf3467c9403378609a2897521baff99f0f3",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "fa8094beeb4fa40aaa16aa7f4a89fb83ca0d1516",
+      "fetch_status": "found",
+      "sha256": "3acf97bd6d9946baa57d23829b59b7ca8a4377de7643bcbcc061df99d07014d3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 5,
+            "Z_unpinned_uses": 8
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/semver-checks.yml",
+      "blob_sha": "fc9821e1265b2d072a9980cddb61b1ac433f9502",
+      "fetch_status": "found",
+      "sha256": "7613e48289b52e3bf848d7beef6e188836304045a2b7010eed877ea254eee1f7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "repo": "getsentry/sentry-for-ai",
+  "base_sha": "ff5353e1701b6460514b986a166a3fa8413c2490",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/skill-drift-check.lock.yml",
+      "blob_sha": "f3fbe4db6f49ee78010685dbcdf7cfe9dde4af55",
+      "fetch_status": "found",
+      "sha256": "4b3820fec24b904e23c465f101a56c42f4677f060dece30f5dee7dd834097155",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/validate-skill-tree.yml",
+      "blob_sha": "48001ecf10fbdede3214b5455ad0025956a06086",
+      "fetch_status": "found",
+      "sha256": "bc96c07848dd16e3b9f4814fd6d77cd1afa9549c537809766d41cd15a71bd6fc",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/warden.yml",
+      "blob_sha": "c61f8f6c5c4eb2fc6cf4341c7724696fce4dd2f6",
+      "fetch_status": "found",
+      "sha256": "fddfe5d5784f6ee9c7e82b84d22cbe5953ae21fef34f1d3c0f433bb2355a4d3c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3,
+            "Z_github_app": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

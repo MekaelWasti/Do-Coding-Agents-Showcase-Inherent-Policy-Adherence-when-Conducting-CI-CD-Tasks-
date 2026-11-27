@@ -1,0 +1,69 @@
+{
+  "repo": "CharsetDetector/UTF-unknown",
+  "base_sha": "7e69ebbdd6ef96a3625fcaf39df42429b8eb0463",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/codeql-analysis.yml",
+      "blob_sha": "524bc027bc36c0822504c450e3c4032a5fa47425",
+      "fetch_status": "found",
+      "sha256": "2bfcfddea40208bccb18559aa6280609565b46fd57486c7b86ab0ee98b6d8fa6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 4
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/main.yml",
+      "blob_sha": "2c30bcdb18ee5ba658e7b0b212be8fb8616750ef",
+      "fetch_status": "found",
+      "sha256": "2c9c0edf3f1977368269663d08bca0de1ee38a7326f58847027febfb0a5c7052",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

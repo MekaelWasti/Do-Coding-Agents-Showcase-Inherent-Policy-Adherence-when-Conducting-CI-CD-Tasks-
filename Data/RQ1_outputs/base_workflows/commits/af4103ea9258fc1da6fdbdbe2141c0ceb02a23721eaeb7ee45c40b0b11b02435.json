@@ -1,0 +1,75 @@
+{
+  "repo": "oivoodoo/devise_masquerade",
+  "base_sha": "b24b26aa65f2d3995f3862fdea2ea53e3278e36f",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/brakeman-analysis.yml",
+      "blob_sha": "ff02b5f40f29e0a7c6651a25ad54a26773740234",
+      "fetch_status": "found",
+      "sha256": "ee7e8345c5d5b0350581a0e3c2f3c466116c3800539c870cd2b1b79442e850b6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/rubocop-analysis.yml",
+      "blob_sha": "fa0bd9d29ec84a2d3ccb65c4fbe1e220a30a49ab",
+      "fetch_status": "found",
+      "sha256": "19c1a574ba908b9eab2a06ed9587d3bcb02965dfa7ced4f83626b7390a01f564",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

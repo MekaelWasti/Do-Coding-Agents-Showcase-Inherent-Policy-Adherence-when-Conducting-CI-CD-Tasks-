@@ -1,0 +1,71 @@
+{
+  "repo": "rdfjs/N3.js",
+  "base_sha": "1771e163f51ee63880c183bfbdfd20d896999611",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/automerge.yml",
+      "blob_sha": "7578bd769c5c52ebb28e60df1c183849163d2c1e",
+      "fetch_status": "found",
+      "sha256": "646c798f8dedf4675e383138579877afe294a71df162d205d4f78b7adfe65c7a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 1,
+            "Z_bot_conditions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "f3db3d54eb92a5ee74c7e1fe9a8c626024d1987d",
+      "fetch_status": "found",
+      "sha256": "71d20bbb63e1273c747cefebd38c8bde56e0cbb7b3ee9a023b8530295a2709ae",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 5,
+            "Z_excessive_permissions": 6,
+            "Z_unpinned_uses": 14
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "repo": "luno/workflow",
+  "base_sha": "3b3a7ad32bc04c9d3dba7eb2388cd878bddda975",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/sonar.yaml",
+      "blob_sha": "30d438729526e4f674e5cc1dea757f4a3d636315",
+      "fetch_status": "found",
+      "sha256": "3f0dffac06c5f21619c43c99a4ce7c5123e60788b7044465022274e083425218",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "blob_sha": "a0b265efcbb172ba414b35eae1e714cb8d4b4f11",
+      "fetch_status": "found",
+      "sha256": "a7c528342dae84014dfdae7a9a3f8d26fe5cb63cd4e759151dbf814faf289118",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

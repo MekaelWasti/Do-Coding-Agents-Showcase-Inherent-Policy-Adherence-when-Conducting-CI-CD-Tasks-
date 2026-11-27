@@ -1,0 +1,67 @@
+{
+  "repo": "bitsocialnet/5chan",
+  "base_sha": "1db0c625e814b1b569c68efe858dff3e0d376705",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "5507aeb7e9999cd186f7206ce1e66198a6e14a58",
+      "fetch_status": "found",
+      "sha256": "ac60023144d25d48dceb591cc4062aa2c28759a025bba131d81c9963f6eb4ff2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 7,
+            "Z_unpinned_uses": 22
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "748918158a79aaa1feabea333f8343f9ef7d789e",
+      "fetch_status": "found",
+      "sha256": "3d78ac629cfbbede770b2bed39a3e19c35fd8708fed6ac5e53c98d1d7f274297",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 6,
+            "Z_unpinned_uses": 20,
+            "Z_cache_poisoning": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

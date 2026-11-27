@@ -1,0 +1,110 @@
+{
+  "repo": "mohsen1/yek",
+  "base_sha": "2bbe6d5261f8b3aafda863ee2283e0237f6fda42",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ailoop.yaml",
+      "blob_sha": "e3e3e89b3e630f12965695c1b2427df636d0891f",
+      "fetch_status": "found",
+      "sha256": "1e1c482981d5ecf0d5811c3503f622df1e0145921f787ab1b45a4ea0af05740c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 15,
+            "Z_unpinned_uses": 6,
+            "Z_unsound_condition": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1,
+            "A_if_cond": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "c9cdaa6f65a6f733e7f28e1f8dbfb224f063b5f1",
+      "fetch_status": "found",
+      "sha256": "0dc8dd87b99081b05092f1d5d6cfba42525bd1ada159420ddcb80b1ea42deae6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 11,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 10,
+            "Z_unpinned_uses": 25,
+            "Z_cache_poisoning": 1,
+            "Z_unsound_condition": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1,
+            "A_expression": 8,
+            "A_if_cond": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R5_no_untrusted_in_run": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test-install.yml",
+      "blob_sha": "b5b470989458bce98c31f1fa5d47628cb4040443",
+      "fetch_status": "found",
+      "sha256": "f3b0e67e3390caf214a0ef7e6c327a2bfaade482ab724aec8a604feb6b3ae0b4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "repo": "PolicyEngine/policyengine-us",
+  "base_sha": "0b3d6855b19c43a3fdac9167fed27b43395681c0",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/pr.yaml",
+      "blob_sha": "ac2c43a1f2cca31768d781c1faee5884afdac5f6",
+      "fetch_status": "found",
+      "sha256": "2733cf0c2028c2e1c389aef14a7626213806afed2863c3c6897420cac6671622",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 7,
+            "Z_excessive_permissions": 8,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 21
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/push.yaml",
+      "blob_sha": "3a2ccb4aea78b027e4af732780fc18383d60c6d4",
+      "fetch_status": "found",
+      "sha256": "addcecfdc69785457ce3c52bf898be2cdbcd0b1e3167afc94b3c255149b17f54",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 8,
+            "Z_excessive_permissions": 9,
+            "Z_unpinned_uses": 24,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/weekly-uv-lock.yaml",
+      "blob_sha": "fbed74a3cacf1b7fc13afc03051276a6f6b19ede",
+      "fetch_status": "found",
+      "sha256": "532be03385f06639516067dda85e9775902b61d8bada7b75ff79c9b0951fbb31",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

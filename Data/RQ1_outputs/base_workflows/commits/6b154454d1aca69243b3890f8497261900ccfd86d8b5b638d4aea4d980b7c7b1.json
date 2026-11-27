@@ -1,0 +1,98 @@
+{
+  "repo": "AISquare-Studio/AISquare-Studio-QA",
+  "base_sha": "e206206bfb530a0e58a01b6202b0ebc5fcc50375",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/lint.yml",
+      "blob_sha": "f45e9f008228fae8f7855d0fc77ebd41cd9a32f1",
+      "fetch_status": "found",
+      "sha256": "e0f06bb1ec3da629af30624f1421bcf370f04ff3fcf9297502c2546b0a2fab87",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "21cb1abc01cff500cc2ee9130049b18433592bb4",
+      "fetch_status": "found",
+      "sha256": "e08cf2d43ec9ce73a1e6e24f5350cc5946e57cf2141d4ff0fd712c28c7a92a10",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 7,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test-action.yml",
+      "blob_sha": "a3cdb7424ef83a709b54c730b860e3f9124c9cbe",
+      "fetch_status": "found",
+      "sha256": "5958f321b00e1d272aad71e1fb0623c52dda7274ba7fa2d013e59e9a04ff396c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "repo": "FormalizedFormalLogic/Foundation",
+  "base_sha": "0246417eb3f8fa302329e9c7557afbe3a25a50f7",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/actionlint.yml",
+      "blob_sha": "e82dd78cb38902ff17e2d8ea1fac633f2dd28c31",
+      "fetch_status": "found",
+      "sha256": "9727c76109ac954c9215e125b0f78d466a538a283e90482f1f03b9a81a6dae64",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "c91e63379d3d12a1ea117967e77093ccb07702cd",
+      "fetch_status": "found",
+      "sha256": "6f4fb6a9397698d7ad7614bdef2056840f5ccca13ff9a1caeb97c9556b1ff8b4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 12
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

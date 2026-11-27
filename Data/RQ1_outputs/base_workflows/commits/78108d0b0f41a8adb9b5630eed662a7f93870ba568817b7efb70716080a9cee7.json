@@ -1,0 +1,67 @@
+{
+  "repo": "EuroEval/EuroEval",
+  "base_sha": "99f41b7868c4bef30a20b9036c28fa8cb9ee04b7",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/auto_assign_reviewers.yaml",
+      "blob_sha": "c4ef3ce446a75a314b5f55f93ccd513825036e1b",
+      "fetch_status": "found",
+      "sha256": "88d6c5b001a1aca5d52d718c26edabb83f1f233352608bd54deab385e457f0c7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci.yaml",
+      "blob_sha": "107a099582e5165ef0371b9bf091850db83d238d",
+      "fetch_status": "found",
+      "sha256": "61a9d9f99c120e4f3da877735caa6720dd87809ae2b6234c38dcd32f5f9cc6a9",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 7
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "repo": "dcSpark/shinkai-local-ai-agents",
+  "base_sha": "879c2eb8199aa0d5e26c652cd29aea602ab66fe5",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/audit.yml",
+      "blob_sha": "724ce3a7e92a0390364a5614d6a24e17d525dba6",
+      "fetch_status": "found",
+      "sha256": "0b311ffb236980e62df435ee7bda5eccd2ef92a42774156c83a2b0f1c0c1ca1a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pr-ci-healchecks.yml",
+      "blob_sha": "9fe2feebabcb50b964d6492f2619d5f9a228a7ce",
+      "fetch_status": "found",
+      "sha256": "cb124448af5916a0684431ace1f3d4c14f7e11be876a26f365546db106098fe1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release-dev.yml",
+      "blob_sha": "883e641a181538d085aa4a328ddf7a526a1308ef",
+      "fetch_status": "found",
+      "sha256": "3c5cfce067a3b9fab04848308a42d630f4b6f044dc9f10ee740935d51f4492ed",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 5,
+            "Z_template_injection": 9,
+            "Z_unpinned_uses": 11
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release-prod.yml",
+      "blob_sha": "3a78bd5d43b2738cdd0c5b71d9db0387b938bcbe",
+      "fetch_status": "found",
+      "sha256": "6d173d522feac57991e952bf89b175d0f722445f4b877546adecf5efdbf39ac8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_template_injection": 10,
+            "Z_unpinned_uses": 14,
+            "Z_cache_poisoning": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "repo": "closeio/ciso8601",
+  "base_sha": "d36f3a85752efea6baacca3e26b26df7023bbc63",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build-wheels.yml",
+      "blob_sha": "ff7ee82c0b51a7b1586c7689ea96e600f168c9ca",
+      "fetch_status": "found",
+      "sha256": "45cd0291d1094c5190d0dd04de80cff385d04a907f87544b382e503d15fab1dc",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_template_injection": 15,
+            "Z_unpinned_uses": 10
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test_and_lint.yml",
+      "blob_sha": "7fbf86265dc4ee47f497afe006c4568d878e32dd",
+      "fetch_status": "found",
+      "sha256": "4452ab23910892b6b087deb72d565491d3c48fe13f4aa0c5b4726d537f456afb",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

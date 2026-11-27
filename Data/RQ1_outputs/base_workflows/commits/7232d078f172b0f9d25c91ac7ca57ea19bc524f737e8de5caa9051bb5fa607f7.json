@@ -1,0 +1,38 @@
+{
+  "repo": "web-infra-dev/rslint",
+  "base_sha": "ae70aafa0260b282bc8967c9a46821af68de299d",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "1227b3905fd0b2404f549a0d385df3d325c4b859",
+      "fetch_status": "found",
+      "sha256": "ea2533153a3a8654c1d8e47d280105323006aba46d475458da7d20e991629208",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

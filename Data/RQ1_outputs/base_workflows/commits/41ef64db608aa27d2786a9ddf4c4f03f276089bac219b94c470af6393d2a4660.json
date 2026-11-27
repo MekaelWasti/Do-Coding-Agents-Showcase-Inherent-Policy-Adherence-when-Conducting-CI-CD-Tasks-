@@ -1,0 +1,105 @@
+{
+  "repo": "codecrafters-io/frontend",
+  "base_sha": "9452d31ea5dcc42d3f8c169841a854c2cca3de85",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/lint.yml",
+      "blob_sha": "d4e58ef20449d6fdc6cee0b74cdc5e7863131e43",
+      "fetch_status": "found",
+      "sha256": "4f5e3084996902b43a1b11f85009a444df733bf18bc030cf7f7bd5bccaed4c3f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1,
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R5_no_untrusted_in_run": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish_bundle.yml",
+      "blob_sha": "3cbbed703ca527980cd1804a876f7747bfacffa7",
+      "fetch_status": "found",
+      "sha256": "162b33bab9be196b5b2bd1e28bf224048f682d760f9532dca25614cbb1d3ce9d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "blob_sha": "26a989e98befe9ca37072df9fcf0d40b4f854c4d",
+      "fetch_status": "found",
+      "sha256": "cf21778cf8f2b058c22402069e05b28517ba1bd2942af88d962f433fabb776f2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 7
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1,
+            "A_deprecated_commands": 3
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R2_no_write_all": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

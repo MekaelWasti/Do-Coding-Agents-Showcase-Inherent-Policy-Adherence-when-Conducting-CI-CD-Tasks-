@@ -1,0 +1,62 @@
+{
+  "repo": "ooyyh/Cloudflare-Clist",
+  "base_sha": "e390be4502c4e5ffc934ee6e86a64d9decb2f0fb",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/deploy.yml",
+      "blob_sha": "571bf9b4e035483fab8a01e0398d51faf51a30d6",
+      "fetch_status": "found",
+      "sha256": "bd5e736fea9964a53a766b0d87c3d3e720a8e85633ccf6634a29a337555dd763",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: deserializing from YAML containing more than one document is not supported\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable inputs\n  = help: at le"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "1c3f9fe75d75d36229b70309036a6308e29f0c5a",
+      "fetch_status": "found",
+      "sha256": "cef8ada9636184b9b31fd1fa64233022d93a967764a893d0fd7bc028ce9b8940",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

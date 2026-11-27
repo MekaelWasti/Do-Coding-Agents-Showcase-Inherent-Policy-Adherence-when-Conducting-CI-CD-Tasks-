@@ -1,0 +1,91 @@
+{
+  "repo": "elastic/apm",
+  "base_sha": "7fae8d51267a382073815e840057e561ee747500",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/apm-agent-meta-issue-action.yml",
+      "blob_sha": "b557bf2de64880a3bdb427a02b65d3a1f6ba7633",
+      "fetch_status": "found",
+      "sha256": "b13cccaee62cfd53b4c459ecf14bbb5ec59273ca3cfa32afc48e80daec4ac339",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/generate-plantuml.yml",
+      "blob_sha": "11928a0a028cc58bd5aef7b7e9e2888f652048c8",
+      "fetch_status": "found",
+      "sha256": "0e3b09dd0cf71c24b690b2f1ce044d997b7f5466e8c36311cf222ccf9a3510ab",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_deprecated_commands": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/merge-schedule.yml",
+      "blob_sha": "a83e7a43422a6382ebc8565d882f19d7ade76d23",
+      "fetch_status": "found",
+      "sha256": "dd3820bbd8d8e34ba89a1fd74db32fa9b0e0a300453abc8dee78f32b2cbfb884",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

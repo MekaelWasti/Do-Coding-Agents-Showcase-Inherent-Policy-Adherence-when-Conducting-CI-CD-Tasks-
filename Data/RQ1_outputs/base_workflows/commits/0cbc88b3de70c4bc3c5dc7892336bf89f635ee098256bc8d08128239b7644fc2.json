@@ -1,0 +1,124 @@
+{
+  "repo": "axios/axios",
+  "base_sha": "20a0ba3c01174aa2ec441753fa1fe47f21d20491",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/publish.yml",
+      "blob_sha": "550b8406a3e95131dcdc4d33581b2a351176ebbe",
+      "fetch_status": "found",
+      "sha256": "cf4a021eeac30db78d664cfcee8b15d96a89c692452e3bebdfa7c7bb3ce18afe",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release-branch.yml",
+      "blob_sha": "013914d83f6923462881a3005d4719dd4fb9ae11",
+      "fetch_status": "found",
+      "sha256": "a28a1aabd9a87effcd3e891f432552d5ceb4564e79bab1b583e28134fbda4e98",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_deprecated_commands": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/run-ci.yml",
+      "blob_sha": "9cb8716d3dae1df5f971c41b2dd31c1ecd84882f",
+      "fetch_status": "found",
+      "sha256": "2d4dcad83fe8e2dcc37516074cdc876cea77087a1ef8cd940c85de8b1e9a4b72",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/update-sponsor-block.yml",
+      "blob_sha": "f55e5320da460e503e6bbb812519330359ac07e2",
+      "fetch_status": "found",
+      "sha256": "d7ad45f5f0821f748bfcb9df679139b1b7c0d23b78e5a9e3664c17a35b87ef7c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

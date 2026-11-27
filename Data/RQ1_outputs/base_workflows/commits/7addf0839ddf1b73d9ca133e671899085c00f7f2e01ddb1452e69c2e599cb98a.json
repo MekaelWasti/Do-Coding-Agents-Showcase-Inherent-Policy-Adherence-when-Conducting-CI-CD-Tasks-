@@ -1,0 +1,154 @@
+{
+  "repo": "spacedriveapp/spacedrive",
+  "base_sha": "4d10dd5e149a78b0bb2e3bb377b438cdcf448821",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/cache-factory.yaml",
+      "blob_sha": "630fee619a84329ee98c91ad06143d7f5dfe8f8c",
+      "fetch_status": "found",
+      "sha256": "02bc424720a98ea3225bb82b4f36ff58f5fccc454c238427758281e4f755a5f1",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: jobs.make_cache: duplicate entry with key \"if\" at line 31 column 5\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable inputs\n  = help: at least one "
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_if_cond": 1,
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while constructing a mapping\n  in \"<unicode string>\", line 31, column 5:\n        if: false # Temporarily disabled\n        ^ (line: 31)\nfound duplicate key \"if\" with value \"github.repository == 'spacedriveapp/spacedrive'\" (original value: \"False\")\n  in \"<unicode string>\", line 56, column 5:\n        i"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "b0fc073ad579a65ed462431feabfb599c608f48c",
+      "fetch_status": "found",
+      "sha256": "3cabe88c144ba757219805132f22c5140be71af13d91ff11a7898b0e82e6b5dd",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_unpinned_uses": 12
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_shell_name": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/core_tests.yml",
+      "blob_sha": "d7fb1a26f6b1c31257f0b657d0d85b13b6b1210c",
+      "fetch_status": "found",
+      "sha256": "add384a68d98b19383516c42b10d5207cd37ce36befd64b822f0970e901e85b2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "4cc75cbd74cd2a4672e9d6293f61eb284493b3f1",
+      "fetch_status": "found",
+      "sha256": "5fac38e741b427ede7bf358956d79ad3e8dcad2a03f87884d3de76064c69e130",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 9
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/server.yml",
+      "blob_sha": "7279d97e251464cbc482b92783e60a1e882ffebf",
+      "fetch_status": "found",
+      "sha256": "b8b21b0d6c8c17cc6fa5e441b70dd16bb1259ab1b1a10a922fa5bc6aae2e9fa5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

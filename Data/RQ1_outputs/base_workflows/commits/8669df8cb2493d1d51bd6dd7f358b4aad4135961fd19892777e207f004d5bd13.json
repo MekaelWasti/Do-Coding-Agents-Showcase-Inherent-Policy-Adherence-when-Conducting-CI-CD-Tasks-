@@ -1,0 +1,295 @@
+{
+  "repo": "Azure-Samples/azure-ai-travel-agents",
+  "base_sha": "5c33cee8e290b8625e72695c0ef4ca3100256e00",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ai-opsec-agent.yml",
+      "blob_sha": "5732eab1b1937c2cfd01ff782c7249028afec59f",
+      "fetch_status": "found",
+      "sha256": "768fa2e96ac07a92304092d191b300c8d9fdfd425b3e9b72bb70d53d1a37e20c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/azure-dev.yml",
+      "blob_sha": "b74f2e9055fe6f8fd6669e0d836272fc426b802e",
+      "fetch_status": "found",
+      "sha256": "3fbed42cee619c5da3347a7b96b9323679cfd46b284343ac2bc5a881d0c5ac30",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1,
+            "A_syntax_check": 44
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while constructing a mapping\n  in \"<unicode string>\", line 50, column 11:\n              VAR: ${{ secrets.VAR }}\n              ^ (line: 50)\nfound duplicate key \"VAR\" with value \"${{ secrets.VAR }}\" (original value: \"${{ secrets.VAR }}\")\n  in \"<unicode string>\", line 51, column 11:\n              VAR: "
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/build.yaml",
+      "blob_sha": "32cc4466fcdb86c8c8df5d3d098b3dba289eb02f",
+      "fetch_status": "found",
+      "sha256": "f0018f0ab811c685d2bcb2c359e5b8dd9cbc76f2dfada3a63f7764b516927274",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 6,
+            "Z_excessive_permissions": 7,
+            "Z_unpinned_uses": 12
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/codeql-csharp.yml",
+      "blob_sha": "87910376dec3b2d9797fb5fe5f339911cc0cdc35",
+      "fetch_status": "found",
+      "sha256": "bade11a981711aead1eb0f26b084a2354381902c33e1fcd83f32c4c802bb671d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/codeql-java.yml",
+      "blob_sha": "dd1832a9eee8c4b08226912e6e65da0e00edecab",
+      "fetch_status": "found",
+      "sha256": "a64ac56a32a12a08e80842192e1aeba6b3232a32ed3f2b12fff119197593d35d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/codeql-python.yml",
+      "blob_sha": "2016c40cd0be27b7927604da419ed14a4ea1fd29",
+      "fetch_status": "found",
+      "sha256": "4344a443e4228c85619fc2664bcb32072c02676b059d37b07aa1ebd5970ce4a7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/codeql-typescript.yml",
+      "blob_sha": "58aaecaa49b137a257a124250d83dd0c03670dd5",
+      "fetch_status": "found",
+      "sha256": "e3c9b699836b990a1cce8fc24565b6a06485b210849f36b8a33e29210abcbca7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/codeql.yml",
+      "blob_sha": "bf2311a53fe895dc0c3f3ef353e323e15b467e1c",
+      "fetch_status": "found",
+      "sha256": "79063c27fc05aed728edeaa47b9bff6002543aa60008a4264edba8707252d22d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R2_no_write_all": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/stale-bot.yml",
+      "blob_sha": "1bcda064ef0e07508e00fff53303f732386cee8f",
+      "fetch_status": "found",
+      "sha256": "6801d2474175bd4633d249ca841282862e5249c484ffe2d1a1b85f6940385eaf",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/valdiate-infra.yml",
+      "blob_sha": "5d7b44e8b3fa9f58110204c6b539878365b6df06",
+      "fetch_status": "found",
+      "sha256": "7aad7b99d0608d3bb85151710afa892de516154d3a13c1792f6a050299f0eaa3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "repo": "vercel/workflow",
+  "base_sha": "ad93a6f84ca5454fec04660e963d8a0d268f3609",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/claude.yml",
+      "blob_sha": "4b2e6d2f5c04af064a0f7abf75805d977a4a8ea0",
+      "fetch_status": "found",
+      "sha256": "002146047e62e45875f378e4d94641893fcc889d7ed22bba40a5e74b8bfa5217",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/cleanup-ci-test-prs.yml",
+      "blob_sha": "f9376ff6ee7277d73888173191fdb70c473aab7a",
+      "fetch_status": "found",
+      "sha256": "a1670282841818704ad4e9153d49df8d04c1164a937e94f0990adb7b49512428",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: could not find expected ':' at line 82 column 20, while scanning a simple key at line 77 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 77, column 1:\n    This automated PR is now being c ... \n    ^ (line: 77)\ncould not find expected ':'\n  in \"<unicode string>\", line 82, column 20:\n                  owner: context.repo.owner,\n                       ^ (line: 82)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "16ec552957a049e9ce11a734285d4f5f3d20bb61",
+      "fetch_status": "found",
+      "sha256": "ab5f0d81e40a73bd137b592f1e615cfb4dadcbdc04a46cb614d24451f68a29b5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "blob_sha": "534ad8790ac8ac8d555979eb0b6c58ce950ba29b",
+      "fetch_status": "found",
+      "sha256": "31aa96985b46bd85b1670f86da0b0378f67486e841bdfd610ef40a6e03d413c5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 6,
+            "Z_excessive_permissions": 7,
+            "Z_template_injection": 12,
+            "Z_unpinned_uses": 20,
+            "Z_cache_poisoning": 8
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/trigger-ci.yml",
+      "blob_sha": "ab00f45c94313d34040ec08b090bfd9caedc84cb",
+      "fetch_status": "found",
+      "sha256": "4370242f37f18f07509c14eaec07b674daf2b89a03176d8af78ace56b540d195",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: could not find expected ':' at line 119 column 1, while scanning a simple key at line 117 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditabl"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 117, column 1:\n    This is an automated PR created  ... \n    ^ (line: 117)\ncould not find expected ':'\n  in \"<unicode string>\", line 119, column 1:\n    **Original PR:** #${prDetails.nu ... \n    ^ (line: 119)"
+        }
+      }
+    }
+  ]
+}

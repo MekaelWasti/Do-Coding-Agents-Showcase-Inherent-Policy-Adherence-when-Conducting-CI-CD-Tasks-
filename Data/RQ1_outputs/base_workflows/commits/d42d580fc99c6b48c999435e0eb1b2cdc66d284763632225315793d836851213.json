@@ -1,0 +1,95 @@
+{
+  "repo": "crossoverJie/cim",
+  "base_sha": "3965da6deb529ccf6007b71436ab3ed65a40a37e",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/docker.yml",
+      "blob_sha": "ecc2984ba576f169b0845e25d6ec6a4e473da39a",
+      "fetch_status": "found",
+      "sha256": "1903ca2bab44bf6fc195b7b5cbb4358c0d319996e5e663566e55610a877a9d39",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/maven.yml",
+      "blob_sha": "26ac135cd685f8a1377a60877c17ef7a48ffe274",
+      "fetch_status": "found",
+      "sha256": "a16ec953e447152a674679cfa0c9086ca9a52ac1b1994d6da12c74e00ba791f6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/reusable_run_tests.yml",
+      "blob_sha": "4312402d5fbc809765415cd7608633ea430b86bf",
+      "fetch_status": "found",
+      "sha256": "516d89e48fe2d1cdefc24350e97ef14f988414dde6c4d593fea199c8e63c4fc4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

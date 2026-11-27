@@ -1,0 +1,67 @@
+{
+  "repo": "milnet92/MXTXppInterpreter",
+  "base_sha": "0ae795ed982b54176f8d0042b9432b54011e2503",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "5baa2a077ee3efe1d0529466f6447af2cd35d995",
+      "fetch_status": "found",
+      "sha256": "922c7b869557433587dd61798b5a83f9e460a548816a94f5189a04003cc72860",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_template_injection": 4,
+            "Z_unpinned_uses": 17,
+            "Z_overprovisioned_secrets": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/stale.yml",
+      "blob_sha": "ad5e1b8fe52198ebbbfe3003d9c637e97f66c417",
+      "fetch_status": "found",
+      "sha256": "f523bcd54969ef0881669b2bf3d3792eab570304f59e0f9fe1a3dd54757fa6ca",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

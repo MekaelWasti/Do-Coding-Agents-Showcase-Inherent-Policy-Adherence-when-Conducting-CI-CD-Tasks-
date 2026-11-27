@@ -1,0 +1,67 @@
+{
+  "repo": "jrkropp/open-webui-developer-toolkit",
+  "base_sha": "16d8b0b145a2b2403b33c807860c4ad21f281f94",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/clone-open-webui-repo.yml",
+      "blob_sha": "057f32bdc236846c2bfafbfcb7bb4f81f020e889",
+      "fetch_status": "found",
+      "sha256": "69b1c03675956a8091c50784a32a622d97ca0fa5fe387ebde0c89113d8b35c92",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/deploy-open-webui-extensions.yml",
+      "blob_sha": "d32e6f83b0ef1f831d8f08f124f1c77d9482e4fb",
+      "fetch_status": "found",
+      "sha256": "4fce869ec0117ac3d286955ae9fd4a281529a6cdebbfb09caac4a3abea34c85a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

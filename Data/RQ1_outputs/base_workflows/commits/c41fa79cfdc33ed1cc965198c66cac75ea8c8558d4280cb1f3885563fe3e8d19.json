@@ -1,0 +1,68 @@
+{
+  "repo": "zigcc/zig-cookbook",
+  "base_sha": "7b4d4f2ada42d770309f2f2081dbce0b5ea82641",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "50088d9c06335a59edc3e3f45676f126c1c583fd",
+      "fetch_status": "found",
+      "sha256": "35210b7cb781b05a2e9524729e3114b37e5c23fb6492eed154c3f68e8e5c29da",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "blob_sha": "dd60527b044956b2a4d24b97534eede22c718eff",
+      "fetch_status": "found",
+      "sha256": "08950bebcccf28dc3337dc0765b034becf2153c4cd48b081d3e3f2da5d88c16b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "repo": "nikdon/pyEntropy",
+  "base_sha": "e78cf01bf542fbe3ccd31f1721842b5e045ccc1d",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/python-package.yml",
+      "blob_sha": "d191ac32042d43291c72606f3fffbfa9205fb3e9",
+      "fetch_status": "found",
+      "sha256": "c82486c422e7883c78bf7e0d3b0564f45dfabffb668f6368b39ea53767533e67",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/python-publish.yml",
+      "blob_sha": "dbbfcc7e4f8e8842e09a8d1e4f1e4bb2b597f6fc",
+      "fetch_status": "found",
+      "sha256": "b2dd0108ac68a5bb8099da6a05d4c5cc6117d96fa5354024f7ba263d3e16e7da",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

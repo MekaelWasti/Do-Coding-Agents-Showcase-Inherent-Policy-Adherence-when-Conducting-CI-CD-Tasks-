@@ -1,0 +1,70 @@
+{
+  "repo": "readthedocs/ethical-ad-server",
+  "base_sha": "43bad2e2d61b3dea0d7dc3dcd703e65ed35409c9",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "2c3f63a7274aee24c49ba8927b387a5249b8ecda",
+      "fetch_status": "found",
+      "sha256": "95d1960f31059413aef929bf4733c982ec14fa8c066a0dcd934ce8ddf0f80ac3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pip-tools.yaml",
+      "blob_sha": "14a3176e8c2c945520756f5ca4b21194f5347763",
+      "fetch_status": "found",
+      "sha256": "f2c6c035f9557df6c5c9b649acde04c9779ae2937537fe63c3e234bbe698b721",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

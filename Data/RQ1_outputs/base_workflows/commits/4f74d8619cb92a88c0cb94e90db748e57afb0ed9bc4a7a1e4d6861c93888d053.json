@@ -1,0 +1,94 @@
+{
+  "repo": "HaxeFoundation/haxe",
+  "base_sha": "4fa1a820da5ef6898405277405ba57a81d369ee1",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/copilot-setup-steps.yml",
+      "blob_sha": "d1121a41d1e565f45f5710842cdc9a078ff53b51",
+      "fetch_status": "found",
+      "sha256": "45535c5b3458254b39d9f58162959e315052b62106488d298543ab513674b45a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/main.yml",
+      "blob_sha": "ff924a11ed42757ae860995517e27d0e24bb6b6b",
+      "fetch_status": "found",
+      "sha256": "7db95f2a643118f2303383964154f28d9cb6d00fccefe6187408be6e5fb9641d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 9,
+            "Z_excessive_permissions": 11,
+            "Z_unpinned_uses": 32
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/target.yml",
+      "blob_sha": "a6511e091b70c2d80d5383549588a5a1cf304c17",
+      "fetch_status": "found",
+      "sha256": "ebb82a016679a964bacd3de19cb8c5129e3c90d1e6f3872f7d6a8c1126bfd0d6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_dangerous_triggers": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R3_no_pr_target": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

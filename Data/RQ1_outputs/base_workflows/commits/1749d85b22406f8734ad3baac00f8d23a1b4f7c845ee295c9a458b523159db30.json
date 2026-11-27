@@ -1,0 +1,100 @@
+{
+  "repo": "cognizant-ai-lab/neuro-san-studio",
+  "base_sha": "eec298352fbf0439977aca51f85e208ed2aa6db5",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/dispatch-to-deploy.yml",
+      "blob_sha": "18a51072263268584b65ed6769e8270f7c24b2d4",
+      "fetch_status": "found",
+      "sha256": "1061f1ab642b3b6ab38dba8e4588c3979cf48bfc2efff4ca5f379c7a73a7b813",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_template_injection": 4,
+            "Z_unpinned_uses": 2,
+            "Z_github_app": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/integration.yml",
+      "blob_sha": "a6c33afe37f514058f8f10e79abe7260647cc6b3",
+      "fetch_status": "found",
+      "sha256": "f42bd48a313b6dcdc88c12708f3f4eac616e0f726585d89483bd47ec71577945",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "blob_sha": "4b754f4b79220b64e0cbb05058d9eaba4d31776d",
+      "fetch_status": "found",
+      "sha256": "9f20c1ae4cfa84aa1b66c6d15c1a9cfa39508e82ae5278135a8c1a30a86b4059",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

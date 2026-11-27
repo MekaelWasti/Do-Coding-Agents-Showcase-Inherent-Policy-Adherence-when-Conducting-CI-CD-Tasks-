@@ -1,0 +1,95 @@
+{
+  "repo": "beartype/beartype",
+  "base_sha": "de34bacd24102dc9196e59d84e5874cca2e153c9",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/python_docs.yml",
+      "blob_sha": "664715df682a707de2d07704688e82debf079f83",
+      "fetch_status": "found",
+      "sha256": "15a92b88fe10d39b8edf7445987d68790c841a1d115fb8e6d581778c5f4359f4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/python_release.yml",
+      "blob_sha": "92af373a5a8f2dfbfd29c34e51fae89a18ebdd69",
+      "fetch_status": "found",
+      "sha256": "5ec97de83466656badb4b1deb209b586d4d8d0d06b391792b0bf2e465d30d85d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_unpinned_uses": 6,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/python_test.yml",
+      "blob_sha": "445460b00cc3ccd9631fdb4885f956e3f7cceabb",
+      "fetch_status": "found",
+      "sha256": "2a2d48674e1c4003de06a58dc2db776dfd6a8a1220ec2500819a2c6e42ebeb06",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

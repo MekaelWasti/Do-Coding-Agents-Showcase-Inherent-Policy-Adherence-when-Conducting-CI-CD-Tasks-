@@ -1,0 +1,71 @@
+{
+  "repo": "tektoncd/pipelines-as-code",
+  "base_sha": "db5251576fe37eb292c8c2fcc474e47f1c81e722",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/container.yaml",
+      "blob_sha": "c38e3d5b5763e66c3a1d0bf7129709955c12ae7e",
+      "fetch_status": "found",
+      "sha256": "17998221848707d237e0412733dbc74a86ceb8467196e6c1abc9689e889eaa11",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 5,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/e2e.yaml",
+      "blob_sha": "6302b8330223fe3a7bd03ab9b1dcb9bf45022955",
+      "fetch_status": "found",
+      "sha256": "a3042a57a819d563a94b4e59ba8db15545248db660c550fb356506b4bb915a53",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 3,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 12,
+            "Z_github_env": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

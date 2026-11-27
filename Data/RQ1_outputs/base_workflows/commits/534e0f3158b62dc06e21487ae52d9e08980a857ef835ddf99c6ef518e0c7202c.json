@@ -1,0 +1,64 @@
+{
+  "repo": "insoxin/API",
+  "base_sha": "007610bbf2b2e5a9ef357b2ee8561b19413b9f38",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/docker-image.yml",
+      "blob_sha": "cbbe55ec959191e7b9d199336053679049be10b3",
+      "fetch_status": "found",
+      "sha256": "33511e61b79c045d8c6b75d35ef2d4846dda1da8974c4bfda2a11345e6be5d32",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 5,
+            "A_deprecated_commands": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning for the next token\nfound character '\\t' that cannot start any token\n  in \"<unicode string>\", line 54, column 21:\n              context: .\t# \u5de5\u4f5c\u76ee\u5f55\n                        ^ (line: 54)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "blob_sha": "080965f6fba5d1200fd3654f94f4f6792a98342f",
+      "fetch_status": "found",
+      "sha256": "a27d1df5478c6e6325d57d2ca2b1f0dfd7d943c45f437988c553abaedbde01b1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

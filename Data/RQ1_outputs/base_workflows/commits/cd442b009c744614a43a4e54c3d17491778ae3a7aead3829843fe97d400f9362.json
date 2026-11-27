@@ -1,0 +1,258 @@
+{
+  "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+  "base_sha": "5af9069a9477e69d583aff1a22b0d6b1990f9217",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/bench.yml",
+      "blob_sha": "76c95235581edaf8c206e860e3911b2ec38860d5",
+      "fetch_status": "found",
+      "sha256": "c081a7b79773c0c666b9176c5e148894593faa0decad95f81b79183f36b0b413",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/build-and-test.yml",
+      "blob_sha": "0ec64ba1cb7f92016a8ebabaf65e89f9fa512f26",
+      "fetch_status": "found",
+      "sha256": "e1d7b273d307ee6a5b86bb941ec5c10fc8454a78b79c517b7813938df944df07",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: did not find expected ',' or ']' at line 15 column 27, while parsing a flow sequence at line 15 column 25\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no a"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while parsing a flow sequence\n  in \"<unicode string>\", line 15, column 25:\n            python-version: [${{ env.PYTHON_VERSION_MATRIX }}]\n                            ^ (line: 15)\nexpected ',' or ']', but got '{'\n  in \"<unicode string>\", line 15, column 27:\n            python-version: [${{ env.PYTHON"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "59fef4d4300f56908afa305aa0c87cea9ba7c481",
+      "fetch_status": "found",
+      "sha256": "59d01b60e842cccd3843848af4c4a3ee0c32fe5c9553fb26d8eb00449f97c276",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: did not find expected ',' or ']' at line 34 column 27, while parsing a flow sequence at line 34 column 25\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no a"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while parsing a flow sequence\n  in \"<unicode string>\", line 34, column 25:\n            python-version: [${{ env.PYTHON_VERSION_MATRIX }}]\n                            ^ (line: 34)\nexpected ',' or ']', but got '{'\n  in \"<unicode string>\", line 34, column 27:\n            python-version: [${{ env.PYTHON"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/deploy-kind.yml",
+      "blob_sha": "3943d0ef4084a53ac5e5b5cc1fd0edf2a19ce52f",
+      "fetch_status": "found",
+      "sha256": "9202a3b81a421417569b5685fae26869f8d5c3afd2b110b6fda36e621464a3e7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/loadtest.yml",
+      "blob_sha": "a9a1debfd12668169889d25fd86ffe84d65d4cae",
+      "fetch_status": "found",
+      "sha256": "b8a2a3d996dd081798d113f6d94079be100879b239131ec571906a584a73be97",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/nightly-transfer.yml",
+      "blob_sha": "a6421b7412337b3a8cad79bffe39b34ad76a6cda",
+      "fetch_status": "found",
+      "sha256": "194ad19e7ed94734639c1bc5a406bc7b3d9fff42f2d2682b5586609ef27920ca",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/security.yml",
+      "blob_sha": "319dc81b6f4c8c713df6e2c27270cc5baa3c3d82",
+      "fetch_status": "found",
+      "sha256": "ca8b9e30d77ce28fe8a9c6f58d68c5d22b50b657205a1005bb5be9b53a146b9f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 7,
+            "Z_cache_poisoning": 2,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/size-check.yml",
+      "blob_sha": "665a5f9cbfc340c6fd325716f7458dc4fe964aff",
+      "fetch_status": "found",
+      "sha256": "a93d0ee3999b6de86d72d608712cd5f6bb621f067ce54bc47b70d81dbf1555f6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/smoke.yml",
+      "blob_sha": "340a083de695ef203c524ee6024facda19c7fcc9",
+      "fetch_status": "found",
+      "sha256": "e329c6b4014e0d83220e077746e9621f18612911602a3147528cd8fb3d310c21",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: did not find expected ',' or ']' at line 15 column 27, while parsing a flow sequence at line 15 column 25\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no a"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while parsing a flow sequence\n  in \"<unicode string>\", line 15, column 25:\n            python-version: [${{ env.PYTHON_VERSION_MATRIX }}]\n                            ^ (line: 15)\nexpected ',' or ']', but got '{'\n  in \"<unicode string>\", line 15, column 27:\n            python-version: [${{ env.PYTHON"
+        }
+      }
+    }
+  ]
+}

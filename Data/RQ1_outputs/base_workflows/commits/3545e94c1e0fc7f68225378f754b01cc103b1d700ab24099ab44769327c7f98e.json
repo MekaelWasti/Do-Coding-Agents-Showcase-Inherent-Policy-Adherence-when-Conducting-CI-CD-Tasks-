@@ -1,0 +1,66 @@
+{
+  "repo": "openvanilla/McBopomofo",
+  "base_sha": "caa229abd9058dd1d87f1b51c367059186391e73",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/codeium-pr-agent.yml",
+      "blob_sha": "2b6cdd3fcdbe5ceadabdb4ec24a6f22d7ca1ca9a",
+      "fetch_status": "found",
+      "sha256": "d552d6c7792f9d64eb178cb6f3a9a2390bcf5c4e1d1e7d01eb0b0b2f2d60910c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/continuous-integration-workflow-xcode-latest.yml",
+      "blob_sha": "72b8660604e3df3230702019224652afe87538e1",
+      "fetch_status": "found",
+      "sha256": "e96fa48f73f19071ddc7f355baa49783e3b93b9cc2efa332a96979ba3b2aaba9",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

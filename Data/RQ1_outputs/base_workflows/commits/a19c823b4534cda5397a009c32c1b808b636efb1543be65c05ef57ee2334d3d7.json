@@ -1,0 +1,73 @@
+{
+  "repo": "jaegertracing/spark-dependencies",
+  "base_sha": "a6d0394575c5bf834c6c6a2352c39660fed45364",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yaml",
+      "blob_sha": "ccb562dbb0e1c7ea7bcb81f2de28fd4bac47d029",
+      "fetch_status": "found",
+      "sha256": "f6aa1ddf339a9750164fea0476483331b6966f7646ec6bda3dd03cdc97ce9225",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 5,
+            "Z_unpinned_uses": 12
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 8
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish-image.yaml",
+      "blob_sha": "01d4fbdd0b4ed0370718497ddb25ca6d9b3a7e39",
+      "fetch_status": "found",
+      "sha256": "6c5c264c1dfa2291e1ee4b30a5ac942c305e25038ace192d9db6ff65212bd2c8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 4,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

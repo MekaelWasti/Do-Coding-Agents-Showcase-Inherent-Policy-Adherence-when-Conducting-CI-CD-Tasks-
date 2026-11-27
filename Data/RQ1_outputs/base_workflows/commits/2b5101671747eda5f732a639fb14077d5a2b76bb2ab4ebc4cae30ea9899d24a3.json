@@ -1,0 +1,99 @@
+{
+  "repo": "hackerai-tech/hackerai",
+  "base_sha": "47c837b92ae45e4f9c9e38158dbe59f1a1588f3d",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/desktop-build.yml",
+      "blob_sha": "4551a6d62c5f2accf0f33b5d0bc0f9e017e2ec42",
+      "fetch_status": "found",
+      "sha256": "bf6e8dc0d75210442e85ebabe0d2cd031f341b10ca810417c5908a6e0a899607",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 2,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 16,
+            "Z_cache_poisoning": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/docker-sandbox.yml",
+      "blob_sha": "5c377d0781293e08ba15204bae06c36501158e16",
+      "fetch_status": "found",
+      "sha256": "7913f66d76844c0f1f5fe2f8c3181135218a84aa4f6aa15808dbdedd91add587",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "blob_sha": "0607749ff985d194a24ef0447fb1211cbc09bb13",
+      "fetch_status": "found",
+      "sha256": "e3abba94ccb1ec5bae99effff7211fd461b04e3bfaebcc386f60f65438196fbd",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

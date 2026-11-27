@@ -1,0 +1,75 @@
+{
+  "repo": "tegnike/aituber-kit",
+  "base_sha": "8ace4a961fc74e59a81c2fd2e739d845fac33c5b",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/lint-and-format.yml",
+      "blob_sha": "181756a01b2c97ea5e0d504c0c3342a1d12851f0",
+      "fetch_status": "found",
+      "sha256": "f41ba70184dd264683d2d7535e0f5eddf8b7563a4324025b5f5edca0db9ba2ea",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/locale-updater.yml",
+      "blob_sha": "20dc3550dd64c2077f94eef5fc8f23328696fdf8",
+      "fetch_status": "found",
+      "sha256": "4e10af5e4b6d4c01b8a0831463508cd8cbf68e0c881dacfa824d473f8dc4a9a6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2,
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R5_no_untrusted_in_run": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

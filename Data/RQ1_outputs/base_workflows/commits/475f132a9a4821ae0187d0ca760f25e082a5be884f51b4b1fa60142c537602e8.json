@@ -1,0 +1,72 @@
+{
+  "repo": "asynkron/protoactor-dotnet",
+  "base_sha": "ce092b0701042fbcfb9dff74a051a413912a761c",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build-dev.yml",
+      "blob_sha": "9a640e779bd4920d126651f77408fb5b6ae649fc",
+      "fetch_status": "found",
+      "sha256": "0a2628b39216ef13fcb784cdf9d51124ef1eb31495308afafadd91a9f9999dc7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 12,
+            "Z_cache_poisoning": 3,
+            "Z_unpinned_images": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 3,
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pull-request.yml",
+      "blob_sha": "24d227335c3e5d0d55c6da3bb1b81047146124ff",
+      "fetch_status": "found",
+      "sha256": "ef49738ea79fa9d2fb3ce8b206e81caa85ce326540ef4953a13b54b317033d8e",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: deserializing from YAML containing more than one document is not supported\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable inputs\n  = help: at le"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 3,
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

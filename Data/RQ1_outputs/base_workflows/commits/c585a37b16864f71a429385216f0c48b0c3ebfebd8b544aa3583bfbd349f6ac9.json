@@ -1,0 +1,63 @@
+{
+  "repo": "microsoft/vstest",
+  "base_sha": "91abcb94e216f1a6e8e3e21b387788fdd60c0063",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/AzureDevOps.yml",
+      "blob_sha": "e89a936ff549a90fa5e56a668fe20c52057474b0",
+      "fetch_status": "found",
+      "sha256": "555872d94feb1a70551c09df221cc493a9e17d6a7182f8057302184fdbd43012",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/enable-auto-merge.yml",
+      "blob_sha": "6f9f5979396594bd003a4959eb64c2b2618d1e3e",
+      "fetch_status": "found",
+      "sha256": "2ed35c086b4e4a24d238a214c76dc0bd92bc80c2dbfd901a957391fde9e75aa5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

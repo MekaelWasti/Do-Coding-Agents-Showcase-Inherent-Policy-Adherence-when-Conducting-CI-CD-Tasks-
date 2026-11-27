@@ -1,0 +1,101 @@
+{
+  "repo": "VladimirKhil/SI",
+  "base_sha": "976b1ee8f744be8a3ddd85a52a9472df20e1f36c",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/codeql.yml",
+      "blob_sha": "b841a85e5b0c0fed20bd3831d9208e9c525659f9",
+      "fetch_status": "found",
+      "sha256": "0911d93f917214e20f9249cf5a615744165cb96feb617f35367f44fe49e5abc5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/dotnet.yml",
+      "blob_sha": "d77538e4e293e58dcbf7b1492b5a9b96f4b70aaa",
+      "fetch_status": "found",
+      "sha256": "5ac6dbe6db0b4c63912c2eedc75b4398e9cd44c745064e5ae22340a2ae06b9f8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/siquester-release.yml",
+      "blob_sha": "05ef8338e9692b877b92e9e6a9502d9bc8dfc45d",
+      "fetch_status": "found",
+      "sha256": "aa3fbb8834565cf59b93b13f59e0d8fc01b835fb7d69fcca71bac456dd195904",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 5,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

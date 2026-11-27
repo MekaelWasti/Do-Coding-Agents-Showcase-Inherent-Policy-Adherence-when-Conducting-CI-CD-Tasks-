@@ -1,0 +1,72 @@
+{
+  "repo": "microsoft/apm",
+  "base_sha": "96fd9be4add0cd2886592f7e3f7f0698fd858521",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build-release.yml",
+      "blob_sha": "22a67bf14d63018e587558f0afd2dbf8aff067ce",
+      "fetch_status": "found",
+      "sha256": "28b2e82ae4316627fdb7c89a0275aa505cedc56821b18df90f6dbecd2ad014d2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 3,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 20,
+            "Z_cache_poisoning": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/copilot-setup-steps.yml",
+      "blob_sha": "dcba339ff72b3621548f8eb39fd04a33db67005a",
+      "fetch_status": "found",
+      "sha256": "2b524bdde274951e7caa9e194dbd53f69ceae30a9d573cdcb66d3cd3a7555998",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

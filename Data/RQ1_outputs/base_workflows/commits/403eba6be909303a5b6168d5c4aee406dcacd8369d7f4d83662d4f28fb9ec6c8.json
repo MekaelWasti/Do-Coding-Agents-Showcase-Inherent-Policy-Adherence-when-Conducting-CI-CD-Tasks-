@@ -1,0 +1,40 @@
+{
+  "repo": "Tokisaki-Galaxy/luci-app-tailscale-community",
+  "base_sha": "43af3d7b3ad340ea503c86780121d553a4537431",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "772e0feb881e8333d8700ca5bb5d25c56941b974",
+      "fetch_status": "found",
+      "sha256": "4c4b54b387ab0304a1e39ce51084e2b529863adb967c2192bb3d93c3dc541066",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 7,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

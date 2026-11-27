@@ -1,0 +1,216 @@
+{
+  "repo": "git-truck/git-truck",
+  "base_sha": "896047c0fc24158715179f1006bd104d0578c2ab",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/bump-version-and-publish.yml",
+      "blob_sha": "e23a166b71235f49550b996aee8a8a76e7e9b512",
+      "fetch_status": "found",
+      "sha256": "724646aa369b30be55944d86c01e5c071e97b644d23aca18543ea2b30ce8c0f0",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/check-bun.yml",
+      "blob_sha": "c5272c9d29923761e7a9eaf887d449bc837d4fa4",
+      "fetch_status": "found",
+      "sha256": "8e1b63acdb99f2877c8f4b4341331888425c822dfc0c595d75adfd4489f23ea5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/check-node.yml",
+      "blob_sha": "43b7e463c072fc2f8b399f6987871f0c89c28eb8",
+      "fetch_status": "found",
+      "sha256": "81ce7ac6612bb839a0c36253d3ef94b84a6129ba0fc7bf9480be9c9b8a0f6674",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/demo-gif.yml",
+      "blob_sha": "626fd30653eca16bee4a9854120a6567f91df33e",
+      "fetch_status": "found",
+      "sha256": "150c96d0d6024e4121de02bb728f1d227b5e325c9bf763ea5fdc3478c1155717",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pkg.pr.new.yml",
+      "blob_sha": "f3be83b96f91ab7b1ac4883cee7e47ef5f37bbf0",
+      "fetch_status": "found",
+      "sha256": "85a9bb65d155707ebd99804ccdd8568a21537f106b4f354f17c6c48a18748d88",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: could not find expected ':' at line 97 column 1, while scanning a simple key at line 95 column 5\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable "
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 95, column 5:\n        npx -y https://pkg.pr.new/git-tr ... \n        ^ (line: 95)\ncould not find expected ':'\n  in \"<unicode string>\", line 97, column 1:\n    [View Commit](${commitUrl})`;\n    ^ (line: 97)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/playwright.yml",
+      "blob_sha": "bd336ce13546e03193b1b5e5cb4554311ca239ee",
+      "fetch_status": "found",
+      "sha256": "d979f6704ad171e1b5554de60d5f9d371a958c3882bd829eb6d4d4d8771d4ca5",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to validate file://C:\\Users\\mekae\\AppData\\Local\\Temp\\tmp2htb5gna\\.github\\workflows\\playwright.yml as workflow: input does not match expected validation schema\nfatal: no audit was performed\nerror: no inputs collected\n"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1,
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish-docker-image.yml",
+      "blob_sha": "f08489c65f42b5d975a2ee1cec59999445738296",
+      "fetch_status": "found",
+      "sha256": "8fae5fb99f485cba199411373a48a7839f6cadf1f03d797cf40dc5678b1e8f2d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

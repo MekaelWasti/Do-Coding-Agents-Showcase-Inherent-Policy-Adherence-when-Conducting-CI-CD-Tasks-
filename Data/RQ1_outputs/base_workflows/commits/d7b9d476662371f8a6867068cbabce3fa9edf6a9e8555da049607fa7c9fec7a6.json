@@ -1,0 +1,72 @@
+{
+  "repo": "becheran/mlc",
+  "base_sha": "14a3964325a3279edf896eb426f192fbb5aa3cc4",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/major-release-tag.yml",
+      "blob_sha": "10a9ba1d0f136f5b7558d919420b4672c6ab7be1",
+      "fetch_status": "found",
+      "sha256": "824eac31bcf1bd6965d38826dd185c3b7d64d1140dd3ed74a4f1fe4c418f234d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/rust.yml",
+      "blob_sha": "9c5261848a9d443efd1e4e1d1eb42eef72759bab",
+      "fetch_status": "found",
+      "sha256": "6f9cb478f7dd3877691b888c6317c60a777708babc8324207b3312fa53e97e2a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 7,
+            "Z_excessive_permissions": 9,
+            "Z_unpinned_uses": 28,
+            "Z_cache_poisoning": 7
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 6
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

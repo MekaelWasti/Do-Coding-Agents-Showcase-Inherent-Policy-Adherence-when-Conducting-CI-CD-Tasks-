@@ -1,0 +1,41 @@
+{
+  "repo": "OWASP/www-community",
+  "base_sha": "57ca91bc4da267ba607496631a9f86d5d267576d",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/validate-tools-json.yml",
+      "blob_sha": "f6f34c789f606e147ffef7cf1b689320ce190020",
+      "fetch_status": "found",
+      "sha256": "c9844c73e0c9fcea3026ff033ae8c6023a351467633545a5a421a36be3641ae2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 4,
+            "Z_adhoc_packages": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "repo": "Hacking-the-Cloud/hackingthe.cloud",
+  "base_sha": "c133f353a2c02f09aec184b0a768be4cc7adc6ea",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build_v2.yml",
+      "blob_sha": "456b6c5b5dcd0df6985c2345df697e7ce638becf",
+      "fetch_status": "found",
+      "sha256": "9477360a7b3a46233c417386f3e9c538f8403991b730454f53e939840a5a390e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/deploy_v2.yml",
+      "blob_sha": "01ff89ee6eafbf6259fc4e3a52166b4d7807e3dd",
+      "fetch_status": "found",
+      "sha256": "d996fd441741bc5b9bc1c07948cf954fcaaa9492265cc025dbeea55ef62db258",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/scheduled_merge.yml",
+      "blob_sha": "747ebe5f89ad62d322fbbf391a973485ca6e743f",
+      "fetch_status": "found",
+      "sha256": "3cef64816f8f5f3ccae863302cb3ceeac2cb433c281175be49029a9badcbdff2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 9
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

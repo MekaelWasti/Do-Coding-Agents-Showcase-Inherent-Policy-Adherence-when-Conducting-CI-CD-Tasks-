@@ -1,0 +1,94 @@
+{
+  "repo": "official-pikafish/Pikafish",
+  "base_sha": "1abfe2dad545f6c70a559acf9e4645ed968839e8",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/analyzer.yml",
+      "blob_sha": "d390880090c2d6564135fcf4e18e784c12c3c557",
+      "fetch_status": "found",
+      "sha256": "f4a0d946657da700dffe4ee72b0880af093e2270476332e996d0a743468bc7bf",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 7
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pikafish.yml",
+      "blob_sha": "a793f980b7e1e102879abecced452c070e32ef76",
+      "fetch_status": "found",
+      "sha256": "ecdb20eae255faaf8eff4d3c2805a28d441246976aa08dbb8f12445a663fd5b9",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 5,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 11
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning for the next token\nfound character '\\t' that cannot start any token\n  in \"<unicode string>\", line 77, column 14:\n            with:\t\n                 ^ (line: 77)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/tuning.yml",
+      "blob_sha": "f39e48d39b87a6e0ab3fb2d7beb078723b3a02b2",
+      "fetch_status": "found",
+      "sha256": "081ea9a1e120329eeccbda584c19e90831ce9333450df1fd2b98616b106adb6b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

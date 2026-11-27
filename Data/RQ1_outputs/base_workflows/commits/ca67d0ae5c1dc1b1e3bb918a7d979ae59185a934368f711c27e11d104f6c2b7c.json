@@ -1,0 +1,69 @@
+{
+  "repo": "qpdf/qpdf",
+  "base_sha": "6923f0d44fc04fa5ed99e1a57987b8af7cc96cca",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/cifuzz.yml",
+      "blob_sha": "388028aa30e800d34ff399c031c8c7287dbd9a4c",
+      "fetch_status": "found",
+      "sha256": "3a8f2899c5a26982a84809bf7d426a4bae3b4ec12d0022db12dbeaa90a68996c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/main.yml",
+      "blob_sha": "31bf9a0f20149fbf8f87727abb15e8033f4ca98c",
+      "fetch_status": "found",
+      "sha256": "d214160d01e6350f64f06fa37934eb3222d45cbb459a1ea94abbb2b516b1e8fb",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 10,
+            "Z_excessive_permissions": 12,
+            "Z_unpinned_uses": 20,
+            "Z_misfeature": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

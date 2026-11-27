@@ -1,0 +1,66 @@
+{
+  "repo": "vercel/ncc",
+  "base_sha": "6e554662751ee461f35ee467445568b73682541d",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "ddf3c62441daa1692aea14db3db10dc9ac16cdeb",
+      "fetch_status": "found",
+      "sha256": "f14838d3dbbe2881197b1e78baa2b353c51dc96550b23138b58e724c0c0d0f3f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3,
+            "Z_cache_poisoning": 1,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pr.yml",
+      "blob_sha": "2d9aaa0b33b8e95b11bc9b9a21bb7014ef11d78e",
+      "fetch_status": "found",
+      "sha256": "ac2b6142ac79508d4bb6cb0cc13d2007352ff01c52d3a21115d11a6fc4ac11c0",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_dangerous_triggers": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R3_no_pr_target": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

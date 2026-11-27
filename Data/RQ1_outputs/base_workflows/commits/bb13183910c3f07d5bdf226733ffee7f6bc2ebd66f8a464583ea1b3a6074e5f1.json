@@ -1,0 +1,68 @@
+{
+  "repo": "jvanbuel/flowrs",
+  "base_sha": "30dc18b516f33252ea67067a4014be09139a6922",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/release-plz.yml",
+      "blob_sha": "8515dc4c24125f5bc187610e8094abd904f18dfc",
+      "fetch_status": "found",
+      "sha256": "364c97937b92cac6a206bc1e2f1f8944b7383610a7408009bdfad63be1e0533a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "53cd07ba504bbdcdcd4e9794f6afc7b1c3c7c447",
+      "fetch_status": "found",
+      "sha256": "94e5447bfd65aafc76aac57534e27acd9e016112f0b2e1cec2b113ad61b9ecdc",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 4,
+            "Z_unpinned_uses": 18,
+            "Z_unpinned_images": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "repo": "jd/tenacity",
+  "base_sha": "0bdf1d9e5f42b7179e7aae52cb70d26283a4c5ed",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yaml",
+      "blob_sha": "70d2f465d1712fe10d170467b6b8f59b27b05314",
+      "fetch_status": "found",
+      "sha256": "4af7411298d647569c394cdc924ccbce3328cf208395066c855f2680158e3270",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "2951be41b5c1237ec2ef055928805728dd3baba3",
+      "fetch_status": "found",
+      "sha256": "26a96ba09e868732a3fc739c0087c1e389c982fdcd72b7293e03e37c831af9d9",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

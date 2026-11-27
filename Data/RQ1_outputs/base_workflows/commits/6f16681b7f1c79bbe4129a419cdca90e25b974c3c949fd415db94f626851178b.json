@@ -1,0 +1,127 @@
+{
+  "repo": "Lightning-AI/litgpt",
+  "base_sha": "b3e83b8a22d35f676edcaf51f721f0a2e5f28bfa",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/check-links.yml",
+      "blob_sha": "f61b41aa230cfbdce15dd62cf6050f9c45081a61",
+      "fetch_status": "found",
+      "sha256": "3c9a6702a985651711e3ce8afaadd5c15e8a33b7414169d8e24bae957b3fd73a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/cpu-tests.yml",
+      "blob_sha": "2749026aebbf566a1bf38778b3569eb050612a42",
+      "fetch_status": "found",
+      "sha256": "bdee7f3e27c65a0ccd3abdae86fee76aabb4dd22e5670c84de0cb5f4947e4b41",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 2,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/mkdocs-deploy.yml",
+      "blob_sha": "6c2784e09220f6bc4ac6520e308a2d5ae5d4589a",
+      "fetch_status": "found",
+      "sha256": "f36a29a8ee2eb34e60069c401ccb3d0d4177c7e4a64cf3367ec19b13f9d975e1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish-pkg.yml",
+      "blob_sha": "ee2dab88dc0e41cbe0d001ac92b6802948531df5",
+      "fetch_status": "found",
+      "sha256": "5af999803a73029faa6c77ddff01b1284cdf7ed6fa671a4873687e458bb9aee3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "repo": "plexe-ai/plexe",
+  "base_sha": "c89c224e44287ad945ed8297ce0003458b1346ef",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/integration.yml",
+      "blob_sha": "24854fc36f950ce9aa5a3997f4f58b5fa6a206d5",
+      "fetch_status": "found",
+      "sha256": "9b3a51d9d7ec036a1bca3094c94a0819dc251948c8d5e7c030220539b899178a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_template_injection": 6,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R5_no_untrusted_in_run": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "blob_sha": "9fb35b857d38367d734af978371e8221220352dc",
+      "fetch_status": "found",
+      "sha256": "dec8e1c9a207dc19c8ae5137c2bf14db4e25c17fb019b8b9ef19d61fb3877d18",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/version-check.yml",
+      "blob_sha": "757806cddc80c7f17df7b7165c1e613fb77c1661",
+      "fetch_status": "found",
+      "sha256": "e1082aa60cc33b2eabaae7cec5f977905497268495d68670e0f56a2c34e6bcd2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

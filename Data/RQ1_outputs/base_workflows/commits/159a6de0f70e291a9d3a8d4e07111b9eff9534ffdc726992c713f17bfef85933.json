@@ -1,0 +1,67 @@
+{
+  "repo": "localgpt-app/localgpt",
+  "base_sha": "5ef088423059eef2cb4f1ff876765f70b51b4854",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "468ff80589d6bbb9a42e158a70cd962887113150",
+      "fetch_status": "found",
+      "sha256": "2a27967e4dc8ace37e59f2e741a059cea69f427d00af0ce13a81cb7a89db0224",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 5,
+            "Z_excessive_permissions": 6,
+            "Z_unpinned_uses": 13
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/deploy-website.yml",
+      "blob_sha": "378473f762e47ea641547e30b97503e09e5a7cdf",
+      "fetch_status": "found",
+      "sha256": "a69ccd61dd26ae1b846a2c3f33f4f5dfa968d824545d831237dd143ad36ff7e3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

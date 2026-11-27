@@ -1,0 +1,71 @@
+{
+  "repo": "microsoft/go-sqlcmd",
+  "base_sha": "e31f42fa9c52bdc3e0a537156447342de3cd37ec",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/golangci-lint.yml",
+      "blob_sha": "eb62ae2d828674eecc62cc4c1a69211690a102d7",
+      "fetch_status": "found",
+      "sha256": "ec481a38abcea0c5308bbdb796be52f6c0752ca38c638942dcc199baad03e616",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pr-validation.yml",
+      "blob_sha": "cc719c6ad132e37bff688dd5df14a0d4423c0006",
+      "fetch_status": "found",
+      "sha256": "81bc167a2fb4c04319df0da611674444d50b71372b929a306a6467c427bdc26d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

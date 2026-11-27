@@ -1,0 +1,70 @@
+{
+  "repo": "ika-rwth-aachen/mqtt_client",
+  "base_sha": "0649f996dbef74133945762d9707b832d37bdfa5",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/docker-ros.yml",
+      "blob_sha": "3e32f5c57b6e4440396d427027ac8dea1b52ee89",
+      "fetch_status": "found",
+      "sha256": "f355f387dc62c1e57a8c8ac8dda2c1eefe239f90b987c73d8296ae1d73251eac",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/industrial_ci.yml",
+      "blob_sha": "25bdc5f2de03db3863fc4a3b5bf4fc4c510248fa",
+      "fetch_status": "found",
+      "sha256": "7d929bd46619bbbcb0981af100b1d4405f6514caec4610f9144ce30f98e1249f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

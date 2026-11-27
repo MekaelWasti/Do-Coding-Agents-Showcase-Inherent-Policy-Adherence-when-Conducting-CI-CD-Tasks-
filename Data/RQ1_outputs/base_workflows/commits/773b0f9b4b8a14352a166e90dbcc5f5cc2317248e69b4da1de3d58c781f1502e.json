@@ -1,0 +1,72 @@
+{
+  "repo": "gristlabs/grist-desktop",
+  "base_sha": "58ee5cc9a27e0f1edfdb8e5e8d7445822041f5ee",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "c339ae3740a11bb0f5293c526a515e3696e66438",
+      "fetch_status": "found",
+      "sha256": "e3fe1009c337781dbcd683b23a872051c964291ea0aea642c68084f953e48998",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/package.yml",
+      "blob_sha": "6625fef43bedf285110b48b562ad189d86ee419b",
+      "fetch_status": "found",
+      "sha256": "c18d0c3963ab0469ea494c22d92a0108619a32a2cc4f86a32d6617cf15e70a03",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 8,
+            "Z_cache_poisoning": 2,
+            "Z_adhoc_packages": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

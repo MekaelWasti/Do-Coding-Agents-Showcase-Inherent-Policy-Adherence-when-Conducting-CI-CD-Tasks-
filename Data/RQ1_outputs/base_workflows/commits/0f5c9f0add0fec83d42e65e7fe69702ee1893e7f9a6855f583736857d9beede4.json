@@ -1,0 +1,96 @@
+{
+  "repo": "fsprojects/FSharp.Data",
+  "base_sha": "d00e31bab1baf84ec1c8dbbfc68471d8cb920690",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/pull-requests.yml",
+      "blob_sha": "2163b6ae802c91843cd4c34da843fa09fbc53855",
+      "fetch_status": "found",
+      "sha256": "77211ad2383aa9a4a78ca9ed2ebd2307ab77efa8f476a8cf2484eb186f39227d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 4
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/push-master.yml",
+      "blob_sha": "6584adda1d55bd42a7e6cf36c52d5e49e106aeca",
+      "fetch_status": "found",
+      "sha256": "2ce04ce70a73fca2f1be29198f57b549336d6ababf516fa60688736d01b3b199",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 3
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/repo-assist.lock.yml",
+      "blob_sha": "c1bb13c8f9f4f449650983ee48bdd0de0f9741df",
+      "fetch_status": "found",
+      "sha256": "f0ce8683119949f97151f5088a44054fe1e6664a591e7c4233fb638a04ec6163",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "zizmor scan failed: INFO zizmor: \ud83c\udf08 zizmor v1.30.1\nfatal: no audit was performed\nerror: failed to load file://C:\\Users\\mekae\\AppData\\Local\\Temp\\tmpes3pti8f\\.github\\workflows\\repo-assist.lock.yml as workflow\n  |\n  = help: this typically indicates a bug in zizmor; please report it\n  = help: https://git"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

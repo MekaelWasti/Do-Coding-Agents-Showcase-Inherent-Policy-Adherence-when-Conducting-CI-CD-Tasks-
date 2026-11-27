@@ -1,0 +1,217 @@
+{
+  "repo": "prompt-security/clawsec",
+  "base_sha": "433a9596a601e6403d1fea5bf91e3bc3c865271e",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "4d744ea0e57daca530b5006c7a808ab3932bfa3d",
+      "fetch_status": "found",
+      "sha256": "761f71a08e51f5fb986807c859cea79efb70e4569b0ace48729a98e21dc5e4c4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 7,
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/codeql.yml",
+      "blob_sha": "e5a6f90545a885b4a830b666629bcf420cc3dbf8",
+      "fetch_status": "found",
+      "sha256": "4fea87f8a8d2427dbb30a1d22c4f1332ee3ae90c75035665b12a77941152bdbd",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/community-advisory.yml",
+      "blob_sha": "d199a172f18818b09419b45c73e73d3f0023cbfa",
+      "fetch_status": "found",
+      "sha256": "f1ab9c24f5073a8bbdfb2088118caa0c43217b8270df3d8838e0d6f860ec6cb1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/deploy-pages.yml",
+      "blob_sha": "614c0f493c7d3502275e33c812046ed5726c079b",
+      "fetch_status": "found",
+      "sha256": "802de25b4b08f53f154ea8062489e9b95ea4c077216d7d4763b2458fb8f96bc3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 2,
+            "Z_dangerous_triggers": 1,
+            "Z_github_env": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R4_no_workflow_run": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/poll-nvd-cves.yml",
+      "blob_sha": "85c019d909c8b1a9b9d42c7c4b1b83bf223afcfc",
+      "fetch_status": "found",
+      "sha256": "75817e7af38a81258d69e933a0bda942d8506dbca456fbd141b0b01f64b67394",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/scorecard.yml",
+      "blob_sha": "6eccd39c409e6589b5a56de15da921d5ff59d4fe",
+      "fetch_status": "found",
+      "sha256": "82670faf917cc7cd7c537668bd2d9750c65649c7841390bffaac289648e02eb3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/skill-release.yml",
+      "blob_sha": "f631682a878c7082d28c708df36531eb7d4f0428",
+      "fetch_status": "found",
+      "sha256": "b771bcf714e8dd5a00beae662ff0d63199ed622212b53d9c553496a603bb6ac6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 5,
+            "Z_template_injection": 3,
+            "Z_cache_poisoning": 3,
+            "Z_adhoc_packages": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/wiki-sync.yml",
+      "blob_sha": "8c303d19d43ac899aa07b288206e2211577ad96e",
+      "fetch_status": "found",
+      "sha256": "6d04edef7d3269c565bc9bb630c8bbd022b45ab12600bd5412eb407d7a4d3848",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

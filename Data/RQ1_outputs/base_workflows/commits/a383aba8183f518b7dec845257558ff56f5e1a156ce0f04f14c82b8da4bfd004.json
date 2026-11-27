@@ -1,0 +1,88 @@
+{
+  "repo": "jaegertracing/spark-dependencies",
+  "base_sha": "0bf0ccd969b63b53b6a84c1ea3b82a1ded45d9c6",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yaml",
+      "blob_sha": "7196f33be5c8a37460bcb916977e4cf20a0e5480",
+      "fetch_status": "found",
+      "sha256": "c7ed59b9e45932a20e284e4e93f8526c19a8b5a69a083ef6dff058507759817f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish-image.yaml",
+      "blob_sha": "87983a0c4398087002e35eb2baff155391bf41a6",
+      "fetch_status": "found",
+      "sha256": "6ac2c7f855f93cddd8cc9ce3870df09bcd3238d283bcd7be806e1d23c2bfe01f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/stale.yml",
+      "blob_sha": "2441620133a499efd134672bb94fdf1fa38c7518",
+      "fetch_status": "found",
+      "sha256": "ff0b36dc5a2ff057d283e7bf516c63f16d3f7c91a91361e09a23a9cbbcc19758",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

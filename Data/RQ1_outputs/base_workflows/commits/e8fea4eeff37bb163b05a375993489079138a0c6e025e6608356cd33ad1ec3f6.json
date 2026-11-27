@@ -1,0 +1,100 @@
+{
+  "repo": "vaadin/flow",
+  "base_sha": "de0e0676c1e35acf5163cb7b939d82440b30c5e6",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/check-permissions.yml",
+      "blob_sha": "15ba42f20ed2fbafad1e04de5836e52e90cd0351",
+      "fetch_status": "found",
+      "sha256": "78f219765ab4c7e2471d2c9122636a3d5467112bd98face4a2428ed479f9c089",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/formatter.yml",
+      "blob_sha": "79c4c52008efd6bf5761fb96cf04a7b7dc02b3e1",
+      "fetch_status": "found",
+      "sha256": "393250b0e7e0797b284c8e758d84a25cbf3c32b1d54b63e488afe231b5f50eef",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 2,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/validation.yml",
+      "blob_sha": "ca4c592cf56b7dfefebdb32e3073fcfc807a9150",
+      "fetch_status": "found",
+      "sha256": "4a1665c3dd236f1661c0f55efab4b7b9230a454030e8442b97baa99cbebf3bf3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 5,
+            "Z_dangerous_triggers": 1,
+            "Z_template_injection": 22,
+            "Z_unpinned_uses": 31
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

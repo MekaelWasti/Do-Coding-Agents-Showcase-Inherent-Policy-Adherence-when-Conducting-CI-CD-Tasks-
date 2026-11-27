@@ -1,0 +1,63 @@
+{
+  "repo": "opencloud-eu/desktop",
+  "base_sha": "50b9a4c3d5e5f53087d106d4aaeb83ade890f94d",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/main.yml",
+      "blob_sha": "c0fa31fc66e8a9f2b87e0329d193f2e3f8c8bcf7",
+      "fetch_status": "found",
+      "sha256": "dd4b4bada8e3a6dd7ded1874abb552b2325969e28adf73d9680cab5f2f57d96c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 6,
+            "Z_unpinned_images": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/stale.yml",
+      "blob_sha": "2813f90798525dd05e667e9ef50ec2f38c45c0f6",
+      "fetch_status": "found",
+      "sha256": "b475313886473aace027d0a03729591a2089970f4d9fd1b5c112587f6e5109d2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

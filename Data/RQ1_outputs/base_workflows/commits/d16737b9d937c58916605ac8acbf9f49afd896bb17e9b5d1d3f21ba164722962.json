@@ -1,0 +1,67 @@
+{
+  "repo": "jgamblin/isthisipbad",
+  "base_sha": "a8937e1bd155d33582392121d5b2bafa54baa9ae",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/SuperLinter.yml",
+      "blob_sha": "2a8b35eb2104eebd3a1062b0abd82dcce658d113",
+      "fetch_status": "found",
+      "sha256": "273c057e0442b2dbf83aeae6cd3bfe402b67757b427dd4a519212f7bdda60e83",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/codeql-analysis.yml",
+      "blob_sha": "1e85f4073b66a0d0a70a40434c6202a9623d92d0",
+      "fetch_status": "found",
+      "sha256": "ac95db59f43c2a5c1a6ee4e109ee3d28f70b7ab22dfeed8bb984b7123cbb5711",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

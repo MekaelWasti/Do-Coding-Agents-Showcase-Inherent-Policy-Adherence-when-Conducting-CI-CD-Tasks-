@@ -1,0 +1,67 @@
+{
+  "repo": "nevalang/neva",
+  "base_sha": "6b7d409b79e374e564f9eaf4beaf9d496cd835ad",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/lint.yml",
+      "blob_sha": "ae7d35cc687bf5b5d623cc598fe3a1b971dbc02d",
+      "fetch_status": "found",
+      "sha256": "201b5c0bc888f9ceb8858bffc318ed476eb8107d7111ba107bab2db3e3b703d6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "blob_sha": "f1fda9e16a90f68c7ef8e41b0474697c1a93ac62",
+      "fetch_status": "found",
+      "sha256": "d6f5b6aa2f1a302164facf93b687ec5c868f6795fe0b878b7f259d60913016f2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

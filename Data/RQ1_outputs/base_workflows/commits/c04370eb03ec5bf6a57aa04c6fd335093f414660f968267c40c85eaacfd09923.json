@@ -1,0 +1,153 @@
+{
+  "repo": "Azure-Samples/azure-spring-boot-samples",
+  "base_sha": "96746b7aec1df8c4c4560648432523f4504bb765",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/.linkspector.yml",
+      "blob_sha": "13632f1ccce54454064f2567b71873c49562d0de",
+      "fetch_status": "found",
+      "sha256": "3921a9ac3aea5f8905b5d6bea05f858b68ceb8adabaabc480204bc8a4817fba1",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to validate file://C:\\Users\\mekae\\AppData\\Local\\Temp\\tmpu5kox1mx\\.github\\workflows\\.linkspector.yml as workflow: input does not match expected validation schema\nfatal: no audit was performed\nerror: no inputs collecte"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 5
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "Workflow has no nonempty jobs mapping"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "4a6a114cc659598b7afc168583c5fe9312bac33e",
+      "fetch_status": "found",
+      "sha256": "3070dcb42fcd5bc92adbbbc202ffbae505b40d890d75cea26797da353ecb8c90",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/codeql-analysis.yml",
+      "blob_sha": "f3f86f5ffb103f18bc910ec224b6429cae3407ca",
+      "fetch_status": "found",
+      "sha256": "1acc216e3d5491d016daf6a1bd760e9e1e0dda9d0b1db3dbf2d8fd3eef74a9ca",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/markdown-link-check.yml",
+      "blob_sha": "085c3ea95f4d76e45fb47ff748db461d3161cae4",
+      "fetch_status": "found",
+      "sha256": "4e8751d3a1dbfad9af6e232f71103fad2cd76d2698cf58c7fa0c467c4e8bca70",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/sync-label-from-azsdk-repo.yml",
+      "blob_sha": "6124e11cdb6be6d596232c6ef69ab1ea501841a1",
+      "fetch_status": "found",
+      "sha256": "f3e34caa044187b6a4d21fe2444e80bb2bdda5ce6ddf09a46ccebf4f4e9f3fd9",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

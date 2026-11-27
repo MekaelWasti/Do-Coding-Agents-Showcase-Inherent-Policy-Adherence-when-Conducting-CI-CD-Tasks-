@@ -1,0 +1,147 @@
+{
+  "repo": "hiddify/hiddify-app",
+  "base_sha": "769f6a6114caac231dbcd4228d2a2021caa36528",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/add_signed_microsft.yml",
+      "blob_sha": "1759121b00f8d421e82a58d6ac3001cc3109e653",
+      "fetch_status": "found",
+      "sha256": "da38bab1659d692ed9399b2956565149a816b3c853f6cffec28953e107b5d514",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning for the next token\nfound character '\\t' that cannot start any token\n  in \"<unicode string>\", line 25, column 54:\n     ... ttern: Hiddify-Windows-Setup-x64\t\t# Optional\n                                         ^ (line: 25)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "d19f99f134cf1153feef6a9d8dd47d161d74ccd0",
+      "fetch_status": "found",
+      "sha256": "068e22c01cb5f55ade8b00c5bc52e9aa5185e2a40f61e8f5d05905e406a36593",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 23
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 6,
+            "A_deprecated_commands": 1,
+            "A_runner_label": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R2_no_write_all": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "1711997ff98049a1cba71f5f886b2c9acab2c2df",
+      "fetch_status": "found",
+      "sha256": "d0d048f9a1107a4cec33e7402eaf0106c22a7a4a75616101570b87df6330d8de",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_secrets_inherit": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R2_no_write_all": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "8ad5700fc782700e54d54fe09c09be1dff430760",
+      "fetch_status": "found",
+      "sha256": "cf16bcabb2a1e3bf7e4440d2150b5fc2acb69040c9c27c104c3ed742b8048491",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_secrets_inherit": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R2_no_write_all": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/winget.yml",
+      "blob_sha": "103b439e5171b6c0e7ebc28741c080a89599f3c6",
+      "fetch_status": "found",
+      "sha256": "70b83138aa3ab8ee39f15bd624528d38a144662c84ca7035db079f36a0a659aa",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "repo": "CaviraOSS/PageLM",
+  "base_sha": "d49165585dbd416dd0864ba2fcc54b5c5b121e58",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "4b14477d05bfc8fa7b0fe36ded50c799ac63dc8c",
+      "fetch_status": "found",
+      "sha256": "65ed26b2b59b4408b8d1cd4bf1692770958f48901644b4be7f6aa301a20d87a9",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: mapping values are not allowed in this context at line 81 column 19\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable inputs\n  = help: at least one"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "mapping values are not allowed here\n  in \"<unicode string>\", line 81, column 19:\n            cache-from: type=gha\n                      ^ (line: 81)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/security.yml",
+      "blob_sha": "25ecc5eb195dfb7866d6b84252e81e56475ed875",
+      "fetch_status": "found",
+      "sha256": "2884b73e12d27fe4096a6c3b7404ae3e2c95d33f9a4f5abb5df63e7afefab04c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_unpinned_uses": 7
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

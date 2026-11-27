@@ -1,0 +1,64 @@
+{
+  "repo": "FPSMasterTeam/FPSMaster-Edge",
+  "base_sha": "f9533afd1a38f1fe307403da20ca01374d843a54",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/nightly.yml",
+      "blob_sha": "3f3a472795821068bdd6e49bc4e1452d7567e164",
+      "fetch_status": "found",
+      "sha256": "f5c774d29326f6b43696bd345fccd056735ba29a6cab45add0dd15a17d5d2bf5",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to validate file://C:\\Users\\mekae\\AppData\\Local\\Temp\\tmpk3xtbnpq\\.github\\workflows\\nightly.yml as workflow: input does not match expected validation schema\nfatal: no audit was performed\nerror: no inputs collected\n  |"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "blob_sha": "08f496ad611c01168ee7a66d7f39a23ff49a3afa",
+      "fetch_status": "found",
+      "sha256": "bd892f892caaa9265c1e87877ff203640fdbc4791f52a80c29b38861b4955a69",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

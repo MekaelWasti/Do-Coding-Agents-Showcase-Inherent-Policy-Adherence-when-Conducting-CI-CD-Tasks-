@@ -1,0 +1,87 @@
+{
+  "repo": "chenhg5/cc-connect",
+  "base_sha": "8911d87e95cc7568c4a5bbd6de01edd0e3de9003",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "884d56970f9e8455900d9decd74fc3a3e6cc86d3",
+      "fetch_status": "found",
+      "sha256": "511023561e02d9b268d46f19c3328b6fa421ebcb5cb391bc16ad05018dfeffd5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/issue-reply.yml",
+      "blob_sha": "7414cd5297b96b840afbb23316af66f9c61b721d",
+      "fetch_status": "found",
+      "sha256": "2216e62376ee2c5983f62fca73daa8a64842ffd04ee25512586e4295df1a2b64",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: could not find expected ':' at line 45 column 20, while scanning a simple key at line 39 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 39, column 1:\n    Thanks for your feedback!`;\n    ^ (line: 39)\ncould not find expected ':'\n  in \"<unicode string>\", line 45, column 20:\n                  owner: context.repo.owner,\n                       ^ (line: 45)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/stale.yml",
+      "blob_sha": "b1da6238d35ffb389045a88cf9f92c21682d6232",
+      "fetch_status": "found",
+      "sha256": "141ba798ae255445bb311e06be821cfcbc32f9a70cc1167d0f116fcd79f3cfed",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

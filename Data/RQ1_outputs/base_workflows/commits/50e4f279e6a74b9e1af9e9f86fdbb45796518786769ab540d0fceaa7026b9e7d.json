@@ -1,0 +1,30 @@
+{
+  "repo": "MontrealAI/AGI-Alpha-Agent-v0",
+  "base_sha": "960c2b5ffa428dd725d44560b46a795b1038cd01",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "86b1c3333bfa2def70730aa1d87dbf40001a0db0",
+      "fetch_status": "found",
+      "sha256": "ed22fce3ecd5ea69f1586900c2ef61a20b40d5d9ac414e31c236a4c541f97bd7",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: did not find expected ',' or ']' at line 39 column 27, while parsing a flow sequence at line 39 column 25\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no a"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while parsing a flow sequence\n  in \"<unicode string>\", line 39, column 25:\n            python-version: [${{ env.PYTHON_VERSION_MATRIX }}]\n                            ^ (line: 39)\nexpected ',' or ']', but got '{'\n  in \"<unicode string>\", line 39, column 27:\n            python-version: [${{ env.PYTHON"
+        }
+      }
+    }
+  ]
+}

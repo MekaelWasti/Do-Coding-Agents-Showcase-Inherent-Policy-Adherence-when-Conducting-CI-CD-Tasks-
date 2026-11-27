@@ -1,0 +1,30 @@
+{
+  "repo": "ruvnet/ruflo",
+  "base_sha": "566bd55809b899d6507ade18fb38cc48a32772f8",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "00dcc3853360696a8e9dfd4f0a213edcd2be43ff",
+      "fetch_status": "found",
+      "sha256": "a6c0886b97209c3cccc1e2c0cf5632da02c8722084d5ea9856d32e7dd7215057",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: did not find expected key at line 33 column 11, while parsing a block mapping at line 30 column 9\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while parsing a block mapping\n  in \"<unicode string>\", line 30, column 9:\n          - name: Run security audit\n            ^ (line: 30)\nexpected <block end>, but found '<scalar>'\n  in \"<unicode string>\", line 33, column 11:\n              deno cache --reload src/cli/index.ts\n              ^ (line: 33"
+        }
+      }
+    }
+  ]
+}

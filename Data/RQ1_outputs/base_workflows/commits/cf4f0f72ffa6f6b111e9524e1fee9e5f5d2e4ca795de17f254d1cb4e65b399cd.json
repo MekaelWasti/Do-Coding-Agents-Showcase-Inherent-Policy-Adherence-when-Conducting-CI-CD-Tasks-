@@ -1,0 +1,73 @@
+{
+  "repo": "exa-labs/exa-py",
+  "base_sha": "c004f73553f8a4cbbf825fe2946d71e09b6973f4",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/run_examples.yml",
+      "blob_sha": "ab49de33c3eef7aee4ac1bca86602d4417d1441e",
+      "fetch_status": "found",
+      "sha256": "3df61f178cb09659ce172b49658cfc1c00a54600037d278182523c65ec44f0e6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/run_tests.yml",
+      "blob_sha": "3b12c1f190388ff918685b2c2d6c6cb4e02b1d34",
+      "fetch_status": "found",
+      "sha256": "72a0f02b2766f48a23ba370a9b7077819855d9268407f07dea7f8d34109e1ffe",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 3
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

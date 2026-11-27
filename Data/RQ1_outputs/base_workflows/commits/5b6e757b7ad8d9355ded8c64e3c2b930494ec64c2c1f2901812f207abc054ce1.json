@@ -1,0 +1,260 @@
+{
+  "repo": "alirezarezvani/claude-code-skill-factory",
+  "base_sha": "a69a46cfef4e640ff220708da2cde9ab07a26e05",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/claude-code-review.yml",
+      "blob_sha": "7f62dfd7982295da587a432e53f98296441b7ad2",
+      "fetch_status": "found",
+      "sha256": "40541c6a3093179df414b77efac4917ad1882f5ef291c1f3cf5afd4a70d12468",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R5_no_untrusted_in_run": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/claude.yml",
+      "blob_sha": "45283b2e26b6db799ecc3baf23c9b26943ba5c09",
+      "fetch_status": "found",
+      "sha256": "63fa2ba0005c448000a3577c7c00471aa01c8b03d24b4038b87e47f8ff8a626e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/hierarchy-dashboard.yml",
+      "blob_sha": "1f53477d55ed0e7be575e885021f84a6296f5e79",
+      "fetch_status": "found",
+      "sha256": "97ea099e4061b8d3308a6b68b18c405edc2f5db6c997c733a74904e5467964ff",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: did not find expected alphabetic or numeric character at line 43 column 2, while scanning an alias at line 43 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "found undefined alias '*Last'\n  in \"<unicode string>\", line 43, column 1:\n    **Last Updated**: $(date -u '+%Y ... \n    ^ (line: 43)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/issue-triage.yml",
+      "blob_sha": "eecd1a2b0ff25083463998477c6ec1a4442d2d41",
+      "fetch_status": "found",
+      "sha256": "a2875e8091a652080ab2103ef5f3edb52c01639a41ccee96c6a50c12be0a4b5b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/plan-auto-close.yml",
+      "blob_sha": "c594df2c5fa3ce407e0714fb3bb9e2dc317a587b",
+      "fetch_status": "found",
+      "sha256": "a9d8b82135576e48f907c0d90d14b8812903f8c159c1306e8dae033226e5e4cf",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: could not find expected ':' at line 109 column 1, while scanning a simple key at line 107 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditabl"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 107, column 1:\n    All **$TOTAL tasks** have been c ... \n    ^ (line: 107)\ncould not find expected ':'\n  in \"<unicode string>\", line 109, column 1:\n    ### \ud83d\udcca Completion Summary\n    ^ (line: 109)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/plan-to-tasks.yml",
+      "blob_sha": "ab642d8a0e94271617a3f04e36aa2527a6d27a69",
+      "fetch_status": "found",
+      "sha256": "aad6f1d5a8eaccc69eb4aaafdb7c2cc8f05d1a29eb51e284ec16d9a807c6d966",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: could not find expected ':' at line 43 column 1, while scanning a simple key at line 41 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable "
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 41, column 1:\n    Rate limits too low. Task creati ... \n    ^ (line: 41)\ncould not find expected ':'\n  in \"<unicode string>\", line 43, column 1:\n    **Current**: REST: $core_remaini ... \n    ^ (line: 43)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/plan-validator.yml",
+      "blob_sha": "5beff53d77b08cbdc399509cbef04391da0e32d5",
+      "fetch_status": "found",
+      "sha256": "81c5de17eee08a138f58b7df16a79e943460fe2af72e21d56341cdb2d163bf0f",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: did not find expected alphabetic or numeric character at line 41 column 2, while scanning an alias at line 41 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "found undefined alias '*Tasks'\n  in \"<unicode string>\", line 41, column 1:\n    **Tasks found**: $task_count\n    ^ (line: 41)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/smart-sync.yml",
+      "blob_sha": "7e4f21ad724d218771533d0249fc7690539fae35",
+      "fetch_status": "found",
+      "sha256": "8d0ece452d82fd9135d11f113519bcd05408fac61b04005d945d415d21341a0a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 2,
+            "Z_template_injection": 4,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_events": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/task-to-subtasks.yml",
+      "blob_sha": "290627bfbf8d7b3648d7bfa6a2bbd66b3078f48b",
+      "fetch_status": "found",
+      "sha256": "f113ad23dbed34519b9e3a9e4790f6554bbae3f94834c85d97ac54e33607f9bf",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: could not find expected ':' at line 44 column 1, while scanning a simple key at line 42 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable "
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 42, column 1:\n    Rate limits too low. Subtask cre ... \n    ^ (line: 42)\ncould not find expected ':'\n  in \"<unicode string>\", line 44, column 1:\n    **Current**: REST: $core_remaini ... \n    ^ (line: 44)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/workflow-health.yml",
+      "blob_sha": "a013874fdb18e6c569e8f16d22ca13e6082e2146",
+      "fetch_status": "found",
+      "sha256": "8fb1ebb91f5b5268a3d27625a39ad17e797852ac6def1ddafe894bcc109b247b",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: did not find expected alphabetic or numeric character at line 177 column 2, while scanning an alias at line 177 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collecti"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 177, column 1:\n    **Generated**: $(date -u '+%Y-%m ... \n    ^ (line: 177)\ncould not find expected ':'\n  in \"<unicode string>\", line 179, column 1:\n    ### \ud83d\udcca Rate Limits\n    ^ (line: 179)"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "repo": "cenit-io/cenit",
+  "base_sha": "5a115c38d356a4566874872487fe8c1eff127364",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/docker-publish.yml",
+      "blob_sha": "01dd9bf7d2957c241d9ca68feb97fe39022e2013",
+      "fetch_status": "found",
+      "sha256": "7d261adeaaf4458d1564a875bfa0ec51a13c69f619446c473491c9b3e5ff7336",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/precommit-checks.yml",
+      "blob_sha": "ff630c15035c91b10cdb9d734c03d3f733105111",
+      "fetch_status": "found",
+      "sha256": "10edc1df6574279662a9fc9b61fdd92ffd2243544a729f08803a28ad836f98bd",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

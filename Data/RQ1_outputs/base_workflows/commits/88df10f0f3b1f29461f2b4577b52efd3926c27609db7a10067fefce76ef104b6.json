@@ -1,0 +1,152 @@
+{
+  "repo": "pubkey/rxdb",
+  "base_sha": "cda78eb56bfde4ea19f5b4c58632c9aac9e9c77c",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "58a4f8f474ee7cebd9d5bfb596d49938aa4bd324",
+      "fetch_status": "found",
+      "sha256": "cb9d998783a2c37c5b8d5ca5c9da38f47c638f12751bde0d73da05bf24b92cad",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/cloudflare-pages.yml",
+      "blob_sha": "43aba4beed4bd819546f743d32aab33df8969708",
+      "fetch_status": "found",
+      "sha256": "de5d39b5ae20ea1cb01998ba83d6c667aaa9d8e4eedc274475cd78e330b9a853",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/main.yml",
+      "blob_sha": "8fa19a1a31b481813b782c827faaaf0b7bd50afd",
+      "fetch_status": "found",
+      "sha256": "d046d6262b77184d4e75f79053a63991878d671c2dae7ce1f26dc9222e84105f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 23,
+            "Z_excessive_permissions": 24,
+            "Z_unpinned_uses": 89,
+            "Z_adhoc_packages": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/prevent-commit-to-generated.yml",
+      "blob_sha": "0092f93bbbf9a900e83af7971f8c5aff8fafb144",
+      "fetch_status": "found",
+      "sha256": "318c68c75743400c6a3352b8203f5b57dd5e526f4daaeec331f9e2b9276962c3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "960fe9390320752a4f29308b909a66f2bbcea3e8",
+      "fetch_status": "found",
+      "sha256": "d3fb2be0f4588b895310d2406ca0d367ef7e46f93ecceb1dc9b35f04f840d8e6",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: mapping values are not allowed in this context at line 91 column 40\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable inputs\n  = help: at least one"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "mapping values are not allowed here\n  in \"<unicode string>\", line 91, column 40:\n     ...  run: sed -i 's/^        default: \".*\"/        default: \"${{gith ... \n                                         ^ (line: 91)"
+        }
+      }
+    }
+  ]
+}

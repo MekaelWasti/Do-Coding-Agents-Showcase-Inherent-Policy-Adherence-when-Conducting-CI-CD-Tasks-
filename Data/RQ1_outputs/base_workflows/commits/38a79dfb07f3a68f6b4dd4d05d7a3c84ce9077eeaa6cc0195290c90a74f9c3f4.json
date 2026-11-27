@@ -1,0 +1,69 @@
+{
+  "repo": "team-mirai/policy",
+  "base_sha": "001723b5c83bd49ac8c060aa8b755cbe0e14aca5",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/markdown-link-check.yml",
+      "blob_sha": "ded9ebfe647b2350eb67c6abb989a599f4428c09",
+      "fetch_status": "found",
+      "sha256": "9e5d3939b2d69ed1319e64108307801308203c74a396d68ac009bdfb57a23d61",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/slack-notification-on-merge.yml",
+      "blob_sha": "085a79d9ca92322dc6cde98f9d1aed0d062c1af8",
+      "fetch_status": "found",
+      "sha256": "92c1a67d4f21266cac428f7047e837924fdea1a2f30ce7f357fdc88a6772edcc",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R5_no_untrusted_in_run": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

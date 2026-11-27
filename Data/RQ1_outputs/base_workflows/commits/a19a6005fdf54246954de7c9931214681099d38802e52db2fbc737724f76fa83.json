@@ -1,0 +1,98 @@
+{
+  "repo": "OPCFoundation/UA-.NETStandard",
+  "base_sha": "ca43b642b62b4f721d3273acd4168d376cbd0651",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/buildandtest.yml",
+      "blob_sha": "d8fb8dd935d9cbd7e427f8d5a309a32287ab6598",
+      "fetch_status": "found",
+      "sha256": "2f92e0b0a92b270f8ec0422ced7f78d8d8a7025b61d9c69f3f6a23884ac3a8b2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/codeql-analysis.yml",
+      "blob_sha": "d0195bdb5945bfca82f636f01ba33c27e944f20b",
+      "fetch_status": "found",
+      "sha256": "f32e2f1a473fa8d74b5b792108a3d2d6bfa801f57963901a00ce7ce989264da4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/docker-image.yml",
+      "blob_sha": "85d1bd8833b6d12cd262a160ff7b763acb25e4d4",
+      "fetch_status": "found",
+      "sha256": "dcf52ffbf46787ddad05cbda0a88b757911f2e220a6dca517d264bc2ac1d1120",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 15,
+            "Z_unpinned_uses": 8
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

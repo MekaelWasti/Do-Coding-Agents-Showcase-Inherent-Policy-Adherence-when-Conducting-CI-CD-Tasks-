@@ -1,0 +1,93 @@
+{
+  "repo": "microsoft/fhir-server",
+  "base_sha": "520def57abe2c9d4fe0131f402f3c45f2574c0ec",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/codeql.yml",
+      "blob_sha": "b8f141fc44d2f3545430463dfe7759d69a5c6cac",
+      "fetch_status": "found",
+      "sha256": "1af4f3d28f17a5707d6e5742b5da93713fdc5299f6256457c93f92d98425bdf5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/sync-to-devops.yml",
+      "blob_sha": "a90ca29a84f7fca4131597d45535bbc897474cac",
+      "fetch_status": "found",
+      "sha256": "e0a4950589bdcf95738c38f38d76c3ada38f1c66b9f15e956825b1c02d6b9951",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/validate-prs.yml",
+      "blob_sha": "66f7b89eb340d355953900fc85bccb6b486c2aa5",
+      "fetch_status": "found",
+      "sha256": "a6759a07ec8fc2c6532ac3aae8c0992f1243195f3a284dfc19258e8aae35e9f2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

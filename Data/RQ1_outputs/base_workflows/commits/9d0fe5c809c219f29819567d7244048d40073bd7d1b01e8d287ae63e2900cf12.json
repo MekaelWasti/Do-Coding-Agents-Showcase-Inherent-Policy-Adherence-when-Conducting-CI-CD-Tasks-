@@ -1,0 +1,65 @@
+{
+  "repo": "OpenSalamander/salamander",
+  "base_sha": "1eb9f3cc5d2fd160330b1a87fddf7f197dc73080",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/pr-comments-guard.yml",
+      "blob_sha": "967a8d40c2310f5b7f62b0a35b3ca787eb426dd7",
+      "fetch_status": "found",
+      "sha256": "b0b339aa8cccc7f34e1a6c44ec0de1cf40541f98be30ffa7dc889f908a7db4e4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pr-msbuild.yml",
+      "blob_sha": "5c07d1ad4d7373723ef9aa05422cec8063f3f6e2",
+      "fetch_status": "found",
+      "sha256": "60fa6eb70cc6b059a542d3472eaecb9f7866f8e6357349c99b5d80fdd4e127e6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

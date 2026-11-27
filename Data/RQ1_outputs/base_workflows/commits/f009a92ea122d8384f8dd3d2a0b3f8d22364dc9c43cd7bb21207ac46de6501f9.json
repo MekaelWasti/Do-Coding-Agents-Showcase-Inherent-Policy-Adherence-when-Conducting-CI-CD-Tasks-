@@ -1,0 +1,36 @@
+{
+  "repo": "github/accessibility-scanner",
+  "base_sha": "bdf0e23620cf9272e22e5f9de2524401c828bc5a",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/test.yml",
+      "blob_sha": "a78e07a8ab146fc6d0f388b4e09af60b0dc92475",
+      "fetch_status": "found",
+      "sha256": "db6365c9e7592bb47d6327b93b5cbe04bd6d7638b60e25c5a34236abb3d1aa96",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

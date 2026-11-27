@@ -1,0 +1,66 @@
+{
+  "repo": "RoleModel/turbo-confirm",
+  "base_sha": "679a7beedee8d92a77b246f615c6a2d60e14bc52",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/playwright.yml",
+      "blob_sha": "c18542c7e531eb67367a56cea5cb02c86acbe83a",
+      "fetch_status": "found",
+      "sha256": "7e6d93e07fa09795ac78f163eadedc82c006b089575a03523d124c826cc81631",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release-package.yml",
+      "blob_sha": "3b94c55867790f8e702ed2612676044c94a6009d",
+      "fetch_status": "found",
+      "sha256": "4b067b2cffc23b2d02a65a7551bed9eb9ef542d84e113d541c36788dde777258",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

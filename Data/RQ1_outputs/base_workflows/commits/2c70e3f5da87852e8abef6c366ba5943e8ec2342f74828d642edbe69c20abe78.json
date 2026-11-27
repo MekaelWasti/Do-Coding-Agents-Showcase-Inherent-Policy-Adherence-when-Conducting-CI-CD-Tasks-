@@ -1,0 +1,72 @@
+{
+  "repo": "taffybar/taffybar",
+  "base_sha": "6f559937d4a0c1cd25515bc21882c03d8934113f",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/flakehub-publish-tagged.yml",
+      "blob_sha": "f4e86b30d72272e650da2080e86f935f0175a689",
+      "fetch_status": "found",
+      "sha256": "3696be0093e735eeb5b4611217907a501c4b1b681c77f6d6525a9097ae1f1f9c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/nix.yml",
+      "blob_sha": "b5a4435968740778b5a75a0651703ab6f9e51a6d",
+      "fetch_status": "found",
+      "sha256": "fd451f5fb744208afc24444abb4f7d60b29f432be78c774c1d2b7f84a19cb4d3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 7
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_if_cond": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

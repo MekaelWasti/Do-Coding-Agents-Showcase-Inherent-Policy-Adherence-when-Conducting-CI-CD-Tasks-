@@ -1,0 +1,67 @@
+{
+  "repo": "honestbleeps/Reddit-Enhancement-Suite",
+  "base_sha": "00506709674d3c0dac7721293d9cbf7e8c8c04ee",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/codeql.yml",
+      "blob_sha": "58ffe72010ab09dd3a1aea4f62625c966af8e212",
+      "fetch_status": "found",
+      "sha256": "0f33dd65cea52c150f1c3126863f0df76bcca923c7bd6b346b2b1ac2ad9f0491",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pipeline.yml",
+      "blob_sha": "ba8a6cb54ed4c8e98b5f8f0897b9569a83f44ff8",
+      "fetch_status": "found",
+      "sha256": "f19a143ea27c398079a4923491304c3c9a01a154effe761141b22a4d9874bc2e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 7,
+            "Z_cache_poisoning": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

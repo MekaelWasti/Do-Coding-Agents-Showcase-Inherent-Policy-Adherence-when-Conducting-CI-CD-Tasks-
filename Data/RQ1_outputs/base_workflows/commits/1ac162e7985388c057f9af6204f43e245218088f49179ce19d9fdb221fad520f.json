@@ -1,0 +1,90 @@
+{
+  "repo": "vava-nessa/free-coding-models",
+  "base_sha": "e65b58a1d6b28083c9a669daebb22be6a47f4203",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/discord-issues.yml",
+      "blob_sha": "41024b6a42a5d04f2d717afbd91cd7302dcce6dc",
+      "fetch_status": "found",
+      "sha256": "d5cf8db453b1317712c4f164f75cc9dc1a6a7a32149a04bcc7eb8549f38d5259",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/discord-prs.yml",
+      "blob_sha": "dfb67693c138cdee587291abef50483ccb1656e6",
+      "fetch_status": "found",
+      "sha256": "7915632e8617ffe4938991771f667c4944ca8d4cca4804aae62620c06ad12279",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_dangerous_triggers": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R3_no_pr_target": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "028c5e4b7c9fb9a5da7ddcd93b7ea7906e7900dc",
+      "fetch_status": "found",
+      "sha256": "47a084fb9a6193acd10584c6b31b83c0bac25a717c3e6049e7bfdfb290f1ffe7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

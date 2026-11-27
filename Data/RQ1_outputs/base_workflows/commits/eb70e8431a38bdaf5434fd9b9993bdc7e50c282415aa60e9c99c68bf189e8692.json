@@ -1,0 +1,102 @@
+{
+  "repo": "Project-OSRM/osrm-backend",
+  "base_sha": "e3ff5404d87e0e3292194ca78acb6b5fb8b56551",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/osrm-backend-docker.yml",
+      "blob_sha": "499731f90b735ab69c0b715412ac77c18b8ece56",
+      "fetch_status": "found",
+      "sha256": "ae0b7496b89619ac5c7c311908855ac9c04ab748209b7fa093c126fb12ef56b3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 10
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 10,
+            "A_expression": 6
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/osrm-backend.yml",
+      "blob_sha": "455e1b0eee6dd1eac51334a9af71e91eee4484e5",
+      "fetch_status": "found",
+      "sha256": "bd065473bb2646064b26c39ea5eebd353c29e6c8fd5992e64849a452a6456da6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 6,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 20,
+            "Z_cache_poisoning": 12
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/stale.yml",
+      "blob_sha": "5a31f5f6db224b1153acd207d301cc0f0e83b2ce",
+      "fetch_status": "found",
+      "sha256": "b7512cbcf12084c9582e0086ab1fb65be0d83f03de0ce3629511ab401ff0be68",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

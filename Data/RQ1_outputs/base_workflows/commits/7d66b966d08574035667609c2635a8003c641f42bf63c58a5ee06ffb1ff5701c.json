@@ -1,0 +1,128 @@
+{
+  "repo": "NewFuture/DDNS",
+  "base_sha": "6f5984c5889038d9a08e673f8262625c449ea999",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build-nuitka-docker.yml",
+      "blob_sha": "cfd8f7af4f8c27fd834135eadb390bf8c22dd3ce",
+      "fetch_status": "found",
+      "sha256": "7078963babf5c658fb91250a99ede31692ba7a07fd3f9d6c7c9b430133e7b200",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 4,
+            "Z_unpinned_uses": 13
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "6218d9ab279c514dc39cd9a4bb3467e270c7ca2b",
+      "fetch_status": "found",
+      "sha256": "2a82fc3c54560f6182344e7bb527d20f35db9f052f36e6a389593c00c172490b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 6,
+            "Z_template_injection": 22,
+            "Z_unpinned_uses": 30
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "blob_sha": "1ecb97feb4ffcfc819c3ede8fa19dbf673a61e30",
+      "fetch_status": "found",
+      "sha256": "522bcc0930742954a4b96c4ec75ba8a895a981f7789c08c242748595efacd1d4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 5,
+            "Z_template_injection": 5,
+            "Z_unpinned_uses": 18
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test-install.yml",
+      "blob_sha": "aed2dfb0251a6c85e5c6a9f8a8b6b5363b2416b3",
+      "fetch_status": "found",
+      "sha256": "e39bede945e9b33ca82192247f78f22f85d83be879a441acb7c14188d02f027e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_images": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

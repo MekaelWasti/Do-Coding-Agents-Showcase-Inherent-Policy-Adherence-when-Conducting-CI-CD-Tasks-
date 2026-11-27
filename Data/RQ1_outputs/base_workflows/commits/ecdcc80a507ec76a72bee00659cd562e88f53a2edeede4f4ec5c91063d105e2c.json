@@ -1,0 +1,58 @@
+{
+  "repo": "readthedocs/readthedocs.org",
+  "base_sha": "9f74278faa4f2ba3fb0c6aa0e9a37e3fe8b129a2",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/main.yml",
+      "blob_sha": "3538f40d67a05ae97b62cc54c8d46877e3c7b33a",
+      "fetch_status": "found",
+      "sha256": "6108fbe973e74e46695db4ff22eaf546acacb78462c40221c6f07968c52477bd",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pip-tools.yaml",
+      "blob_sha": "a7730c10d57f9426710408ec0dfe91647775b1a9",
+      "fetch_status": "found",
+      "sha256": "fed04a4fdf3c6390f5de44c7b4a50cc6f4cdc0d15ce49362b18fb81ff4995012",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

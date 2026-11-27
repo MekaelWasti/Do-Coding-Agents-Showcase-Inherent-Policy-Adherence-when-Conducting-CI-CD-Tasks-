@@ -1,0 +1,44 @@
+{
+  "repo": "apache/casbin-gateway",
+  "base_sha": "e0e44147f3915c605cce09a1bb420b020555f247",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "bcdb04a2824cee68a80c326af5ecdb6269527a4f",
+      "fetch_status": "found",
+      "sha256": "be34425b3979d35132a6d04feb4942ad475a0ced7082fdc1d0284bb8334c9d71",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 5,
+            "Z_unpinned_uses": 12,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 11,
+            "A_syntax_check": 1,
+            "A_deprecated_commands": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "repo": "fffaraz/fakessh",
+  "base_sha": "91ba388867711e54a399918c881bb84b8fe251c1",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/docker-image.yml",
+      "blob_sha": "9e25338a966b443297e99d2226d24231e3d828ed",
+      "fetch_status": "found",
+      "sha256": "9807e251c750a46f243f761d854c4a0702fe8585616d7d509109672bf77dfd98",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/go.yml",
+      "blob_sha": "8c240593455fe41ed9038a7358954ec1b0aa4bde",
+      "fetch_status": "found",
+      "sha256": "5721047425f8e9d21efcd9e7ce1ecca1d86a96d6a1e9dff0f7b0589c8836bc01",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

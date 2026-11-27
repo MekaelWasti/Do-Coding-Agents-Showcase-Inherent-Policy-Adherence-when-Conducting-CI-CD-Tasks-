@@ -1,0 +1,40 @@
+{
+  "repo": "replicate/fast-flux-demo",
+  "base_sha": "0332c3447e0f3528955244a349d335b6971c1400",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/deploy.yml",
+      "blob_sha": "08d57e25e01dc470347b19c9d9baff84a7f7c657",
+      "fetch_status": "found",
+      "sha256": "02339fdd943b007fbcd5a69cf65cf1ddf1a193380f6bbdc2d24f8cb76c7f98c4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

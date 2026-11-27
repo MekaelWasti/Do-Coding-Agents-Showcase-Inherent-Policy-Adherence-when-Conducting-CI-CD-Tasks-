@@ -1,0 +1,66 @@
+{
+  "repo": "bytedance/deer-flow",
+  "base_sha": "7e53d6571adb5d95e27c035db795b27eeb76902d",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/backend-unit-tests.yml",
+      "blob_sha": "4c19662f8144b8169fc4b014275d77aea5177b4a",
+      "fetch_status": "found",
+      "sha256": "3ec3ca691154e6844a1e5303f3571e14b7fe99ca9addfcae00174aa5db53a653",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/lint-check.yml",
+      "blob_sha": "13a6f9e51863c820688e51b48214f28028449e8b",
+      "fetch_status": "found",
+      "sha256": "b1ad8bb2de2eebe7c18cfafc24c6599b3763e6b402aab4d7cfa52b9399788c62",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

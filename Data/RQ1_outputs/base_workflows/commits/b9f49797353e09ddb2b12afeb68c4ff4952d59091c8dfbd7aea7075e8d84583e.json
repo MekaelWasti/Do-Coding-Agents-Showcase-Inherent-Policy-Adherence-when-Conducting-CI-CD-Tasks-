@@ -1,0 +1,70 @@
+{
+  "repo": "EvotecIT/PSWriteOffice",
+  "base_sha": "49e96dbd82907939ed49dce894cad6f858ab49e9",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/test-dotnet.yml",
+      "blob_sha": "12aa0f1b31d9efd120f3a18fe2e04e08c6fd5aa3",
+      "fetch_status": "found",
+      "sha256": "cf9f3544edbdfeeca6dd87217e6eccd8982bd4d1b57884ed8deaf214624137a3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 15
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test-powershell.yml",
+      "blob_sha": "54c1d0a6e17d73bd6ccebdfe695bbe5477fbb9d4",
+      "fetch_status": "found",
+      "sha256": "977014f7434174597b08f6e51f58848b5c997567664b13821b32ba543ac140e5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 5,
+            "Z_unpinned_uses": 12
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_if_cond": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

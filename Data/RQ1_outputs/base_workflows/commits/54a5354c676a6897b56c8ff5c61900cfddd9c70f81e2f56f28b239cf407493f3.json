@@ -1,0 +1,70 @@
+{
+  "repo": "dotnet/yarp",
+  "base_sha": "ace364fcdb2d76105c2096083f14579b00858b0f",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/docker_build.yml",
+      "blob_sha": "b8eab3c905e64bcda54a002dde9a5b1076cbcd52",
+      "fetch_status": "found",
+      "sha256": "031c11bffafb40e09559547cba012e71a2c0db24173d294f46be61750efa7271",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 6
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/markdownlint.yml",
+      "blob_sha": "2583e4cf86e1122ec66b7cefc6495daf640dd20c",
+      "fetch_status": "found",
+      "sha256": "9aa8229a0737b2ae5b1ac2b681203d0e3f5c3e349e00896216e46ca2b1755969",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

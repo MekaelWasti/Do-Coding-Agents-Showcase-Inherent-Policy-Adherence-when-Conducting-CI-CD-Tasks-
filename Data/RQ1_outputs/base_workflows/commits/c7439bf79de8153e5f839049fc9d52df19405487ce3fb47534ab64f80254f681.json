@@ -1,0 +1,69 @@
+{
+  "repo": "mochilang/mochi",
+  "base_sha": "fc24d10193bd4bf91722e52bb7e06be648b99996",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/docker-publish.yml",
+      "blob_sha": "fa9bc6d74cc1c4058a461022cf2c14d115f3f50a",
+      "fetch_status": "found",
+      "sha256": "3372a9f4c56548877b186ff92adcba9d819c4d150dd191e0a51ceeb0e6f1a2ee",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "blob_sha": "04fe142a75dfdd875f59be98cb8c6eb0022e4458",
+      "fetch_status": "found",
+      "sha256": "5157904548aa1bda23153cf777714cbd3f342eb9dda6ec96db91eb5cdec51914",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "repo": "rust-lang/flate2-rs",
+  "base_sha": "69ff49449e3a853bf2f90bf3dbdbb705d80c00f5",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/cifuzz.yml",
+      "blob_sha": "fe3fbbca8f969b2918a00dfa24a080c5a84ce9d4",
+      "fetch_status": "found",
+      "sha256": "013476ca2a4938b85e6a300a5e2586595de11a85b25fbd186e69d6850de3cc55",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/main.yml",
+      "blob_sha": "89e9414bb0403abb397088da2130cdcc1205ec96",
+      "fetch_status": "found",
+      "sha256": "0693f3b7f55447cffbf631ad00fa28fef2e7852bdaa074452ab2373bb2292b20",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 6,
+            "Z_excessive_permissions": 7,
+            "Z_unpinned_uses": 7
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

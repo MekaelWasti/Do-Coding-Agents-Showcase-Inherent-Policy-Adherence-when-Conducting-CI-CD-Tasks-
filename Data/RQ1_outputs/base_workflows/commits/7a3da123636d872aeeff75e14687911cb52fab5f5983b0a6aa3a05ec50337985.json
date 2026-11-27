@@ -1,0 +1,110 @@
+{
+  "repo": "epam/Indigo",
+  "base_sha": "dad659b1cab5f543585dab78ae1b245607d5ed92",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/docker-images.yaml",
+      "blob_sha": "10a998ff5859026598ceb482e7c5caaf57c3d605",
+      "fetch_status": "found",
+      "sha256": "6a5452fc3d0adba8f0b4d7299ce689d7e7c61be9332bf464b75e2be8911547ca",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 9
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 9
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/indigo-ci.yaml",
+      "blob_sha": "ca6e5171b8c1f1d32d67ca8122a67c4b8fd7184a",
+      "fetch_status": "found",
+      "sha256": "65142d578b6bd41a77a055b5890c3de13ba0d408bc045d61568a767f204302f7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 32,
+            "Z_excessive_permissions": 36,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 103,
+            "Z_cache_poisoning": 1,
+            "Z_unpinned_images": 11
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 7
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/sonar.yml",
+      "blob_sha": "23b5f905a664530a027d95045cd5bb3f248171d9",
+      "fetch_status": "found",
+      "sha256": "dc854e0ce3df14c0cc50b8258f48efea3686dc9d075dbcdea84595f27b8a4e99",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

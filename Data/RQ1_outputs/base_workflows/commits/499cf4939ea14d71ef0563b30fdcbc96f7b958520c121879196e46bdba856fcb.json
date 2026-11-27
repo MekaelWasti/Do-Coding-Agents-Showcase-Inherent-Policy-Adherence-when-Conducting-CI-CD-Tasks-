@@ -1,0 +1,68 @@
+{
+  "repo": "dotnet/skills",
+  "base_sha": "8f06012483067eee3cc797b2f8fbc1aaf1f246f0",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/evaluation.yml",
+      "blob_sha": "177d8a4153f2973d48941f8c6328db414c0389d7",
+      "fetch_status": "found",
+      "sha256": "2fb5d2264899e065b2e2d28f0ce0baab172e03860d38a5eacbf3ab8a4e233c06",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 2,
+            "Z_template_injection": 10,
+            "Z_unpinned_uses": 12
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/skill-validator.yml",
+      "blob_sha": "2bf6c6d4c78acc5b5c3ce230336d91f871e73ab6",
+      "fetch_status": "found",
+      "sha256": "4cf31b9a8aa7dd209104937e6e0e0a4428bc0c442c7a932c3d31ffa6b1482116",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

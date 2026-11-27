@@ -1,0 +1,67 @@
+{
+  "repo": "microsoft/rushstack",
+  "base_sha": "56c693579d1cca9518580f1eafa705c72a76f102",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "9bb38332fe890e00996575c88de3a77e42b4ba2c",
+      "fetch_status": "found",
+      "sha256": "daefb8422405b2c7370f82c1904b26f7a57389011f5b8854086f690dfa5db756",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/file-doc-tickets.yml",
+      "blob_sha": "544a395a4c546034949c1133c55a326332afc7a9",
+      "fetch_status": "found",
+      "sha256": "59e64ea8156f91bcfc66b03847386ff7d137db11e8a5d2d060bd786bdb52ae5f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

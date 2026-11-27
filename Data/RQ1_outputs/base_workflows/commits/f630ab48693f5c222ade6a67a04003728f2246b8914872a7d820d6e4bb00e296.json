@@ -1,0 +1,111 @@
+{
+  "repo": "cartography-cncf/cartography",
+  "base_sha": "43b82709ad8273609da93f813eae4ee3942a2432",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ossf-scorecard.yml",
+      "blob_sha": "2cac046b6dd0397938a9fcb43f1a3a60f3313a28",
+      "fetch_status": "found",
+      "sha256": "7a1d8e4024d50123f49812d4941fce800d8f59f8e9eb5aa5c3e37b71c9ce4ac7",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish-to-ghcr-and-pypi.yml",
+      "blob_sha": "c9d6bdfa23d615e956573ed0ae4ddcd07f96d405",
+      "fetch_status": "found",
+      "sha256": "2a5b7d7b0cf5569fa3eeb4617f02981fbb622191867967787c35b68a4232d2f1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_template_injection": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/sphinx.yml",
+      "blob_sha": "72ddf492dcbb0e4018869607a49752393ff8339d",
+      "fetch_status": "found",
+      "sha256": "b0acf4c4a117e0c705f22768aab305c1b8486e7d55893efae78f8ef6c0586955",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test_suite.yml",
+      "blob_sha": "8cef33583cb0a7654eb1264403c040bf2d6c2aa2",
+      "fetch_status": "found",
+      "sha256": "65cf7980486bff657933d569de811b3417c488151cc68eb2bd8d513f98b15aa4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

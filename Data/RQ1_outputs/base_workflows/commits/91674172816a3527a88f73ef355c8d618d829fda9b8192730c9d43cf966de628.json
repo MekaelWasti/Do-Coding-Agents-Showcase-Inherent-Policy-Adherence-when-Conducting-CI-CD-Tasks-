@@ -1,0 +1,70 @@
+{
+  "repo": "OpenCloudGaming/OpenNOW",
+  "base_sha": "3d1b71d8fadb29c32e879ecd8cf03fa7dc22a7d0",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/auto-build.yml",
+      "blob_sha": "517bffc6ef27757626a2d7f9a91e2e0f7aed9f68",
+      "fetch_status": "found",
+      "sha256": "6f0c716c6707d4ff465a3ca50f4cc27354450721a3af6b6ce5c4df697d11ec07",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 3
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "152c7cc2ee94176a023c51ac24c4c111b2f1364c",
+      "fetch_status": "found",
+      "sha256": "10324fa3328706c68fff008270181bbbb9b9132fea4312f025566a21c5b8c5d5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_unpinned_uses": 9,
+            "Z_cache_poisoning": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 5
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

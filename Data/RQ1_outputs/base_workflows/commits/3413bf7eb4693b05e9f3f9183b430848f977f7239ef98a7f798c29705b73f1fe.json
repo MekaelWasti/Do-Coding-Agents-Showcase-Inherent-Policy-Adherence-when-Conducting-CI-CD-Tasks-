@@ -1,0 +1,60 @@
+{
+  "repo": "LF-Decentralized-Trust-labs/gitmesh",
+  "base_sha": "d4e77c96895d894ad24cfdbf0101cf0b65fb2496",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/dco.yml",
+      "blob_sha": "89059a40433d16bf75daa0d96d8974b11898719a",
+      "fetch_status": "found",
+      "sha256": "72fc495b10053d4f590852f95d72fcb83c7acd7368ad01ce22d6ea3fc873c976",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/gov-sync.yml",
+      "blob_sha": "f1c04910492243d737ff0a4d1e2c42bb3c34c870",
+      "fetch_status": "found",
+      "sha256": "0132df11492725a59ed47c80099c24663144e3e5522f9c1e2136167c37329646",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: could not find expected ':' at line 82 column 1, while scanning a simple key at line 80 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable "
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 80, column 1:\n    Auto-generated governance update ... \n    ^ (line: 80)\ncould not find expected ':'\n  in \"<unicode string>\", line 82, column 1:\n    Signed-off-by: github-actions[bo ... \n    ^ (line: 82)"
+        }
+      }
+    }
+  ]
+}

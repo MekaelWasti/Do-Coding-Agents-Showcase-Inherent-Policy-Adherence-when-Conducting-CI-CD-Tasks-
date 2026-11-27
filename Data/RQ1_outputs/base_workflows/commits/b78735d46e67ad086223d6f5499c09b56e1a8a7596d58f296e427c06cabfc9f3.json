@@ -1,0 +1,67 @@
+{
+  "repo": "bpmn-miwg/bpmn-miwg-test-suite",
+  "base_sha": "41421a35097dfdafa62b8617b5d1d93517332ee2",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/maven.yml",
+      "blob_sha": "dc56042339f52c730f3498608125f638860f5d79",
+      "fetch_status": "found",
+      "sha256": "f40f32e6453ca50125ae3b512dfb097a124e6c967450ef44a4c70a1df854d76e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "200bfbe3ece76242e0d36ffc69af630aeab35171",
+      "fetch_status": "found",
+      "sha256": "2370c4121735c3ba0c8c9e6b8a1d8777c0010d65606b63032d2d999248611a6a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

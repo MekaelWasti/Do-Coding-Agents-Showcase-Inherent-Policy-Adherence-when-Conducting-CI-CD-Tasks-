@@ -1,0 +1,42 @@
+{
+  "repo": "neondatabase/appdotbuild-agent",
+  "base_sha": "36f890360e28d18ed007c227a444483c4609b010",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build_and_test.yml",
+      "blob_sha": "a4c0c9591525460a8323f827f69596d1be02f329",
+      "fetch_status": "found",
+      "sha256": "9bd881aef215d720e70a2ef8ca87591987810e59b5822f2c3b859d5841a98b3b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 7,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2,
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R5_no_untrusted_in_run": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

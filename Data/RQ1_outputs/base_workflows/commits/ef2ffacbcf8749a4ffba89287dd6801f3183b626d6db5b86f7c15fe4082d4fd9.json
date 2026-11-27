@@ -1,0 +1,73 @@
+{
+  "repo": "FreePeak/db-mcp-server",
+  "base_sha": "740e160b88f5391f6cf95657f1da2fddafbd5b2a",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/go.yml",
+      "blob_sha": "297727d5d04951717d5753e4886c4408477a122f",
+      "fetch_status": "found",
+      "sha256": "8aae3ba2501633f93cb7b8131ecdab7ed589c84b1dfb816305aa59467e2f88ee",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 4
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/npm-publish.yml",
+      "blob_sha": "0d09759f261a6e66e6f64cae0da0fde3800dcfab",
+      "fetch_status": "found",
+      "sha256": "e4506121be2ac4f6a0f4f451a438d6e6774f3118c91e525f100c7661c7febe4d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 6,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "repo": "linkedin/Hoptimator",
+  "base_sha": "94ca7cd980d80c684dce0502571c5e33f875edaa",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/integration-tests.yml",
+      "blob_sha": "76482f7cf1f4120522a9eb86b09dde5500be93f9",
+      "fetch_status": "found",
+      "sha256": "7df74483bd92fac78f4d3f9771a8feba567b746249ce7a1a917d9f07b9a74b58",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "a2f2262d214c05f7e98abf0a8a667fbccba4c672",
+      "fetch_status": "found",
+      "sha256": "2d26832a3ccd2809ab90ab0846edf24a57fb1ceae56eeb0f97970f5bd8679966",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

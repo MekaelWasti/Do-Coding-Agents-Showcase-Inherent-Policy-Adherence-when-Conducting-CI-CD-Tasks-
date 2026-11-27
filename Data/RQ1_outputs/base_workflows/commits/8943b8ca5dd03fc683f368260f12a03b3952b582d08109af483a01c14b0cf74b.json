@@ -1,0 +1,101 @@
+{
+  "repo": "fabriziosalmi/patterns",
+  "base_sha": "ed0c2e736e6f25db0f39794c25d42b8c1a6c7e34",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/test_apache_docker.yml",
+      "blob_sha": "c46c60535368c35646aac3e7db0d2ef39d65265b",
+      "fetch_status": "found",
+      "sha256": "d496b73ee9a87fad8d6f8fa58d210e422bab5caae8acc30327fa5ff52e965c8c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test_nginx.yml",
+      "blob_sha": "90a7bd9ecf1973f43fa0bdccd66df312763a685b",
+      "fetch_status": "found",
+      "sha256": "ab2f26587882757847bfad9757847432c3f13b206629493032c3e233ec373ea4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/update_patterns.yml",
+      "blob_sha": "59d9a298956711deddcd2973239271bce1c98a0a",
+      "fetch_status": "found",
+      "sha256": "0f7b7a2c7688eca7df046570ecd719f1de6c8b8ef6d53d100f8ee3546a5cdb35",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 8
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 3,
+            "A_expression": 4
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

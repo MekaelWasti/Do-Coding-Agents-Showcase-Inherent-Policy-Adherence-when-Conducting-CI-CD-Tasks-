@@ -1,0 +1,94 @@
+{
+  "repo": "pingcap/tidb",
+  "base_sha": "88db26251c71b6be57b3e6748831a0e5427d3e82",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/bazel-build-crossbuild.yml",
+      "blob_sha": "fa7272429e1c55b976518b9d66926f438403b65d",
+      "fetch_status": "found",
+      "sha256": "200d007efe48ceee9d9c90b44b1dae319191c0e8132a855e31470184e2c6aa24",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/integration-test-compile-br.yml",
+      "blob_sha": "2ee3f3c6f1c739703a146a4891ede05750cf4d3d",
+      "fetch_status": "found",
+      "sha256": "a2e3b70cc8191e305cd7c85e01a03d66240b3e853ede8b1d3f028d3bb27a2f10",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_unpinned_uses": 4,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/integration-test-dumpling.yml",
+      "blob_sha": "a131a71abaec685cd2c47c0f81a3eb341566e2dc",
+      "fetch_status": "found",
+      "sha256": "928e5e3c89a786a6048ea23abd1c64a6f866caa54e0b5fe06e1639839eecafe5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1
+          }
+        }
+      }
+    }
+  ]
+}

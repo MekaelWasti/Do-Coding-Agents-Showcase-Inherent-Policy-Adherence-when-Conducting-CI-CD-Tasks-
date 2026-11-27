@@ -1,0 +1,30 @@
+{
+  "repo": "reown-com/reown-docs",
+  "base_sha": "aa6aed172b1a0fab9c797e51aad583ab0077e3a5",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/content-review.yml",
+      "blob_sha": "a97e1f11f09e00190dbd0f39c1b6d88c6f60af9d",
+      "fetch_status": "found",
+      "sha256": "3d248a618f5cf2bafe5f72c214499d24cf0ad90018b9cac73264bfa457fa1d0e",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: did not find expected alphabetic or numeric character at line 55 column 2, while scanning an alias at line 55 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 55, column 1:\n    **Files to review:** ${mdxFiles. ... \n    ^ (line: 55)\ncould not find expected ':'\n  in \"<unicode string>\", line 56, column 1:\n    ${mdxFiles.map(file => `- \\`${fi ... \n    ^ (line: 56)"
+        }
+      }
+    }
+  ]
+}

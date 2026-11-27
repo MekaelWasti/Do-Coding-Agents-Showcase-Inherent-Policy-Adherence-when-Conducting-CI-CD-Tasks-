@@ -1,0 +1,70 @@
+{
+  "repo": "kubeflow/kale",
+  "base_sha": "aa6837aabc788d787f9ad860d03f2ec759ae6b90",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build_backend.yml",
+      "blob_sha": "67aea6bbe973e05272f44717d216b4edb304114f",
+      "fetch_status": "found",
+      "sha256": "78cdfffb6399d1a9aa041951846e24b3eb1a7b54a91471290d031db6c51121c2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 4
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/build_labextension.yml",
+      "blob_sha": "23c3724c0d5aced6390d05e0044e7c4e9909cbb3",
+      "fetch_status": "found",
+      "sha256": "47df29e52d68c5013e247e8f3c479e619ed388a1346b4baa66edc1849eb7d9a4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 8
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

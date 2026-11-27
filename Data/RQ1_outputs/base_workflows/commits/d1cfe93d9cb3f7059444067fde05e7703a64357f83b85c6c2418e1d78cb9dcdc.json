@@ -1,0 +1,93 @@
+{
+  "repo": "stephengpope/thepopebot",
+  "base_sha": "bb25e0790fa07da27c45f6f02b9d919ebe834046",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/claude.yml",
+      "blob_sha": "dc439a5013e7eea619a95e8d2a54920aa07392e6",
+      "fetch_status": "found",
+      "sha256": "46f4690b79a7a02491aec349a108af1f841aa558f8c436f62a5eb3b96c76d3de",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/notify-label-added.yml",
+      "blob_sha": "f6b0b8aff662945a71859c10abeabc12143a60fb",
+      "fetch_status": "found",
+      "sha256": "1b2eb62095d9ab1687386f524a7fef4bad0c98510716c518a22887065361e204",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_template_injection": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish-npm.yml",
+      "blob_sha": "e4abee95a0be09f26acbce5a1fca800142485bf2",
+      "fetch_status": "found",
+      "sha256": "81eaf31f170fdaacfe485903e41569bc76b135aee216ee722c66720fec600d0c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_unpinned_uses": 10,
+            "Z_cache_poisoning": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

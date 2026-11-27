@@ -1,0 +1,71 @@
+{
+  "repo": "resilience4j/resilience4j",
+  "base_sha": "b888e8249e746bcb9b005f3a67326ad6d2dab55c",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/gradle-build.yml",
+      "blob_sha": "947d052d6450b6f6e7aee29bfbc43ef271d79335",
+      "fetch_status": "found",
+      "sha256": "79652a82b392975acae7367c7ca6f45af6ddd723cd8148f28721dbc4e314aebc",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/on-release-tag.yml",
+      "blob_sha": "b164279c34684f8df022c580e230af92e60943d7",
+      "fetch_status": "found",
+      "sha256": "0f62a37f38b469fe1d30ab8f7bc31a8f9ee1998c8b8ecabcfce33f8d38269d22",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

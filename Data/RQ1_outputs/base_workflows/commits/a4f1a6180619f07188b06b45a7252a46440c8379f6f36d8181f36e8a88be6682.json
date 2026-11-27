@@ -1,0 +1,72 @@
+{
+  "repo": "elisescu/tty-share",
+  "base_sha": "e41b9a1b37350b35c0d204ccb56418f3b5f46b87",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/pr_checks.yml",
+      "blob_sha": "de935104ca49ab459f3a4ae464a91a9d8ce7b99c",
+      "fetch_status": "found",
+      "sha256": "5c004b5c756001f5aad0f7af57d3064264f294df1ac4bddd1739575d12dedac5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 3,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 4
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/releases.yml",
+      "blob_sha": "1eb2320752c6f585484f3f7d4b88f9134bd27e32",
+      "fetch_status": "found",
+      "sha256": "dca2780f1aa4eb575c6f02ea1014144cafa5ef648fa8a325fbe3283de510edee",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

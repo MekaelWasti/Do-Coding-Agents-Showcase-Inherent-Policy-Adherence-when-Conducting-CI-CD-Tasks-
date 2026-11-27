@@ -1,0 +1,88 @@
+{
+  "repo": "whitphx/stlite",
+  "base_sha": "2ecb0c72cfc431d3f45b471b0f6301b84640f6e4",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/postbuild.yml",
+      "blob_sha": "75c8f74ff309d50b8a5b2a40fffc10a3ec91b09a",
+      "fetch_status": "found",
+      "sha256": "975fc6e0898d443617edb568c38e0f6dcfbf34825d945ee5f034add893b8cb18",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1,
+            "Z_cache_poisoning": 3,
+            "Z_adhoc_packages": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R4_no_workflow_run": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/spellcheck.yml",
+      "blob_sha": "c764201db08c3e0e04ae0ebddaf6cd1abf8c2984",
+      "fetch_status": "found",
+      "sha256": "a730be963744d2865570a78c4ea0bcada926951f00d794fd185c1db8e5a50d2f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test-build.yml",
+      "blob_sha": "e90ba8ba264e5e779ad47b20ac33b296d7bb08eb",
+      "fetch_status": "found",
+      "sha256": "3b29083f9b1b1bf45b4c9aa2d8de9429b1463c17ba84a7d0eeaef4f92741bd33",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_template_injection": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R5_no_untrusted_in_run": 1,
+            "R9_job_timeouts": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    }
+  ]
+}

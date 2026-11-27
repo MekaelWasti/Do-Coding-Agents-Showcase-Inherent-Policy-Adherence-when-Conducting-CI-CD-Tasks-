@@ -1,0 +1,67 @@
+{
+  "repo": "clawdotnet/openclaw.net",
+  "base_sha": "121f3ce4a4f7c729c4de6201180d03844615653c",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "6ba01e9f0eb134c6e22a7879c011c8de836ec3db",
+      "fetch_status": "found",
+      "sha256": "6aa61056d504f955ac739adbc3f8fa8500bf53a1badc02a642e157796bb4a668",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 5,
+            "Z_excessive_permissions": 5,
+            "Z_unpinned_uses": 22
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/nuget.yml",
+      "blob_sha": "9d85392e18eb2260b847fdc8733ff3c5d38b1ed7",
+      "fetch_status": "found",
+      "sha256": "2cca7e8eaf149a5b945d8d4ceb0a14ed6e8d64d88dd83a75b37166bf13c828fc",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

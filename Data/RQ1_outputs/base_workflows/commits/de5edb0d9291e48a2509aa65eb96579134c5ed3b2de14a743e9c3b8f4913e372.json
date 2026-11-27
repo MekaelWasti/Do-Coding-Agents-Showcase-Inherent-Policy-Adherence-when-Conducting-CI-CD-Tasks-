@@ -1,0 +1,62 @@
+{
+  "repo": "BorysLevytskyi/BitwiseCmd",
+  "base_sha": "43d5d7fa44e986366bba036e368a1c5d63506024",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/manual-bitwisecmdtests.yml",
+      "blob_sha": "113979b5a52547e4c35953bab55cf0c366416c3b",
+      "fetch_status": "found",
+      "sha256": "4be0733d0f21f9971dc3dd6fb5aba62072963b7f8918d18e00593545404727d6",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pr-ci.yml",
+      "blob_sha": "2f096ba29436c4c95b825fe16bf63c6eed690592",
+      "fetch_status": "found",
+      "sha256": "1cd19cad4dd0859e64cf34bbd65123f20cd959e12fd4528cc47357034a5dc544",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

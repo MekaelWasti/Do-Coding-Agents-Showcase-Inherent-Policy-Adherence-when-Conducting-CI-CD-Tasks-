@@ -1,0 +1,341 @@
+{
+  "repo": "ambient-code/agentready",
+  "base_sha": "469ae89f269bec570de2b1a8a1fe2ddfdb346c8d",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/agentready-assessment.yml",
+      "blob_sha": "830eace79b88e145ab38fcd98893b150d961879f",
+      "fetch_status": "found",
+      "sha256": "ccf089c1547558e3f241653d373a34b3110a457b021e555dc23c285760dc2bda",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/claude-code-action.yml",
+      "blob_sha": "c044f788ab600eb71d58cd8794c74bffcd5358d0",
+      "fetch_status": "found",
+      "sha256": "dd60872896054fac9ce3e148def32357cb6c6f773a0c33716df1bfceab3150e0",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/continuous-learning.yml",
+      "blob_sha": "fbed6a9898f9c25d0a9f0d1679cd4ff41b1c7423",
+      "fetch_status": "found",
+      "sha256": "ec7b91b4a8b8614f95f6e1c8d31dc2b1929bd433c9c06f532e49db30d162eff7",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: could not find expected ':' at line 112 column 1, while scanning a simple key at line 110 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditabl"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 110, column 1:\n    Automatically extracted skills f ... \n    ^ (line: 110)\ncould not find expected ':'\n  in \"<unicode string>\", line 112, column 1:\n    \ud83e\udd16 Generated with Claude Code\n    ^ (line: 112)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/docs-lint.yml",
+      "blob_sha": "dd65bf65e1c54653d1889b56f8ee47bd6b0aa29e",
+      "fetch_status": "found",
+      "sha256": "5ffefbda5533c5c296518b30632527b43d296a3157bd39463ce96ef07f01f9bf",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pr-review-auto-fix.yml",
+      "blob_sha": "4ec970c4202a8ed01c1105d2913c002ee86094f3",
+      "fetch_status": "found",
+      "sha256": "79d03783c6db9c966550661f62c3d2e5f2e9565fbf1ac90faae662c0d23f3e62",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 3,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/publish-pypi.yml",
+      "blob_sha": "4995b2be1ea78158f7378c2d8a87b947ce729871",
+      "fetch_status": "found",
+      "sha256": "beaf9e27b506af610565002bc06f6f5d6a8ce7434b4e76f09387f7b000835a1a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "3c80162813c54959aa6affb0c523e587da9f6845",
+      "fetch_status": "found",
+      "sha256": "d632ee6888953548f27db543a499136e1f5fae19a8399c6377c730fd6e8dea3a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/security.yml",
+      "blob_sha": "63859e2a26cfa2ebdfd0947c8db845401c8ce55d",
+      "fetch_status": "found",
+      "sha256": "aac95823ade7c085034e1cb97228dbaa15d0061ca2dbe167a053af634e3271f8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "blob_sha": "bc5e1cb55c2ce414dc01379ab739929a0a9c2db5",
+      "fetch_status": "found",
+      "sha256": "08fe5331ea0251e802f1a70a4bb5fdf26ddd71fbe5b8829895daf9f7046bb8e1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/update-docs.yml",
+      "blob_sha": "cf72c2da50b53ecdf9616db94e31919710f7c6a0",
+      "fetch_status": "found",
+      "sha256": "4add7cf30d7639a70effd5c385769beb7821e7519fea9291a673e8467e8edbe8",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: did not find expected alphabetic or numeric character at line 42 column 2, while scanning an alias at line 42 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection"
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 42, column 1:\n    **Reason**: ${revisionReason}\n    ^ (line: 42)\ncould not find expected ':'\n  in \"<unicode string>\", line 44, column 1:\n    **Triggered by**: @${actor}\n    ^ (line: 44)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/update-leaderboard.yml",
+      "blob_sha": "1e3b010072984bcceaf610184ab9e15307962d7a",
+      "fetch_status": "found",
+      "sha256": "64fccc1ecb4ace38559f2ab52f36beb30e68ef499dc57d2a1389cbac8b8ed9cf",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: could not find expected ':' at line 47 column 1, while scanning a simple key at line 42 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable "
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 42, column 1:\n    Generated from submissions/ dire ... \n    ^ (line: 42)\ncould not find expected ':'\n  in \"<unicode string>\", line 47, column 1:\n    \n    ^ (line: 47)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/validate-leaderboard-submission.yml",
+      "blob_sha": "333304f6167006ed54bdee7d8f0a3d7acf83f7e9",
+      "fetch_status": "found",
+      "sha256": "2ed5ff0758350ea88b59deef8623cc8c4d4be2fb1e0d8c04b9666e54ecbe634e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

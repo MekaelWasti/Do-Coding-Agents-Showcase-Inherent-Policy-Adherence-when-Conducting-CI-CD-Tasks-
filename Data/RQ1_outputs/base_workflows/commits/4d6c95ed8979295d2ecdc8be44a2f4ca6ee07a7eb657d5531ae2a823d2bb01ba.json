@@ -1,0 +1,68 @@
+{
+  "repo": "micro/go-micro",
+  "base_sha": "80345fe63d79d0d6569b44d47fe2ecb3967c70f3",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/tests.yaml",
+      "blob_sha": "b2d1c9ccbeb37a55b7556b6eb8e22620252709d2",
+      "fetch_status": "found",
+      "sha256": "a6861c9c12e79b56dbf4f342d03166a56f11fd5a0cb85205ba2bc1a05609af33",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/website.yml",
+      "blob_sha": "1112674a20f9783d10005c7c60780a6728db0c4e",
+      "fetch_status": "found",
+      "sha256": "da04d0a136e783ff0b163ffb36c683a8271db7a21813030fc12da5546b3026ab",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

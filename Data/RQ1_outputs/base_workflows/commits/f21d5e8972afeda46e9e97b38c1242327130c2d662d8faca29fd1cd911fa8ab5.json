@@ -1,0 +1,73 @@
+{
+  "repo": "superagent-ai/grok-cli",
+  "base_sha": "e763e2f472a56d535e70c283741ff2a0dbe94c79",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/security.yml",
+      "blob_sha": "6c2a15c2797531981494c3e2fc0e957205274cd3",
+      "fetch_status": "found",
+      "sha256": "8cd44b8952ca2171415b484a373a8466a916715aa3445cf6317bde2e25aaf1ff",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/typecheck.yml",
+      "blob_sha": "d182c6e9b5eb671d34956df41e910dd614bb9906",
+      "fetch_status": "found",
+      "sha256": "fe8544f0d2e065e3b3fb8026baa78faa7d4179ab2cb376fdd7e0254d53926323",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "repo": "streamyfin/jellyfin-plugin-streamyfin",
+  "base_sha": "4f04b3207e331f9f58752fda08fd4ca277d674eb",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/lint_pr.yml",
+      "blob_sha": "68e2bd8e5395d3898f9efba4da7d65bf6b07ec60",
+      "fetch_status": "found",
+      "sha256": "ddbce62f302ee350c1995f8cfabee4c6a36e93c20a56f035294939ec4b88bf2d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "cc5dbad3efc90f5d98d6c2a9db734f95ce7b2feb",
+      "fetch_status": "found",
+      "sha256": "700d61d4881c42708352b32bfdd968e8448d7df5ded0571bf76974cdee5da2d8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

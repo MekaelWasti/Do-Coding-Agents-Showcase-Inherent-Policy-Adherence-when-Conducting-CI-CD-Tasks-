@@ -1,0 +1,90 @@
+{
+  "repo": "microsoft/moaw",
+  "base_sha": "ef8b5c4ab75c7e4281b618c8983daced866e0f46",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/deploy.yml",
+      "blob_sha": "d0088b292a5ed986a2f760fca70a2ede9196311b",
+      "fetch_status": "found",
+      "sha256": "787f2a3f52ff586327080ed94abd9af4e38df892949a6bb9116b64e67533d24e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pull-request.yml",
+      "blob_sha": "6071e58bc0b87eaa740702972a2160828a40e4ec",
+      "fetch_status": "found",
+      "sha256": "6b32745ca2b2677508199c5d6996d101c30660342b19b8afc29a408936afff0a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release-cli.yml",
+      "blob_sha": "e1ec7f806f0e764cc6e12f1a9779a40a85c2169f",
+      "fetch_status": "found",
+      "sha256": "cee4f378bf042dd17ec8f5e2c2ecc319a2779bcc150bb0e2f1a584980ab777d2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

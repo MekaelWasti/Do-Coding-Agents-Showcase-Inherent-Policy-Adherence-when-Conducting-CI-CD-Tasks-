@@ -1,0 +1,155 @@
+{
+  "repo": "cncf/toc",
+  "base_sha": "a0bd6587f1bc07ed1b5c79c66c160c0a2858e925",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/check-readme-changes.yml",
+      "blob_sha": "142cefbdfb34c00b42744e4cacbc0d65a1b14187",
+      "fetch_status": "found",
+      "sha256": "143194b28391c828d6893ed10b27e56793d87aa404c765f1fc178c6642245cbd",
+      "scan": {
+        "zizmor": {
+          "status": "error",
+          "error": "INFO zizmor: \ud83c\udf08 zizmor v1.30.1\n WARN collect_inputs: zizmor::registry::input: failed to parse input: could not find expected ':' at line 61 column 1, while scanning a simple key at line 59 column 1\nfatal: no audit was performed\nerror: no inputs collected\n  |\n  = help: collection yielded no auditable "
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_syntax_check": 1
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning a simple key\n  in \"<unicode string>\", line 59, column 1:\n    ${filesList}\n    ^ (line: 59)\ncould not find expected ':'\n  in \"<unicode string>\", line 61, column 1:\n    These README files are auto-gene ... \n    ^ (line: 61)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/create-tech-review.yml",
+      "blob_sha": "83f6d9210984011670e4b99cc5009146177a2169",
+      "fetch_status": "found",
+      "sha256": "b33f3642264ca1e37f667b116fef3744e0166fff4ae8ef368efb39c2e4e17638",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/labeler.yaml",
+      "blob_sha": "6125404029ebc0dd5c6c24ecafb5e5ba016f0e5e",
+      "fetch_status": "found",
+      "sha256": "d8f5b41ce2f32a47cfb222bcc009ffdce0da27f21beb6dcaef7bf77b1724fbeb",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/tags_yaml_branch_pr_processing.yaml",
+      "blob_sha": "c1d521b3fc8f708cb772fb7b44841d599bc0e8f4",
+      "fetch_status": "found",
+      "sha256": "103631969c65cfa317dd479e3883adac03b07ec77be77c5735ee46a4557c1f41",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1,
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R5_no_untrusted_in_run": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/tags_yaml_fork_pr_processing.yaml",
+      "blob_sha": "4b57c27b35d6b06243fe90b2187c14f376af7fef",
+      "fetch_status": "found",
+      "sha256": "6fd33901ffaae7b1947737760898e086b9392063b374dbb63160016f7d4a7aae",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

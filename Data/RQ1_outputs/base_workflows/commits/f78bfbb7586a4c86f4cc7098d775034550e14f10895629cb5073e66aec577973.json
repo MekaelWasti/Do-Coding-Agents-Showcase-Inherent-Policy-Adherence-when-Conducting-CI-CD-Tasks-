@@ -1,0 +1,89 @@
+{
+  "repo": "microsoft/mcp-dotnet-samples",
+  "base_sha": "80d4b935dcfd6474afa09ee436ddbd69d9400643",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build-awesome-copilot.yaml",
+      "blob_sha": "7f30b91ac24a55e54d7b36b2de97c55d2c477354",
+      "fetch_status": "found",
+      "sha256": "3545a33535245737bbc7810b3c4c6516839cae325d46e679e7abc259da522340",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_secrets_inherit": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/build-container.yaml",
+      "blob_sha": "983d254372ff8eb69137c053bcc4006d5e3348ec",
+      "fetch_status": "found",
+      "sha256": "7565e5cf4172f9f382b6c69f36718de580024dea8e3a71495a22a447b9e614cd",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 9,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/build.yaml",
+      "blob_sha": "d9db74e40d552b090e6cb2be15f76ab5954b2c82",
+      "fetch_status": "found",
+      "sha256": "d5738588531fb54e0f5fa417f07b9cab9949857433dc4b354294ed077429e54d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_secrets_inherit": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

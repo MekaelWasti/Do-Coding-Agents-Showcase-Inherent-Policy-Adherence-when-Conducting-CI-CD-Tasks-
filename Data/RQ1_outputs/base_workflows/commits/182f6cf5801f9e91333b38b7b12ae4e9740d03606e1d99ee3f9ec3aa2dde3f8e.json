@@ -1,0 +1,100 @@
+{
+  "repo": "marcelscruz/public-apis",
+  "base_sha": "8a811715b989b0318daefb03a1b6832d28ec7e51",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/broken-link-checker.yml",
+      "blob_sha": "b1215afbd1b7c388b4fbfe6a07e6188e5144a1bd",
+      "fetch_status": "found",
+      "sha256": "d1a8a6bd6481a363ad8718ccd5851ce0ce91c919ddfbc8745da013bcd8a16895",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pr-review-automation.yml",
+      "blob_sha": "7eda5e4e006ecd40dd27159e8e5a741c39a07598",
+      "fetch_status": "found",
+      "sha256": "bfb651c639b87cb7f6a9e8d9a22223d0d7a729c7d1e486904b5225a68dd9903a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 2,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/update-db.yml",
+      "blob_sha": "26adca436ef851e5c6e0dc006957785315f11eeb",
+      "fetch_status": "found",
+      "sha256": "170cd27e4e760bb3fda35c87ef042b8d393b22b49cd5760a9c2427c13132ce0f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

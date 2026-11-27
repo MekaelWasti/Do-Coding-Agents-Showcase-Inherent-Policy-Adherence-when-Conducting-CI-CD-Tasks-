@@ -1,0 +1,67 @@
+{
+  "repo": "CJackHwang/ds2api",
+  "base_sha": "9f91da403fbfba58f6afd19805e4607fe17f9dd0",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/quality-gates.yml",
+      "blob_sha": "3d7c9a1090ac072d19680bb0e447063df6966c05",
+      "fetch_status": "found",
+      "sha256": "c8a79afb9f9d694faba69a8ce4cac3aa3cdd7ecc1984464b50aac90cf6b467cb",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release-artifacts.yml",
+      "blob_sha": "3293fb809f6a5b0edf42486badab7d425c4faca3",
+      "fetch_status": "found",
+      "sha256": "02b0a453adae0ff84a3c1f284a6a75e19cf096bc8221a0e3819ba952e4dc12fb",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 7,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "repo": "owtf/owtf",
+  "base_sha": "ed7d2229f95ad004d308bb82c17ef7fcfe993405",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/main.yml",
+      "blob_sha": "5bf8ae27532cfe3fb65828b6a79cacbdfde4574d",
+      "fetch_status": "found",
+      "sha256": "45dc5f06d8c8b74c839b3ec08328ef445f3e0abfffc478153805a136d780867b",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 5,
+            "Z_unpinned_uses": 10,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

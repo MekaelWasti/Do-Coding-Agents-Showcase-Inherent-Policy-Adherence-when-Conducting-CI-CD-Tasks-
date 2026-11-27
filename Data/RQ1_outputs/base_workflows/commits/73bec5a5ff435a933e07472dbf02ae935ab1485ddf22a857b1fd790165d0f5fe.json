@@ -1,0 +1,68 @@
+{
+  "repo": "tinyobjloader/tinyobjloader",
+  "base_sha": "8a3f8b92d18309e00911bf5cf5e465cfe4eaa1b1",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/cron.yml",
+      "blob_sha": "77d39d3c34cf8fc1a2d6c3afe30b3e6458ce6a8e",
+      "fetch_status": "found",
+      "sha256": "f3c262b6032a04edb9ff4aea28ee82a6d3a73ec4fd00703f2bd11a90800c86b4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/wheels.yml",
+      "blob_sha": "b37104a2c51f34667887301dcee4a581399ad0a6",
+      "fetch_status": "found",
+      "sha256": "d0fbf4f56c091b94ebb75632c531637ed03a6cba11ff2886d56d12345ccd74de",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_unpinned_uses": 10
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1,
+            "A_job_needs": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

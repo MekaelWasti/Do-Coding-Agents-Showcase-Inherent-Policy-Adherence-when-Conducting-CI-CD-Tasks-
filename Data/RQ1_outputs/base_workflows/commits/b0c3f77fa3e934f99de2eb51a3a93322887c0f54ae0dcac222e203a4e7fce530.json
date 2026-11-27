@@ -1,0 +1,97 @@
+{
+  "repo": "frappe/frappe-ui",
+  "base_sha": "7193ee66309d5217bbebad4974805dd2203cc827",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/publish.yml",
+      "blob_sha": "96462c1a2aafeb1b143517ce3d4673d2caaf0702",
+      "fetch_status": "found",
+      "sha256": "41200a7f6449eadfdde06785eb1ba090b9fc9d8d7ef0b8405971f5d956d7c876",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/site-deploy.yml",
+      "blob_sha": "60910b59b46e5b7fd46f37df6c059fd31e5f9bf8",
+      "fetch_status": "found",
+      "sha256": "ea1edd9428faf46133fe5200046dc7629e1cb95ed79a7cd4042931e0eb915938",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/vitest.yml",
+      "blob_sha": "b90ebc8586ba2534794d6685c17055f7c6cb2aa8",
+      "fetch_status": "found",
+      "sha256": "2cebc7c24b3195c9232753f1c3a6150aca3a532c257b2bac12c4945eda1d0abc",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

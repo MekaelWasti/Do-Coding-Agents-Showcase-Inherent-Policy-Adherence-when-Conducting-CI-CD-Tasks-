@@ -1,0 +1,42 @@
+{
+  "repo": "shanselman/cert-inspector",
+  "base_sha": "f47c26c3e91cad20073bdc0edf4b3ed7469ed0f1",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "71f67fa222769c9d12b028577e7ae072ab2e2a0e",
+      "fetch_status": "found",
+      "sha256": "61b6f705af3ba8c996018c6502cfb8c824390be2477fc032be9e6c0f8ac4f538",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 2,
+            "Z_unpinned_uses": 5,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

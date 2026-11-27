@@ -1,0 +1,98 @@
+{
+  "repo": "juliusknorr/nextcloud-docker-dev",
+  "base_sha": "7b9d9bc00b8e4fb35aea91f8ae0206b013e5b766",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/docker.yml",
+      "blob_sha": "f9b47ec3112a91c7c0da82b68f6166698c026029",
+      "fetch_status": "found",
+      "sha256": "3ee083fbf5b60cd25c062a541628c522013e64ee63954b65ca5b5652ab7c7e51",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 9,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/docs.yml",
+      "blob_sha": "f461f73cdf3a95a37a6d49304f0cd7f016c94fd1",
+      "fetch_status": "found",
+      "sha256": "d631edefb1786615ca3b8c5d4f61450288133b4ddf2a6b72cfa39c1410e8a76e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/shellcheck.yml",
+      "blob_sha": "a3f7c8f239e2e4a21843352c6814c72cf8da9ede",
+      "fetch_status": "found",
+      "sha256": "fd7f784e52ff9b16d3dc15cc8976e004fc204c2ece3851d8db7e14f0a4880ceb",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

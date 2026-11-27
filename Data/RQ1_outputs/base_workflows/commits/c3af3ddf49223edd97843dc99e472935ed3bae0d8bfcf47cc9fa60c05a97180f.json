@@ -1,0 +1,148 @@
+{
+  "repo": "microsoft/testfx",
+  "base_sha": "65f8636524b4ffd6f7a6cd842714645f46905136",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/AzureDevOps.yml",
+      "blob_sha": "d497856f1ef6e3bf4c4e2a89f138b93b740781aa",
+      "fetch_status": "found",
+      "sha256": "5bd23a5fbdd3a84a50152c62106ed404acbe94ac18b416f15b37b9b9fdf5a7b1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/backport-base.yml",
+      "blob_sha": "5941ec39fbc13d2022dcced6d01507077041ed86",
+      "fetch_status": "found",
+      "sha256": "4f736429435dc88e748f949d3327bb5f87e8414afb22b35397055e7218c15d5e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/backport.yml",
+      "blob_sha": "8fbe4558db854d750f1272d61e39f2a02012e0b3",
+      "fetch_status": "found",
+      "sha256": "4a39951ec1fe601a15dfdb918ac0bed0d9d4ea711e574b1ad09533a8bee88d7a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1,
+            "Z_secrets_inherit": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/enable-auto-merge.yml",
+      "blob_sha": "ee51e9904af8ecdaa6c19c36f6a0dd1abc8d5ef2",
+      "fetch_status": "found",
+      "sha256": "198a1a3f166ac31976c90aabfef93aea45bc2a5353f98d5fd69c480e95e2764c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/markdownlint.yml",
+      "blob_sha": "91eb19ad4c935679107106a3fe5402d1e4278ab2",
+      "fetch_status": "found",
+      "sha256": "c66ddbbce11a512cbd9a17162fbf54194ae7e93a794f538c0c6cd90b39420939",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

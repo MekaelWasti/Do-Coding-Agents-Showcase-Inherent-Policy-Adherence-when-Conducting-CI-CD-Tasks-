@@ -1,0 +1,69 @@
+{
+  "repo": "tegnike/aituber-kit",
+  "base_sha": "51f5f5b26499c0758368231b8c7674190945f8f2",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/lint-and-format.yml",
+      "blob_sha": "181756a01b2c97ea5e0d504c0c3342a1d12851f0",
+      "fetch_status": "found",
+      "sha256": "f41ba70184dd264683d2d7535e0f5eddf8b7563a4324025b5f5edca0db9ba2ea",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/locale-updater.yml",
+      "blob_sha": "803f8d4d48583cbd53bd4587f9778ea5b0e8b8b1",
+      "fetch_status": "found",
+      "sha256": "c5924af44e810c21e86b7dddd94ee842d8d6cbe37ca86990dc7cf656f5762158",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

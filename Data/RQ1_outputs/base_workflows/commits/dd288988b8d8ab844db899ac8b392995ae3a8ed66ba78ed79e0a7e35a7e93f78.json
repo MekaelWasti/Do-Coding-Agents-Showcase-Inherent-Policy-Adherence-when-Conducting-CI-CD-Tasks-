@@ -1,0 +1,69 @@
+{
+  "repo": "AbsaOSS/spline",
+  "base_sha": "91967598d9bf096792aea020ad505825a8ef2a6e",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/add-issue-to-project.yml",
+      "blob_sha": "6499f110ecb2f57f4954e913eff2e1f8115cdef0",
+      "fetch_status": "found",
+      "sha256": "8a198d76f9929867d8f1403bd96a995f79ca921640fe3091dc540c20a87dd2a8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/ci-check-jacoco.yml",
+      "blob_sha": "31463ec8840c3bfa61824a01f75f75cded0ed3bc",
+      "fetch_status": "found",
+      "sha256": "e2304c34d2d6a52ad064a5c923a9a8d209175f967d236f7e34a64cceba1c5f0f",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

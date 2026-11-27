@@ -1,0 +1,66 @@
+{
+  "repo": "OpenBikeControl/bikecontrol",
+  "base_sha": "eea1b8eb402afd2bd44b7cdbc72bd6929dca5c70",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "blob_sha": "3d4f907c607f40d2efa319f167669e33ef9eb70f",
+      "fetch_status": "found",
+      "sha256": "3f60a9e98e0f62671656e6754ce780e3384f6ae134a4b8f3de2c43f184e12b91",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 2,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 13
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "error",
+          "error": "more indented follow up line than first in a block scalar\n  in \"<unicode string>\", line 198, column 11:\n              $source = \"C:\\Windows\\System32\"\n              ^ (line: 198)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/web.yml",
+      "blob_sha": "a88f0c2eddba252a5deaec6510a920cc0314a876",
+      "fetch_status": "found",
+      "sha256": "030c4641ffa6a3411ece2cbf1083e66041821b50462d9282fa7108d77e231827",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

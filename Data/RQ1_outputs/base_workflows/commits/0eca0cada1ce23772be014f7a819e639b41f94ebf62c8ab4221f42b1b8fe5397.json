@@ -1,0 +1,65 @@
+{
+  "repo": "cncf/sandbox",
+  "base_sha": "523664335d67db5f7bf425c8c7f26907686c2168",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/onboarding-monitor.yml",
+      "blob_sha": "1c769f529aeb8f644c114889fc01bfea06d0e66a",
+      "fetch_status": "found",
+      "sha256": "0ea86639234aab08d6df7664fda8809b9f04ae44754fa12764d88616a61c773d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/vote-monitor.yml",
+      "blob_sha": "f0bac7897ec68b54629ff94dda80220a80ed7c66",
+      "fetch_status": "found",
+      "sha256": "c0bb8c0e1b29da3fb4c427a3890a51e2f6409cc72b05ded4df934edf2764dbab",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

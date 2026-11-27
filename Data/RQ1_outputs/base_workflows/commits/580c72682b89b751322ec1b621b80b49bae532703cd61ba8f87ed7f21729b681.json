@@ -1,0 +1,85 @@
+{
+  "repo": "eggjs/egg",
+  "base_sha": "49a701feed34042bcdf20c9a80c38282d0a021e0",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "75ead46c056152019c54dfa6f1d2bc23cb8ad0e7",
+      "fetch_status": "found",
+      "sha256": "4661933a804452cd241cee548b42ca0d9744a25960d1a703e2f110fdbebfa930",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/cleanup-cache.yml",
+      "blob_sha": "7d3a42ee5daf58b8c91721938780341a6f79cbfb",
+      "fetch_status": "found",
+      "sha256": "2db5f22928101d208a60c009f3dcd4a200136dd6c76bf94dbb27db8b6c82931c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "b46a95d2e98c309e16a10f37c8e9c03d39f28204",
+      "fetch_status": "found",
+      "sha256": "a968e73dc8c90ee9ff13670a748813b60ac8802f91e70e9fc1bfa92fd7da2b9c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 25,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

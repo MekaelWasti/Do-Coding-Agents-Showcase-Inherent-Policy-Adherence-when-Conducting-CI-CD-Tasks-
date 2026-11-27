@@ -1,0 +1,65 @@
+{
+  "repo": "tektoncd/pipelines-as-code",
+  "base_sha": "d3c9611d9f676b95a0daf5313d214e4134c7578c",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/container.yaml",
+      "blob_sha": "0cd7d47624307bab2405a97eaf104d5d32ed45eb",
+      "fetch_status": "found",
+      "sha256": "1fbb75b9231718908e10f33b12c7d92bc850f5136c5fa2a0a8f7118287a88680",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 5
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/e2e.yaml",
+      "blob_sha": "63e299064ddd52eafc2064ed220fc998ada5329d",
+      "fetch_status": "found",
+      "sha256": "d4d78a429f5b5a1300f07a7c43f0997039db493c8d96d79530cba2ca508658b2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 3,
+            "Z_dangerous_triggers": 1,
+            "Z_github_env": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R3_no_pr_target": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "repo": "t0sche/cvss-bt",
+  "base_sha": "a7636c2df02d62ccf389c1427813fe217d27ae7a",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/cvss-bt.yml",
+      "blob_sha": "b3bde4b5a09e4dc0d284b0fc53c827fd944361e9",
+      "fetch_status": "found",
+      "sha256": "a67abe5c3b0140904b6256d12f94aa86886209e7cd78451a263e90d15a918251",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_dangerous_triggers": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2,
+            "A_deprecated_commands": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R4_no_workflow_run": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/epss.yml",
+      "blob_sha": "689ea981c4b7863f7d5bce7e5df79de6488c5b8c",
+      "fetch_status": "found",
+      "sha256": "d5b1bd117590593328129782b2cb8683d58020e8c576d00e6c3d6417f82db636",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

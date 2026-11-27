@@ -1,0 +1,122 @@
+{
+  "repo": "habitat-sh/habitat",
+  "base_sha": "6d0578cef0966d3ef1ad2ccb357a331c34346316",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci-main-pull-request-stub.yml",
+      "blob_sha": "93d95d88ecfa32d425038a0870c48592da09ba35",
+      "fetch_status": "found",
+      "sha256": "07c4e9c5085fcd9c4410695a2ba09edb337a0f9fafc7675b07b8004998f355d8",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1,
+            "Z_secrets_inherit": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/codeql.yml",
+      "blob_sha": "f893a4062dc03d6e22f16c8c7f39a8221d8cedf2",
+      "fetch_status": "found",
+      "sha256": "fd09f5bbb9bda7aa84170eb17e28741136131e0079df2972226151541a071ddf",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/labler.yml",
+      "blob_sha": "d3c6d01eb67cbed7a48233a07b0486cd6ec4a40e",
+      "fetch_status": "found",
+      "sha256": "0478080df84fa49028c76f325a6191f64318c6c859dd4cd39b536a39b622f049",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/rust-cargo-audit-check.yml",
+      "blob_sha": "582b1ee9f4b254405a7e9804d11d3d8490b61851",
+      "fetch_status": "found",
+      "sha256": "3b33cfce06c1d7046800cc14eeeff8d803bff8c313041872282da4ef3fdc6ac2",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

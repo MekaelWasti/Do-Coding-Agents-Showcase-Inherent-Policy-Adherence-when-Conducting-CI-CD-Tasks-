@@ -1,0 +1,63 @@
+{
+  "repo": "elastic/terraform-provider-elasticstack",
+  "base_sha": "c0bd3290a1cf76a856e8d43c25b9e89f78561369",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/copilot-setup-steps.yml",
+      "blob_sha": "800f414bec327876426d326922b00bee6d129e24",
+      "fetch_status": "found",
+      "sha256": "644db42bc5addf8d7798b75b634db8e34058818b503c4e108ca1b6901919008c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "blob_sha": "51c8d2c79fc3768afa35a82efd01418d8218dcf6",
+      "fetch_status": "found",
+      "sha256": "237cebb6a331a11b03e99001257d56652c51f0474f9d3eb71063dd6641ebceed",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_unpinned_images": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

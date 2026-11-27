@@ -1,0 +1,70 @@
+{
+  "repo": "rust-cross/cargo-zigbuild",
+  "base_sha": "b059f4acbefa7d5e0c625d551bea69ff266df577",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/CI.yml",
+      "blob_sha": "8bc6567e22061000a9a82ea35b951e5e0a3527a7",
+      "fetch_status": "found",
+      "sha256": "e82b3301d0d377025cc73168f80a2b5f6d8331511f64da2b401ec972933ee826",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 5,
+            "Z_excessive_permissions": 6,
+            "Z_unpinned_uses": 15
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/Release.yml",
+      "blob_sha": "ac361f7d27fbcedd4049270cd0989fb9cb14301b",
+      "fetch_status": "found",
+      "sha256": "aa650f294e624cd1297b56db241f93be057c1688618071aaf6124fbaa9027bcc",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 6,
+            "Z_template_injection": 3,
+            "Z_unpinned_uses": 27,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "repo": "linkdotnet/Blog",
+  "base_sha": "c0dd5f2a34327d770aeeccabbfbda526d2e4279c",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/codeql.yml",
+      "blob_sha": "23ec5820f4c1344ac65d5ef96362ec3377dd7236",
+      "fetch_status": "found",
+      "sha256": "7b16ea3477b71dc73780734c87221360e72ed27cf33b4efb88dd5244b7f826f4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_unpinned_uses": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/dotnet.yml",
+      "blob_sha": "26b83ce334c0c89002060887db1625029bf927c7",
+      "fetch_status": "found",
+      "sha256": "b71a9649fcf2f19e4db96a7e9a2c5d1efd2e2b2d1c3c9f8ed9d9400e8edafac1",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    }
+  ]
+}

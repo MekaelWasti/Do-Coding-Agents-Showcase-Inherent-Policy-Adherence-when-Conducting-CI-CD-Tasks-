@@ -1,0 +1,67 @@
+{
+  "repo": "firetix/vibe-coding-penetration-tester",
+  "base_sha": "8adf5218c5b9ed35efaf5ea907b86160a2323ad4",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/nightly-e2e.yml",
+      "blob_sha": "507dbc11eb2bcad79682fe3351199688102a5b13",
+      "fetch_status": "found",
+      "sha256": "e5a018fdfb9b030f0fee2c78b7600035aea13d8ab826b88404fde7b3d2000903",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/pr-tests.yml",
+      "blob_sha": "b550f10fe1d5727d79312535164340f370838912",
+      "fetch_status": "found",
+      "sha256": "9766048be65e1c962384f801a32465988804f366824676a5e40c870e53052868",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

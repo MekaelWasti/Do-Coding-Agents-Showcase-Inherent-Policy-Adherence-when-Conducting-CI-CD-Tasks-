@@ -1,0 +1,216 @@
+{
+  "repo": "turbot/steampipe",
+  "base_sha": "4e84c293481c950cfb44b1dcd265debba404dfb2",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/01-steampipe-release.yaml",
+      "blob_sha": "8e3d77bf45cba36b8f5cd675c369b1bf808ebeec",
+      "fetch_status": "found",
+      "sha256": "74f139884a41c9a10a8172bcc7616277142ec590b9db24502cd652da650a9e2d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 6,
+            "Z_excessive_permissions": 7,
+            "Z_template_injection": 13,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/02-steampipe-db-image-build.yaml",
+      "blob_sha": "54cffcb752346b8cd8a06d588e471a193bf09b69",
+      "fetch_status": "found",
+      "sha256": "3a03cb00e831476661c9a98ce732c5740224bca63867d1ebdf6332c833a7227d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/10-test-lint.yaml",
+      "blob_sha": "ac417c355d837deede6441e7bbe1a4981eca241f",
+      "fetch_status": "found",
+      "sha256": "629e7a6d40d9f4a89806cb023d102a36fe10a4e154376785c8de780b76b2c1e5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 1,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/11-test-acceptance.yaml",
+      "blob_sha": "e1d061776bdccdbcfe3a38870060c62eea8141e5",
+      "fetch_status": "found",
+      "sha256": "30a87eb83a0ea2a56f8535a4ada2b45a6e0d011a3fbfdff4fc2e6fd05a5c80c0",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_excessive_permissions": 4,
+            "Z_cache_poisoning": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_matrix": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1,
+            "R11_no_continue_on_error": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/12-test-post-release-linux-distros.yaml",
+      "blob_sha": "478caef62ddad95462bb1d479b8773cec26a1371",
+      "fetch_status": "found",
+      "sha256": "b35292a99ce60b27a42f3980215b77b4483488b469ed6e5c7246bb0b3f4b1355",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 5,
+            "Z_excessive_permissions": 7,
+            "Z_template_injection": 8
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/30-stale.yaml",
+      "blob_sha": "dbbe1cd00f234e9dccca5e43b626f599c9ac97b8",
+      "fetch_status": "found",
+      "sha256": "06a9f446786b4423492171386558a3bdfc7f76101b5da1b15ec2fc630b364c8c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/31-add-issues-to-pipeling-issue-tracker.yaml",
+      "blob_sha": "594defeac65218981cf24193fa874c83779323f7",
+      "fetch_status": "found",
+      "sha256": "c5eb52b380228fb623b3b146fe5ff3d6cd04ebcf286f024a13e72241de4c2475",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1,
+            "Z_secrets_inherit": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

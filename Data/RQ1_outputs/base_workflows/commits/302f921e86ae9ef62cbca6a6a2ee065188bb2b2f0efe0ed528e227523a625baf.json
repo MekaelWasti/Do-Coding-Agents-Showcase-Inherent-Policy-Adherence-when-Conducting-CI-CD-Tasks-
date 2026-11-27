@@ -1,0 +1,95 @@
+{
+  "repo": "NullPointerDepressiveDisorder/MiddleDrag",
+  "base_sha": "2355a1e6d20a08b2fddbcfa69a15113dcf04394d",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/objective-c-xcode.yml",
+      "blob_sha": "098f84a77b257177e7d6849c36cfc67a188ded2f",
+      "fetch_status": "found",
+      "sha256": "42367805841443c951d5504956cd3317c60c12ea1846a79dd7ec2dff1cb407e5",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "1115c7319dc5049a3660562ab91b28f2e2b67f1f",
+      "fetch_status": "found",
+      "sha256": "8502dfdcc7b597d3737aa84ada55b430c041ab59a279dfa0fc1e9270f5fb3836",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 4,
+            "Z_unpinned_uses": 5,
+            "Z_cache_poisoning": 1,
+            "Z_github_app": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/update-homebrew.yml",
+      "blob_sha": "3a2e74a2c9acefcd94e2b5d8df551bc717d8e40e",
+      "fetch_status": "found",
+      "sha256": "63fcda5b58e996f200bad7de07b7925ec1775367fe39e13936d85895e6ed1c5e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_template_injection": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

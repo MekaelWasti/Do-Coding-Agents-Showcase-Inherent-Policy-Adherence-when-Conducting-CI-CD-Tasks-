@@ -1,0 +1,66 @@
+{
+  "repo": "odvcencio/gotreesitter",
+  "base_sha": "e7d18e2cb2ee1edb5fe208a33bc6711a8c6e0be5",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob_sha": "ce08d0577c97621db2912bd8bb8367f29d6367d8",
+      "fetch_status": "found",
+      "sha256": "85619463c87a4c1cef50d69cb4fa73d6fd44651494cf0faaaefb3e76f84ec93d",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 5,
+            "Z_excessive_permissions": 6,
+            "Z_unpinned_uses": 12
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/grammar-lock-update.yml",
+      "blob_sha": "a8c7c943440469cbdf7d64e0d609be563a0f3306",
+      "fetch_status": "found",
+      "sha256": "47ee399ac9b1ffa90e66b68d46338c8080f0dbc279ebd83d3489fcdd39790dc3",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

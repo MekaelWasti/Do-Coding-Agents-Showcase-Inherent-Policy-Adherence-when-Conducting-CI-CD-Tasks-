@@ -1,0 +1,122 @@
+{
+  "repo": "microsoft/Foundry-Local",
+  "base_sha": "658e729fb3519c4202bfbe7ce8e262b27f83922f",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/build-cs-steps.yml",
+      "blob_sha": "b0f78f2248536c7753011b352625418a21ad5c54",
+      "fetch_status": "found",
+      "sha256": "7401b6f6bfda5467d715eefecbaa282faf6d87885c6277f026f611887c277403",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 5,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/build-js-steps.yml",
+      "blob_sha": "d56eb4378fed1bffd723f7b14be831573c1fb444",
+      "fetch_status": "found",
+      "sha256": "6909886d25bf94b770d58fa5141502d7fa450c3885e14e0e5caa6d3b2e89c161",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 5,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/foundry-local-sdk-build.yml",
+      "blob_sha": "1190ac90368fde497a100455665d78808d0b34ac",
+      "fetch_status": "found",
+      "sha256": "5d0c5a76dd8582817cc874601b7d40102c0ad61968578fc3c69dc6cefe76e12c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_secrets_inherit": 6
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/rustfmt.yml",
+      "blob_sha": "28e61acc546da8528d7e964254c2cbb9b45e35c8",
+      "fetch_status": "found",
+      "sha256": "3744fd5fbc3d3483e92842d9d412b4b0944c7420b244783ff5c186069b756935",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

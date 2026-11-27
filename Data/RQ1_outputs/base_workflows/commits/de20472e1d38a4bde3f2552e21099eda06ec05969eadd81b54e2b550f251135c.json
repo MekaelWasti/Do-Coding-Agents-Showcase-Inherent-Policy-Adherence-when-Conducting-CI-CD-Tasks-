@@ -1,0 +1,102 @@
+{
+  "repo": "Labs64/GuideChimp",
+  "base_sha": "737528d1ae4369f0677365f3440fc740ce3f3497",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/guidechimp-ci.yml",
+      "blob_sha": "1898b00aeaf431deeb629bea7f6d463302328697",
+      "fetch_status": "found",
+      "sha256": "fc64aa910612f024369397ac8491ddbd7797d3830136cea70d80077e4d2b682c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/guidechimp-codeql-analysis.yml",
+      "blob_sha": "5434e37dfe15c2776b71679447a6b0744f0f0ef5",
+      "fetch_status": "found",
+      "sha256": "dcacf6cf8b603345a5dc7c4a8ea68d6a76a03612b3bbc0eb667365de59f21ea4",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 4
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/guidechimp-release.yml",
+      "blob_sha": "191295964fbd10929f1dd003dae5140c86b4f74b",
+      "fetch_status": "found",
+      "sha256": "9dc048c0cf5f03fac330fdcf2b2dda29a83d09cb2da560dc51e7eea6d750bd0a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 4,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 3
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

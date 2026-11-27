@@ -1,0 +1,156 @@
+{
+  "repo": "LayerZero-Labs/devtools",
+  "base_sha": "1596719f4728ea0616a3d852e69afadf64565d68",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/on-develop.yaml",
+      "blob_sha": "110fb5ee9b93d432483a104f2bb9a87068ffe284",
+      "fetch_status": "found",
+      "sha256": "5d9916065d8532690d952755f372856e0fe056fd5bb3f3d9a3fdc28a5aa183fa",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 1,
+            "Z_secrets_inherit": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/on-main.yaml",
+      "blob_sha": "bc8764b21be58f434e96a13f75bf731b28e4bcb5",
+      "fetch_status": "found",
+      "sha256": "5ec76f422122a7dda432aa4bb4796eacc1933098647b5d921e2c05be651f4396",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 3,
+            "Z_secrets_inherit": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R9_job_timeouts": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/reusable-publish-docker.yaml",
+      "blob_sha": "93e25ad08b506c119ffc35c4dd139ec56ae5c4a2",
+      "fetch_status": "found",
+      "sha256": "0c0c4b4fde3ed3e8cb45b39051246ac29f8bc9c24c7d61bbb86a7754696c1c9e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 12,
+            "Z_excessive_permissions": 7,
+            "Z_unpinned_uses": 12
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 24
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/reusable-publish.yaml",
+      "blob_sha": "3ad9d0a95d570e160425c8f1325e0c08e91e90e7",
+      "fetch_status": "found",
+      "sha256": "7e99fa48da8e52704dafdee0978a786a6d2e7b03a9ea210bd0baa6608d1798a9",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/reusable-test.yaml",
+      "blob_sha": "c853597fcdb9367c1d0a5c82e548069d614994ea",
+      "fetch_status": "found",
+      "sha256": "79706f966e848b7ee4db2bea5ee284a282a5167e3c76d168cff05e0658739d45",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 3,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 7
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_runner_label": 6
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

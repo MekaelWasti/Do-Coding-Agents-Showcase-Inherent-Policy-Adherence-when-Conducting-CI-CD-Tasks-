@@ -1,0 +1,157 @@
+{
+  "repo": "Hack23/cia",
+  "base_sha": "813eaef738ed6ff89b04c574e1b605bc320e484f",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/codeql-analysis.yml",
+      "blob_sha": "3145fcf9ecb856c0dca330e9430ed97eeeedacd0",
+      "fetch_status": "found",
+      "sha256": "1b6796e7d152afa52c1eaae27ab323efde49b14b6665704339646e7538b60803",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/dependency-review.yml",
+      "blob_sha": "827736c3ac9621458987f7b685f47e6453e6c5ef",
+      "fetch_status": "found",
+      "sha256": "6a8508f40fa570bd476751a2925de2febdf9d4bc6579b43a439d3a1ee2aa2a0a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/labeler.yml",
+      "blob_sha": "224904d38c77fdc53da754e842d1e49d7ef79bd5",
+      "fetch_status": "found",
+      "sha256": "2b5f3c2594a1b0a599ca9ba12cb6b47a23affa26fdcdde70fdf82718856ff7e9",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "836105c504d738b814d7c6be1fb5fc47cc9ab31a",
+      "fetch_status": "found",
+      "sha256": "027581787b2321d131fcfe3d96655e64697f958411df74321af9438c370365ab",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_template_injection": 5,
+            "Z_unpinned_uses": 1,
+            "Z_cache_poisoning": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "error",
+          "error": "while scanning for the next token\nfound character '\\t' that cannot start any token\n  in \"<unicode string>\", line 118, column 137:\n     ... }\" -Pall-modules versions:commit\t\n                                         ^ (line: 118)"
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/scorecards.yml",
+      "blob_sha": "28e2308b239ed7978c629c9bd8e52930f0016e2e",
+      "fetch_status": "found",
+      "sha256": "b644fa0ebc783aa33e6b46f7da33a0a1096ac97b5dc49246a5cb92da9008cb86",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/zap-scan.yml",
+      "blob_sha": "0c94887d0e920eb9d65217770f8c8e58b8bc99c6",
+      "fetch_status": "found",
+      "sha256": "28295a4ccdfcfebf9b2b3351b6bce3087c3ba6539585be7059119d0022a7d568",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

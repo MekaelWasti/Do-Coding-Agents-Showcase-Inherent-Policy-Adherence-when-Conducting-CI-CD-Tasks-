@@ -1,0 +1,70 @@
+{
+  "repo": "OpnForm/OpnForm",
+  "base_sha": "75c77932f34f314e227e63798cdf8ac9eb5e77f5",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/ci-cd.yml",
+      "blob_sha": "6376aff95e2a62d6a10922394a8083a5e15f964f",
+      "fetch_status": "found",
+      "sha256": "e4a55fc2a1184ad1d6395ddc347b9d499978583a35d7693f45246238a09508ff",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 7,
+            "Z_excessive_permissions": 7,
+            "Z_unpinned_uses": 24,
+            "Z_cache_poisoning": 8
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/discord-notifications.yml",
+      "blob_sha": "89b92828d91a22c289c72c0a81bca6e8fc070d43",
+      "fetch_status": "found",
+      "sha256": "76fbdae02fb3538f48016b946dacefd92df853370680f0c4da3bc583684c4f98",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_excessive_permissions": 5,
+            "Z_template_injection": 4,
+            "Z_unpinned_uses": 4
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

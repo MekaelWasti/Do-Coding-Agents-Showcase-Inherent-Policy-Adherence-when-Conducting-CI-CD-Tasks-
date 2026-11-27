@@ -1,0 +1,100 @@
+{
+  "repo": "WordPress/blueprints",
+  "base_sha": "e80551c65283c72ccef9bc1062bab09a91de653a",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/has-valid-blueprint-json.yml",
+      "blob_sha": "d435cc1c25dd448edd8f9f957c94f7b1bf3e2ab8",
+      "fetch_status": "found",
+      "sha256": "a338b2adcd91f3d1018401cc2c71c818d8b724b0d58fff5d4cb7a1934c2d3f77",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 1
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/postprocess.yml",
+      "blob_sha": "68f9b05b3429187bc7310c63d8842705515ae374",
+      "fetch_status": "found",
+      "sha256": "ef87eaebfbbf36262f73e2ae99efb93c57922418aec812f917df5f2906736d57",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_excessive_permissions": 1,
+            "Z_unpinned_uses": 3,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_action": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/preview-comment.yml",
+      "blob_sha": "111362715ea38f38336afaf83b7c3348907fd58a",
+      "fetch_status": "found",
+      "sha256": "85eb5892b151600f4708a603c18033f02deb6302d2ebaedeb1e396ed6b131089",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_dangerous_triggers": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R3_no_pr_target": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

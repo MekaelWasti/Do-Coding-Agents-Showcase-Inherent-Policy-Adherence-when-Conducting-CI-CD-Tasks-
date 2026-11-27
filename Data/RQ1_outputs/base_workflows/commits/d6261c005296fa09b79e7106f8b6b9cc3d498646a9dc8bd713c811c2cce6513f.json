@@ -1,0 +1,64 @@
+{
+  "repo": "semantic-release/gitlab",
+  "base_sha": "dc0f9810ca0e7044e6bec7d924adeb79adeef762",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "33a1ef9f0bf4d0aca7da46fa811ecba843dc71d1",
+      "fetch_status": "found",
+      "sha256": "9eacc052bfd1e20dbf69b727dc9c467ff1ce9998a76773ad26e38225027b589e",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "blob_sha": "e8b9216fead60b0374d91d5f48591c7fab0c3659",
+      "fetch_status": "found",
+      "sha256": "72a5dc889265d5a095c331acf1113619324e6b5641e1b98818eacb3cc9183fd0",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 2,
+            "Z_excessive_permissions": 3
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {
+            "A_expression": 2
+          }
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R1_permissions_declared": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}

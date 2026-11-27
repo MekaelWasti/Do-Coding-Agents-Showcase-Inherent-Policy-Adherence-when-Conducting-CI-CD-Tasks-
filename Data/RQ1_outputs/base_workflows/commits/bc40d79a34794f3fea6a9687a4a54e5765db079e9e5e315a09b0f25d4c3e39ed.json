@@ -1,0 +1,70 @@
+{
+  "repo": "autobrr/netronome",
+  "base_sha": "cb4aab3ae2af7050ea7d090b932b80018e873583",
+  "revision": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": ".github/workflows/claude.yml",
+      "blob_sha": "8862ed318530c9eca06b73a09f5d403fbaad4a30",
+      "fetch_status": "found",
+      "sha256": "b09c0107fdd19c13fa9f61f9564551f5d29e9b5e3ce132aff225b382cf3ff22a",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 1,
+            "Z_unpinned_uses": 2
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob_sha": "87b2fceefc2d0ab94ca320cc6bee6ac1c945f282",
+      "fetch_status": "found",
+      "sha256": "1bc6f77c6e788ff8628fdb8a095c5d17a955f30c2ab4b5202e52df610327bb5c",
+      "scan": {
+        "zizmor": {
+          "status": "analyzed",
+          "rules": {
+            "Z_artipacked": 4,
+            "Z_excessive_permissions": 2,
+            "Z_template_injection": 2,
+            "Z_unpinned_uses": 26,
+            "Z_cache_poisoning": 5,
+            "Z_adhoc_packages": 1
+          }
+        },
+        "actionlint": {
+          "status": "analyzed",
+          "rules": {}
+        },
+        "custom": {
+          "status": "analyzed",
+          "rules": {
+            "R6_third_party_sha_pinned": 1,
+            "R7_all_actions_sha_pinned": 1,
+            "R8_checkout_no_persist_creds": 1,
+            "R9_job_timeouts": 1,
+            "R10_concurrency": 1
+          }
+        }
+      }
+    }
+  ]
+}
