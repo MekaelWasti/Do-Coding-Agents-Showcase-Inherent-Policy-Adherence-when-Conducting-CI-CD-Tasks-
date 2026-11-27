@@ -4,9 +4,9 @@ Research code for analyzing security and correctness changes in agent-attributed
 
 ## Code
 
-- [Research Question 1: Analyzing Static Analyses on Agent-Associated PRs](Experiments/RQ1)
-- [Research Question 2: File-Associative Analysis on Agent-Edit Behaviour](Experiments/RQ2_3) (Cells 1-29)
-- [Research Question 3: Categorical Analysis on Agent-Edit Behaviour](Experiments/RQ2_3) (Cells 30-40)
+- [Research Question 1: Analyzing Static Analyses on Agent-Associated PRs](Experiments/RQ1.ipynb)
+- [Research Question 2: File-Associative Analysis on Agent-Edit Behaviour](Experiments/RQ2_3.ipynb) (Cells 1-29)
+- [Research Question 3: Categorical Analysis on Agent-Edit Behaviour](Experiments/RQ2_3.ipynb) (Cells 30-40)
 
 ## Dataset
 
