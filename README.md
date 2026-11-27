@@ -1,20 +1,13 @@
 # Do Coding Agents Showcase Inherent Policy Adherence when Conducting CI-CD Tasks? An Agentic-PR based-Explorative Study
 
-Research code for assessing security and correctness changes in agent-attributed GitHub Actions workflow edits. The current pipeline compares historical before/after workflow files using zizmor, actionlint, literal custom rules, and relative change checks.
-
-Scanner findings are candidate policy signals, not proof of policy adoption, agent exposure, or an actual exploit. This repository does not currently evaluate agents executing natural-language agentic workflows.
+Research code for analyzing security and correctness changes in agent-attributed GitHub Actions workflow edits. The current pipeline workflow files before and after agent-associated PRs are analyzed using static analysis tools such as zizmor, actionlint, custom rule scripts, and relative change checks. We empirically study the results to gauge how well agents follow CI/CD best practices and conventions, and examine what may be influencing their decisions not to.
 
 ## Code
 
-- [Pipeline setup, commands and limitations](Experiments/Policy%20Oracle%20Pipeline/paper_a/README.md)
-- [Original custom checks](Experiments/Data/rule_mining/mine.py)
+- [Research Question 1: Analyzing Static Analyses on Agent-Associated PRs](Experiments/RQ1)
+- [Research Question 2: File-Associative Analysis on Agent-Edit Behaviour](Experiments/RQ2_3) (Cells 1-29)
+- [Research Question 3: Categorical Analysis on Agent-Edit Behaviour](Experiments/RQ2_3) (Cells 30-40)
 
-The existing directory layout is preserved so the validated code and recorded source hashes remain intact. Git attributes disable line-ending conversion for the frozen source.
+## Dataset
 
-## Data and tools
-
-Raw datasets, results, retrieval caches, binaries, local dependencies and machine-specific output paths are excluded from Git. Configure an output directory and supply the pinned tools as described in the pipeline README. Keep the archived data and its provenance separately.
-
-## Validation
-
-After restoration on 15 October 2026: 48 unit tests passed, all 485 historical pilot comparisons matched, and full-output verification passed. Four scanner source files match the completed run hashes. The missing recovery script was reconstructed from recorded edits and passes the history tests; no independent original hash was available for that script.
+We use the [AIDev v5 dataset](https://huggingface.co/datasets/hao-li/AIDev), which holds 7.6M agent-associated PRs with a cutoff date of March 31st, 2026. The included "pop" subset filters for PRs originating from GitHub repositories with more than 100 stars. Our data tables created from the dataset through static tool analyses are available [here](Data/) 
